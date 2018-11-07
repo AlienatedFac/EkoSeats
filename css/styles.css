@@ -189,7 +189,7 @@ a img{
   width: auto;
   background-color: #f3f3f3;
   background: url('../images/back.png') center 80% no-repeat;
-  background-size:1400px auto;
+  background-size:1500px auto;
 }
 .android-be-together-section1 {
   position: relative;
@@ -322,7 +322,7 @@ a img{
 
 .android-wear-section {
   position: relative;
-  background: url('../images/fondo.png') center top no-repeat;
+  background: url('../images/mueble1.jpg') center top no-repeat;
   background-size: cover;
   height: 800px;
 }
