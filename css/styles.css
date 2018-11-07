@@ -182,14 +182,14 @@ a img{
       position: absolute;
       bottom: 16px;
     }
-
+/*Fondo donde estan las letras e EkoSeats*/
 .android-be-together-section {
   position: relative;
-  height: 800px;
+  height: 300px;
   width: auto;
   background-color: #f3f3f3;
-  background: url('../images/fondo.png') center 30% no-repeat;
-  background-size:lenght;
+  background: url('../images/back.png') center 80% no-repeat;
+  background-size:1400px auto;
 }
 .android-be-together-section1 {
   position: relative;
@@ -322,7 +322,7 @@ a img{
 
 .android-wear-section {
   position: relative;
-  background: url('../images/wear.png') center top no-repeat;
+  background: url('../images/fondo.png') center top no-repeat;
   background-size: cover;
   height: 800px;
 }
@@ -392,7 +392,7 @@ a img{
   }
 
 .android-customized-section-image {
-  background: url('../images/devices.jpg') center top no-repeat;
+  background: url('../images/wear.png') center top no-repeat;
   background-size: cover;
   height: 400px;
 }
