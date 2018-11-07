@@ -192,8 +192,9 @@ a img{
   background-size:1500px auto;
 }
 .android-be-together-section1 {
-  position: relative;
-  height: 800px;
+  position: center;
+  height: 600px;
+  width:600px;
   width: auto;
   background-color: #f3f3f3;
   background-size:lenght;
@@ -236,6 +237,7 @@ a img{
 .android-screens {
   text-align: right;
   width: 100%;
+  height: auto;
   white-space: nowrap;
   overflow-x: auto;
 }
@@ -256,8 +258,8 @@ a img{
 
 .android-wear {
   display: inline-block;
-  width: 160px;
-  margin-right: 32px;
+  width: 200px;
+  margin-right: 1px;/*32 original*/
 }
 
   .android-wear .android-screen-image {
@@ -268,8 +270,9 @@ a img{
 
 .android-phone {
   display: inline-block;
-  width: 64px;
-  margin-right: 48px;
+  width: auto;
+  height: 200px;
+  margin-right: 20px;/*48 original*/
 }
 
   .android-phone .android-screen-image {
@@ -280,8 +283,9 @@ a img{
 
 .android-tablet {
   display: inline-block;
-  width: 110px;
-  margin-right: 64px;
+  width: auto;
+  height: 200px;
+  margin-right: 20px;/*64or*/
 }
 
   .android-tablet .android-screen-image {
@@ -297,8 +301,9 @@ a img{
 
 .android-tv {
   display: inline-block;
-  width: 300px;
-  margin-right: 80px;
+  width: 200px;
+  height: auto;
+  margin-right: 20px;/*80 original*/
 }
 
   .android-tv .android-screen-image {
