@@ -1,0 +1,95 @@
+body{
+background-image: url(nature.jpg);
+background-repeat: no-repeat;
+background-attachment: scroll;
+background-position: center 0;
+}
+.header{
+  padding-right: 90%;
+  margin:auto;
+  width: 100%;
+  font-family: Arial, Helvetica, Sans-Seriff;
+}
+
+*{
+  padding:0px;
+  margin:0px;
+}
+
+ul, ol{
+  list-style: none;
+}
+
+.nav li a{
+  background-color: #000;
+  color:#fff;
+  text-decoration:none;
+  padding:10px 25px;
+  display:block;
+}
+
+.nav li a:hover{
+background-color: #434343; 
+}
+
+.nav li{
+  float:left; 
+}
+
+.nav li ul{
+  display: none;
+  position: absolute;
+  width:none;
+}
+
+.nav li:hover>ul{
+display: inline-grid;
+}
+
+.nav li ul li{
+  position: relative;
+}
+
+.nav li ul li ul{
+  display:none;
+  left:119px;
+  top:0px;
+}
+
+#Inicio
+{
+background-color:aqua;
+color:red; 
+}
+
+#Texto
+{
+background-color:blue;
+color:red; 
+}
+
+/*
+h1{
+background-color: #A5FF33;
+color:white;
+position: relative;
+display: inline-block;
+margin:0 25px;
+padding: 0 10px;
+height: 40px;
+font-family: monospace;
+}
+h2{
+background-color: #A5FF33;
+color:white;
+}  
+
+#lasto { /*Es mi footer*/
+ /* position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 50px;
+  background-color: #A5FF33;
+  width: 100%;
+}
+
