@@ -106,40 +106,45 @@
         <div class="android-screen-section mdl-typography--text-center">
           <a name="screens"></a>
           <div class="mdl-typography--display-1-color-contrast">Conoce toda nuestra linea de productos</div>
-          <div class="android-screens">
-            <div class="android-wear android-screen">
-              <a class="android-image-link" href="">
-                <img class="android-screen-image" src="images/wear.jpg">
+<?php
+date_default_timezone_set("America/New_York");
+$dia = date("l");
+            echo "<div class='android-screens'>";
+            echo"<div class='android-wear android-screen'>";
+             echo "<a class='android-image-link' href=''>";
+               echo "<img class='android-screen-image' src='images/wear.jpg'>";
                 
+              echo"</a>";
+            echo"<a class='android-link mdl-typography--font-regular mdl-typography--text-uppercase' href=''>$dia</a>";
+            echo"</div>";
+            
+            echo"<div class='android-phone android-screen'>
+              <a class='android-image-link' href=''>
+                <img class='android-screen-image' src='images/silla.jpg'>
               </a>
-              <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase" href="">Producto 1</a>
+              <a class='android-link mdl-typography--font-regular mdl-typography--text-uppercase' href=''>$dia</a>
             </div>
-            <div class="android-phone android-screen">
-              <a class="android-image-link" href="">
-                <img class="android-screen-image" src="images/silla.jpg">
+            <div class='android-tablet android-screen'>
+              <a class='android-image-link' href=''>
+                <img class='android-screen-image' src='images/si2.jpg'>
               </a>
-              <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase" href="">Producto 2</a>
+              <a class='android-link mdl-typography--font-regular mdl-typography--text-uppercase' href=''>$dia</a>
             </div>
-            <div class="android-tablet android-screen">
-              <a class="android-image-link" href="">
-                <img class="android-screen-image" src="images/si2.jpg">
+            <div class='android-tv android-screen'>
+              <a class='android-image-link' href=''>
+                <img class='android-screen-image' src='images/mesa.jpg'>
               </a>
-              <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase" href="">Producto 3</a>
+              <a class='android-link mdl-typography--font-regular mdl-typography--text-uppercase' href=''>$dia</a>
             </div>
-            <div class="android-tv android-screen">
-              <a class="android-image-link" href="">
-                <img class="android-screen-image" src="images/mesa.jpg">
+            <div class='android-auto android-screen'>
+              <a class='android-image-link' href=''>
+                <img class='android-screen-image' src='images/mueble5.jpg'>
               </a>
-              <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase" href="">Producto 4</a>
-            </div>
-            <div class="android-auto android-screen">
-              <a class="android-image-link" href="">
-                <img class="android-screen-image" src="images/mueble5.jpg">
-              </a>
-              <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase mdl-typography--text-left" href="">Producto 5</a>
+              <a class='android-link mdl-typography--font-regular mdl-typography--text-uppercase mdl-typography--text-left' href=''>$dia</a>
             </div>
           </div>
-        </div>
+        </div>";
+                ?>
         <div class="android-wear-section">
           <div class="android-wear-band">
             <div class="android-wear-band-text">
