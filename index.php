@@ -143,109 +143,111 @@ $dia = date("l");
               <a class='android-link mdl-typography--font-regular mdl-typography--text-uppercase mdl-typography--text-left' href=''>$dia</a>
             </div>
           </div>
-        </div>";
-                ?>
-        <div class="android-wear-section">
-          <div class="android-wear-band">
-            <div class="android-wear-band-text">
-              <div class="mdl-typography--display-2 mdl-typography--font-thin">Recomendado</div>
-              <p class="mdl-typography--headline mdl-typography--font-thin">
+        </div>
+        <div class='android-wear-section'>
+          <div class='android-wear-band'>
+            <div class='android-wear-band-text'>
+              <div class='mdl-typography--display-2 mdl-typography--font-thin'>Recomendado</div>
+              <p class='mdl-typography--headline mdl-typography--font-thin'>
                Credensa de Madera Con Puerta Corredisa
               </p>
               <p>
-                <a class="mdl-typography--font-regular mdl-typography--text-uppercase android-alt-link" href="credensas.html">
-                  VER PRODUCTO&nbsp;<i class="material-icons">chevron_right</i>
+                <a class='mdl-typography--font-regular mdl-typography--text-uppercase android-alt-link' href='credensas.html'>
+                  VER PRODUCTO&nbsp;<i class='material-icons'>chevron_right</i>
                 </a>
               </p>
             </div>
           </div>
         </div>
-        <div class="android-customized-section">
-          <div class="android-customized-section-text">
-            <div class="mdl-typography--font-light mdl-typography--display-1-color-contrast">OTROS PRODUCTOS</div>
-            <p class="mdl-typography--font-light">
+        <div class='android-customized-section'>
+          <div class='android-customized-section-text'>
+            <div class='mdl-typography--font-light mdl-typography--display-1-color-contrast'>OTROS PRODUCTOS</div>
+            <p class='mdl-typography--font-light'>
               Descripciones
               <br>
-              <a href="" class="android-link mdl-typography--font-light">Enlace</a>
+              <a href='' class='android-link mdl-typography--font-light'>Enlace</a>
             </p>
           </div>
-          <div class="android-customized-section-image"></div>
+          <div class='android-customized-section-image'></div>
         </div>
-        <div class="android-more-section">
-          <div class="android-section-title mdl-typography--display-1-color-contrast">Mas de Ekoseats</div>
-          <div class="android-card-container mdl-grid">
-            <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
-              <div class="mdl-card__media">
-                <img src="images/salas1.jpg">
+        <div class='android-more-section'>
+          <div class='android-section-title mdl-typography--display-1-color-contrast'>Mas de Ekoseats</div>
+          <div class='android-card-container mdl-grid'>
+            <div class='mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp'>
+              <div class='mdl-card__media'>
+                <img src='images/salas1.jpg'>
               </div>
-              <div class="mdl-card__title">
-                 <h4 class="mdl-card__title-text">Tipo madera</h4>
+              <div class='mdl-card__title'>
+                 <h4 class='mdl-card__title-text'>Tipo madera</h4>
               </div>
-              <div class="mdl-card__supporting-text">
-                <span class="mdl-typography--font-light mdl-typography--subhead">Sala color madera reciclada</span>
+              <div class='mdl-card__supporting-text'>
+                <span class='mdl-typography--font-light mdl-typography--subhead'>Sala color madera reciclada</span>
               </div>
-              <div class="mdl-card__actions">
-                 <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="salas.html">
+              <div class='mdl-card__actions'>
+                 <a class='android-link mdl-button mdl-js-button mdl-typography--text-uppercase' href='salas.html'>
                    VER
-                   <i class="material-icons">chevron_right</i>
+                   <i class='material-icons'>chevron_right</i>
                  </a>
               </div>
             </div>
 
-            <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
-              <div class="mdl-card__media">
-                <img src="images/sala2.jpg">
+            <div class='mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp'>
+              <div class='mdl-card__media'>
+                <img src='images/sala2.jpg'>
               </div>
-              <div class="mdl-card__title">
-                 <h4 class="mdl-card__title-text">Sala Color Blanco</h4>
+              <div class='mdl-card__title'>
+                 <h4 class='mdl-card__title-text'>Sala Color Blanco</h4>
               </div>
-              <div class="mdl-card__supporting-text">
-                <span class="mdl-typography--font-light mdl-typography--subhead">Sala de Madera Reciclada con tres piezas</span>
+              <div class='mdl-card__supporting-text'>
+                <span class='mdl-typography--font-light mdl-typography--subhead'>Sala de Madera Reciclada con tres piezas</span>
               </div>
-              <div class="mdl-card__actions">
-                 <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="salas.html" target="_blank">
-                   <i class="material-icons">chevron_right</i>
+              <div class='mdl-card__actions'>
+                 <a class='android-link mdl-button mdl-js-button mdl-typography--text-uppercase' href='salas.html' target='_blank'>
+                   <i class='material-icons'>chevron_right</i>
                  </a>
               </div>
             </div>
 
-            <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
-              <div class="mdl-card__media">
-                <img src="images/salas6.jpg">
+            <div class='mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp'>
+              <div class='mdl-card__media'>
+                <img src='images/salas6.jpg'>
               </div>
-              <div class="mdl-card__title">
-                 <h4 class="mdl-card__title-text">Sala Redonda</h4>
+              <div class='mdl-card__title'>
+                 <h4 class='mdl-card__title-text'>Sala Redonda</h4>
               </div>
-              <div class="mdl-card__supporting-text">
-                <span class="mdl-typography--font-light mdl-typography--subhead">Sala Color Azul con 4 piezas </span>
+              <div class='mdl-card__supporting-text'>
+                <span class='mdl-typography--font-light mdl-typography--subhead'>Sala Color Azul con 4 piezas </span>
               </div>
-              <div class="mdl-card__actions">
-                 <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="salas.html">
+              <div class='mdl-card__actions'>
+                 <a class='android-link mdl-button mdl-js-button mdl-typography--text-uppercase' href='salas.html'>
                    VER
-                   <i class="material-icons">chevron_right</i>
+                   <i class='material-icons'>chevron_right</i>
                  </a>
               </div>
             </div>
 
-            <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
-              <div class="mdl-card__media">
-                <img src="images/salas4.jpg">
+            <div class='mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp'>
+              <div class='mdl-card__media'>
+                <img src='images/salas4.jpg'>
               </div>
-              <div class="mdl-card__title">
-                 <h4 class="mdl-card__title-text">Sala Junta</h4>
+              <div class='mdl-card__title'>
+                 <h4 class='mdl-card__title-text'>Sala Junta</h4>
               </div>
-              <div class="mdl-card__supporting-text">
-                <span class="mdl-typography--font-light mdl-typography--subhead">Sala Baja Con 4 Cojines, incluye una pequeña mesa</span>
+              <div class='mdl-card__supporting-text'>
+                <span class='mdl-typography--font-light mdl-typography--subhead'>Sala Baja Con 4 Cojines, incluye una pequeña mesa</span>
               </div>
-              <div class="mdl-card__actions">
-                 <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="salas.html">
+              <div class='mdl-card__actions'>
+                 <a class='android-link mdl-button mdl-js-button mdl-typography--text-uppercase' href='salas.html'>
                    VER
-                   <i class="material-icons">chevron_right</i>
+                   <i class='material-icons'>chevron_right</i>
                  </a>
               </div>
             </div>
           </div>
         </div>
+        ";
+                ?>
+
 
         <footer class="android-footer mdl-mega-footer">
           <div class="mdl-mega-footer--top-section">
