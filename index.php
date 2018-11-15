@@ -71,7 +71,7 @@
           
           <div class="android-drawer-separator"></div>
           <span class="mdl-navigation__link" >Salas</span>
-          <a class="mdl-navigation__link" href="salas.html">Salas </a>
+          <a class="mdl-navigation__link" href="salas.php">Salas </a>
           <a class="mdl-navigation__link" href="sillones.html">Sillones</a>
           <a class="mdl-navigation__link" href="">Sofa</a>
           <div class="android-drawer-separator"></div>
