@@ -208,7 +208,7 @@ Ver producto</button>
                 <img src='images/$var1.jpg'>
               </div>
               <div class='mdl-card__title'>
-                 <h4 class='mdl-card__title-text' id="$var1">$var2</h4>
+                 <h4 class='mdl-card__title-text'>$var2</h4>
               </div>";
 ?>
               
