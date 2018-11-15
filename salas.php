@@ -96,17 +96,16 @@
           <div class="android-font android-sub-slogan">
               <div class="android-card-container mdl-grid">
 <?php
-
-              <!-- Aqui empieza la tarjeta-->
-
+date_default_timezone_set("America/New_York");
+$variableejemplo = date("l");
 
             
-            echo="<div class='mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp'>
+            echo"<div class='mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp'>
               <div class='mdl-card__media'>
                 <img src='images/salas1.jpg'>
               </div>
               <div class='mdl-card__title'>
-                 <h4 class='mdl-card__title-text'>Tipo Madera</h4>
+                 <h4 class='mdl-card__title-text'>$variableejemplo</h4>
               </div>
               <div class='mdl-card__supporting-text'>
               </div>
@@ -123,7 +122,7 @@ Ver producto</button>
                 <img src='images/sala2.jpg'>
               </div>
               <div class='mdl-card__title'>
-                 <h4 class='mdl-card__title-text'>Sala Color Blanco</h4>
+                 <h4 class='mdl-card__title-text'>$variableejemplo</h4>
               </div>
               <div class='mdl-card__supporting-text'>
                 
@@ -139,7 +138,7 @@ Ver producto</button>
                 <img src='images/salas3.jpg'>
               </div>
               <div class='mdl-card__title'>
-                 <h4 class='mdl-card__title-text'>Sala Sencilla</h4>
+                 <h4 class='mdl-card__title-text'>$variableejemplo</h4>
               </div>
               <div class='mdl-card__supporting-text'>
               </div>
@@ -156,7 +155,7 @@ Ver producto</button>
                 <img src='images/salas4.jpg'>
               </div>
               <div class='mdl-card__title'>
-                 <h4 class='mdl-card__title-text'>Sala Junta</h4>
+                 <h4 class='mdl-card__title-text'>$variableejemplo</h4>
               </div>
               <div class='mdl-card__supporting-text'>
               </div>
@@ -175,7 +174,7 @@ Ver producto</button>
                 <img src='images/salas5.jpg'>
               </div>
               <div class='mdl-card__title'>
-                 <h4 class='mdl-card__title-text'>Sala Sencilla</h4>
+                 <h4 class='mdl-card__title-text'>$variableejemplo</h4>
               </div>
               <div class='mdl-card__supporting-text'>
               </div>
@@ -190,7 +189,7 @@ Ver producto</button>
                 <img src='images/salas6.jpg'>
               </div>
               <div class='mdl-card__title'>
-                 <h4 class='mdl-card__title-text'>Sala Redonda</h4>
+                 <h4 class='mdl-card__title-text'>$variableejemplo</h4>
               </div>";
 ?>
               
