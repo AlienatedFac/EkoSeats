@@ -50,13 +50,39 @@
           </div>
           <button class="android-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" id="more-button">
             <i class="material-icons">more_vert</i>
-          </button>
-          <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="more-button">
-            <li class="mdl-menu__item">Cuenta</li>
-            <li class="mdl-menu__item">Usuario</li>
-            <li class="mdl-menu__item">Administrador</li>
-            <li class="mdl-menu__item">Vendedor</li>
-          </ul>
+            </button>
+        
+            <?php
+
+$user=$_POST['user'];
+$password=$_POST['password'];
+
+session_start();
+
+$conexion = mysqli_connect("localhost", "root", "", "EkoBDD");
+$consulta =$conexion->query("SELECT * from ACCESO WHERE Nickname='$user' AND Password='$password'");
+
+if($resultado = mysqli_fetch_array($consulta)){
+	$_SESSION['u']=$user;
+echo" 
+<ul class='mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect' for='more-button'>
+            <li class='mdl-menu__item' href='Log-in.html'> <a  href='usuario.php'>$user </a></li>
+            <li class='mdl-menu__item'>Usuario</li>
+            <li class='mdl-menu__item'>Administrador</li>
+            <li class='mdl-menu__item'>Cerrar Sesion</li>
+          </ul>";
+    
+}
+else{
+    echo"
+    <ul class='mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect' for='more-button'>
+            <li class='mdl-menu__item' href='Log-in.html'> <a  href='usuario.php'>Iniciar Sesion </a></li>
+            <li class='mdl-menu__item'>Usuario</li>
+            <li class='mdl-menu__item'>Administrador</li>
+            <li class='mdl-menu__item'>Vendedor</li>
+          </ul>";
+}
+              ?>
           <span class="android-mobile-title mdl-layout-title">
             <img class="android-logo-image" src="images/ekoseats.png">
           </span>
