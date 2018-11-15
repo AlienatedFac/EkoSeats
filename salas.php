@@ -98,6 +98,22 @@
 <?php
 date_default_timezone_set("America/New_York");
 $variableejemplo = date("l");
+$var1 = "";
+$var2 = "";
+$var3 = "";
+$var4 = "";                  
+$conexion = mysqli_connect("localhost", "root", "", "EkoBDD");
+$query=("select * from inventario where id=1");
+$execute = mysql_query($query, $conexion); 
+//Compruebo si hay algún resultado
+if($row = mysql_fetch_array($execute)){
+   //Guardo los datos de la BD en las variables de php
+   $var1 = $row["id"];
+   $var2 = $row["nombre"];
+   $var3 = $row["descripcion"];
+   $var4= $row["precio"];
+}
+                  
 
             
             echo"<div class='mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp'>
@@ -184,12 +200,13 @@ Ver producto</button>
               </div>
             </div>
  <!-- Aqui empieza SALA REDONDA-->
+
             <div class='mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp'>
               <div class='mdl-card__media'>
                 <img src='images/salas6.jpg'>
               </div>
               <div class='mdl-card__title'>
-                 <h4 class='mdl-card__title-text'>$variableejemplo</h4>
+                 <h4 class='mdl-card__title-text'>$var2</h4>
               </div>";
 ?>
               
