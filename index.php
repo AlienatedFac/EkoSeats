@@ -53,34 +53,32 @@
             </button>
         
             <?php
-
+            echo"
+    <ul class='mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect' for='more-button'>
+            <li class='mdl-menu__item' href='Log-in.html'> <a  href='Log-in.html'>$sesion Sesion </a></li>";
+ 
 $user=$_POST['user'];
 $password=$_POST['password'];
-
+            $sesion="";
 session_start();
 
 $conexion = mysqli_connect("localhost", "root", "", "EkoBDD");
 $consulta =$conexion->query("SELECT * from ACCESO WHERE Nickname='$user' AND Password='$password'");
+           
+    
 
 if($resultado = mysqli_fetch_array($consulta)){
 	$_SESSION['u']=$user;
+    $sesion="Cerrar";
 echo" 
-<ul class='mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect' for='more-button'>
-            <li class='mdl-menu__item' href='Log-in.html'> <a  href='usuario.php'>$user </a></li>
-            <li class='mdl-menu__item'>Usuario</li>
+            <li class='mdl-menu__item'>$user</li>
             <li class='mdl-menu__item'>Administrador</li>
             <li class='mdl-menu__item'>Cerrar Sesion</li>
           </ul>";
     
 }
 else{
-    echo"
-    <ul class='mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect' for='more-button'>
-            <li class='mdl-menu__item' href='Log-in.html'> <a  href='usuario.php'>Iniciar Sesion </a></li>
-            <li class='mdl-menu__item'>Usuario</li>
-            <li class='mdl-menu__item'>Administrador</li>
-            <li class='mdl-menu__item'>Vendedor</li>
-          </ul>";
+    $sesion="Iniciar";
 }
               ?>
           <span class="android-mobile-title mdl-layout-title">
