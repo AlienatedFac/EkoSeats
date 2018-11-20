@@ -21,7 +21,6 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/material.min.css">
     <link rel="stylesheet" href="css/styles.css">
-      <link rel="stylesheet" href="css/popup.css">
    <!-- Mi Head we --> 
   </head>
   <body>
@@ -150,34 +149,111 @@ if($resultado = mysqli_fetch_array($consulta)){
               </div>
               <div class='mdl-card__supporting-text'>
               </div>
-              
-              
               <div class='mdl-card__actions'>
-             <button class='open-button' onclick='openForm();'>Open Form</button>
-
-<div class='form-popup' id='myForm'>
-  <form action='/action_page.php' class='form-container'>
-    <h1>Login</h1>
-
-    <label for='email'><b>Email</b></label>
-    <input type='text' placeholder='Enter Email' name='email' required>
-
-    <label for='psw'><b>Password</b></label>
-    <input type='password' placeholder='Enter Password' name='psw' required>
-
-    <button type='submit' class='btn'>Login</button>
-    <button type='button' class='btn cancel' onclick='closeForm()'>Close</button>
-  </form>
-</div>
+               <button onclick='document.getElementById('modal-wrapper').style.display='block'' style='width:200px; margin-top:200px; margin-left:145px;'>
+Ver producto</button>
 
               </div>
-            </div>            
+            </div>
+            
             ";
             }
 
           
 ?>
               
+<style>
+*{margin:0px; padding:0px; font-family:Helvetica, Arial, sans-serif;}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 26px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  font-size:16px;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 26px;
+    border: none;
+    cursor: pointer;
+    width: auto;
+  font-size:20px;
+    border-radius: 25px;
+}
+button:hover {
+    opacity: 0.8;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+.avatar {
+    width: 200px;
+  height:200px;
+    border-radius: 50%;
+}
+
+/* The Modal (background) */
+.modal {
+  display:none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 120%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+/* Modal Content Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 4% auto 15% auto;
+    border: 1px solid #888;
+    width: 40%; 
+  padding-bottom: 30px;
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+.close:hover,.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    animation: zoom 0.6s
+}
+@keyframes zoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+</style>
+
+              <div class="mdl-card__actions">
+
+<button onclick="document.getElementById('modal-wrapper').style.display='block'" style="width:200px; margin-top:200px; margin-left:145px;">
+Ver producto</button>
 
 </div>
 </div>
@@ -210,16 +286,18 @@ if($resultado = mysqli_fetch_array($consulta)){
 
 <script>
 // If user clicks anywhere outside of the modal, Modal will close
-function openForm() {
-    document.getElementById("myForm").style.display = "block";
-}
 
-function closeForm() {
-    document.getElementById("myForm").style.display = "none";
+var modal = document.getElementById('modal-wrapper');
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
 }
 </script>
  <!-- Aqui termina sala redonda-->      
-        
+          
+          
+          </div>
           <div class="android-font android-create-character">
             <a href=""><img src="images/andy.png"> </a>
           </div>
