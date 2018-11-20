@@ -103,26 +103,17 @@ $var2="";
 $var3="";
 $var4="";                  
 $conexion = mysqli_connect("localhost", "root", "", "EkoBDD");
-                  for($contador=1;$contador<6;$contador++)
+                  for($contador=1;$contador<16;$contador++)
                   {
 $consulta =$conexion->query("SELECT * from salas WHERE id= $contador");
-
 if($resultado = mysqli_fetch_array($consulta)){
-
    //Guardo los datos de la BD en las variables de php
    $var1 = $resultado["id"];
     $var2 = $resultado["Nombre"];
     $var3 = $resultado["Descripcion"];
     $var4 = $resultado["Precio"];
-    
-   
 }
-         
-                  
-         
-
-            
-            echo"<div class='mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp'>
+          echo"<div class='mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp'>
               <div class='mdl-card__media'>
                 <img src='images/salas/$var1.jpg'>
               </div>
@@ -230,7 +221,6 @@ button:hover {
     from {transform: scale(0)} 
     to {transform: scale(1)}
 }
-</style>
 </style>
 
               <div class="mdl-card__actions">
