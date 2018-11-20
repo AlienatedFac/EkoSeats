@@ -1,4 +1,4 @@
-/**
+  /**
  * Copyright 2015 Google Inc. All Rights Reserved.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@
   font-family: "And Black";
   src: url("myfont-webfont.eot?#iefix") format('embedded-opentype'),
        url("../fonts/and_black.woff") format('woff'),
-       url("../fonts/and_black.ttf") format('truetype');
+       url("../font1s/and_black.ttf") format('truetype');
 }
 
 body {
@@ -188,7 +188,7 @@ a img{
   height: 300px;
   width: auto;
   background-color: #f3f3f3;
-  background: url('../images/back.png') center 80% no-repeat;
+  background: url('../images/fondo.png') center 80% no-repeat;
   background-size:1500px auto;
 }
 .android-be-together-section1 {
@@ -331,6 +331,7 @@ a img{
   background-size: cover;
   height: 800px;
 }
+
 
 .android-wear-band {
   position: absolute;
