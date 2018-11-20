@@ -39,23 +39,23 @@
             </div>
           </div>
           <!-- Menú -->
-          <div class="android-navigation-container">
-            <nav class="android-navigation mdl-navigation">
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="index.html">Home</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Entregas</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="uploading.html">Uploads</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="informacion.html">Informacion</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="contactos.html">Carrito</a>
-            </nav>
-          </div>
-          <button class="android-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" id="more-button">
-            <i class="material-icons">more_vert</i>
-            </button>
-        
             <?php
             echo"
+            
+          <div class='android-navigation-container'>
+            <nav class='android-navigation mdl-navigation'>
+              <a class='mdl-navigation__link mdl-typography--text-uppercase' href='index.php'>Home</a>
+              <a class='mdl-navigation__link mdl-typography--text-uppercase' href='log-in.html'>$login Sesion</a>
+              <a class='mdl-navigation__link mdl-typography--text-uppercase' href='uploading.html'>Uploads</a>
+              <a class='mdl-navigation__link mdl-typography--text-uppercase' href='informacion.html'>Informacion</a>
+              <a class='mdl-navigation__link mdl-typography--text-uppercase' href='contactos.html'>Carrito</a>
+            </nav>
+          </div>
+          <button class='android-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect' id='more-button'>
+            <i class='material-icons'>more_vert</i>
+            </button>
     <ul class='mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect' for='more-button'>
-            <li class='mdl-menu__item' href='Log-in.html'> <a  href='Log-in.html'>$sesion Sesion </a></li>";
+            <li class='mdl-menu__item' href='Log-in.html'> <a  href='Log-in.html'> Sesion </a></li>";
  
 $user=$_POST['user'];
 $password=$_POST['password'];
@@ -68,7 +68,8 @@ $consulta =$conexion->query("SELECT * from ACCESO WHERE Nombre='$user' AND Passw
     
 
 if($resultado = mysqli_fetch_array($consulta)){
-	$_SESSION['u']=$user;
+	$login="Cerrar Sesion";
+    $_SESSION['u']=$user;
     $sesion="Cerrar";
 echo" 
             <li class='mdl-menu__item'>$user</li>
