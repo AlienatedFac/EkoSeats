@@ -63,7 +63,7 @@ $password=$_POST['password'];
 session_start();
 
 $conexion = mysqli_connect("localhost", "root", "", "EkoBDD");
-$consulta =$conexion->query("SELECT * from ACCESO WHERE Nickname='$user' AND Password='$password'");
+$consulta =$conexion->query("SELECT * from ACCESO WHERE Nombre='$user' AND Password='$password'");
            
     
 
@@ -73,7 +73,7 @@ if($resultado = mysqli_fetch_array($consulta)){
 echo" 
             <li class='mdl-menu__item'>$user</li>
             <li class='mdl-menu__item'>Administrador</li>
-            <li class='mdl-menu__item'>Cerrar Sesion</li>
+            <li class='mdl-menu__item' href='index.php'>Cerrar Sesion</li>
           </ul>";
     
 }
@@ -95,21 +95,43 @@ else{
           
           <div class="android-drawer-separator"></div>
           <span class="mdl-navigation__link" >Salas</span>
-          <a class="mdl-navigation__link" href="salas.php">Salas </a>
-          <a class="mdl-navigation__link" href="sillones.html">Sillones</a>
-          <a class="mdl-navigation__link" href="">Sofa</a>
+        <form action="salas.php" method="POST">
+ <input type="submit" class="mdl-navigation__link" name="seccion" value="Salas" />
+</form>
+  <form action="salas.php" method="POST">
+ <input type="submit" class="mdl-navigation__link" name="seccion" value="Sillones" />
+</form>
+  <form action="salas.php" method="POST">
+ <input type="submit" class="mdl-navigation__link" name="seccion" value="Sofa" />
+</form>
           <div class="android-drawer-separator"></div>
-          <span class="mdl-navigation__link" href="">Comedores</span>
-          <a class="mdl-navigation__link" href="">Mesas</a>
-          <a class="mdl-navigation__link" href="">Sillas</a>
-          <a class="mdl-navigation__link" href="">Bancos</a>
-          <a class="mdl-navigation__link" href="Credensas.html">Credensas</a>
+<span class="mdl-navigation__link" >Comedores</span>
+  <form action="salas.php" method="POST">
+ <input type="submit" class="mdl-navigation__link" name="seccion" value="Mesas" />
+</form>
+  <form action="salas.php" method="POST">
+ <input type="submit" class="mdl-navigation__link" name="seccion" value="Sillas" />
+</form>
+<form action="salas.php" method="POST">
+ <input type="submit" class="mdl-navigation__link" name="seccion" value="Bancos" />
+</form>
+            <form action="salas.php" method="POST">
+ <input type="submit" class="mdl-navigation__link" name="seccion" value="Credensas" />
+</form>
           <div class="android-drawer-separator"></div>
           <span class="mdl-navigation__link" href="">Accesorios</span>
-          <a class="mdl-navigation__link" href="">Lamparas</a>
-          <a class="mdl-navigation__link" href="">Cojines</a>
-          <a class="mdl-navigation__link" href="">Cuadros</a>
-          <a class="mdl-navigation__link" href="">Decoracion</a>
+        <form action="salas.php" method="POST">
+ <input type="submit" class="mdl-navigation__link" name="seccion" value="Lamparas" />
+</form>
+  <form action="salas.php" method="POST">
+ <input type="submit" class="mdl-navigation__link" name="seccion" value="Cojines" />
+</form>
+<form action="salas.php" method="POST">
+ <input type="submit" class="mdl-navigation__link" name="seccion" value="Cuadros" />
+</form>
+            <form action="salas.php" method="POST">
+ <input type="submit" class="mdl-navigation__link" name="seccion" value="Decoracion" />
+</form>
         </nav>
       </div>
 

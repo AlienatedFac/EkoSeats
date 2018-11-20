@@ -41,7 +41,7 @@
           <!-- Menú -->
           <div class="android-navigation-container">
             <nav class="android-navigation mdl-navigation">
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="index.html">Home</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="index.php">Home</a>
               <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Entregas</a>
               <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Uploads</a>
               <a class="mdl-navigation__link mdl-typography--text-uppercase" href="informacion.html">Informacion</a>
@@ -63,39 +63,63 @@
         </div>
       </div>
 
-      <div class="android-drawer mdl-layout__drawer">
+    <div class="android-drawer mdl-layout__drawer">
         <span class="mdl-layout-title">
           <img class="android-logo-image" src="images/ekoseats.png">
         </span>
         <nav class="mdl-navigation">
           
           <div class="android-drawer-separator"></div>
-          <span class="mdl-navigation__link" href="">Salas</span>
-          <a class="mdl-navigation__link" href="salas.html">Salas </a>
-          <a class="mdl-navigation__link" href="Sillones.html">Sillones</a>
-          <a class="mdl-navigation__link" href="">Sofa</a>
+          <span class="mdl-navigation__link" >Salas</span>
+        <form action="salas.php" method="POST">
+ <input type="submit" class="mdl-navigation__link" name="seccion" value="Salas" />
+</form>
+  <form action="salas.php" method="POST">
+ <input type="submit" class="mdl-navigation__link" name="seccion" value="Sillones" />
+</form>
+  <form action="salas.php" method="POST">
+ <input type="submit" class="mdl-navigation__link" name="seccion" value="Sofa" />
+</form>
           <div class="android-drawer-separator"></div>
-          <span class="mdl-navigation__link" href="">Comedores</span>
-          <a class="mdl-navigation__link" href="">Mesas</a>
-          <a class="mdl-navigation__link" href="">Sillas</a>
-          <a class="mdl-navigation__link" href="">Bancos</a>
-          <a class="mdl-navigation__link" href="credensas.html">Credensas</a>
+<span class="mdl-navigation__link" >Comedores</span>
+  <form action="salas.php" method="POST">
+ <input type="submit" class="mdl-navigation__link" name="seccion" value="Mesas" />
+</form>
+  <form action="salas.php" method="POST">
+ <input type="submit" class="mdl-navigation__link" name="seccion" value="Sillas" />
+</form>
+<form action="salas.php" method="POST">
+ <input type="submit" class="mdl-navigation__link" name="seccion" value="Bancos" />
+</form>
+            <form action="salas.php" method="POST">
+ <input type="submit" class="mdl-navigation__link" name="seccion" value="Credensas" />
+</form>
           <div class="android-drawer-separator"></div>
           <span class="mdl-navigation__link" href="">Accesorios</span>
-          <a class="mdl-navigation__link" href="">Lamparas</a>
-          <a class="mdl-navigation__link" href="">Cojines</a>
-          <a class="mdl-navigation__link" href="">Cuadros</a>
-          <a class="mdl-navigation__link" href="">Decoracion</a>
+        <form action="salas.php" method="POST">
+ <input type="submit" class="mdl-navigation__link" name="seccion" value="Lamparas" />
+</form>
+  <form action="salas.php" method="POST">
+ <input type="submit" class="mdl-navigation__link" name="seccion" value="Cojines" />
+</form>
+<form action="salas.php" method="POST">
+ <input type="submit" class="mdl-navigation__link" name="seccion" value="Cuadros" />
+</form>
+            <form action="salas.php" method="POST">
+ <input type="submit" class="mdl-navigation__link" name="seccion" value="Decoracion" />
+</form>
         </nav>
       </div>
-
-      <div class="android-content mdl-layout__content">
-        <a name="top"></a>
-        <div class="android-be-together mdl-typography--text-center">
-          <div class="android-font android-slogan">SALAS</div>
-          <div class="android-font android-sub-slogan">
-              <div class="android-card-container mdl-grid">
+      
 <?php
+         $Nombre=$_POST['seccion'];
+echo"<div class='android-content mdl-layout__content'>
+        <a name='top'></a>
+        <div class='android-be-together mdl-typography--text-center'>
+           
+          <div class='android-font android-slogan'>$Nombre</div>
+          <div class='android-font android-sub-slogan'>
+              <div class='android-card-container mdl-grid'>";
 date_default_timezone_set("America/New_York");
 $variableejemplo = date("l");
 $var1="";
@@ -105,7 +129,7 @@ $var4="";
 $conexion = mysqli_connect("localhost", "root", "", "EkoBDD");
                   for($contador=1;$contador<16;$contador++)
                   {
-$consulta =$conexion->query("SELECT * from salas WHERE id= $contador");
+$consulta =$conexion->query("SELECT * from $Nombre WHERE id= $contador");
 if($resultado = mysqli_fetch_array($consulta)){
    //Guardo los datos de la BD en las variables de php
    $var1 = $resultado["id"];
@@ -115,7 +139,7 @@ if($resultado = mysqli_fetch_array($consulta)){
 }
           echo"<div class='mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp'>
               <div class='mdl-card__media'>
-                <img src='images/salas/$var1.jpg'>
+                <img src='images/$Nombre/$var1.jpg'>
               </div>
               <div class='mdl-card__title'>
                  <h4 class='mdl-card__title-text'>$var2</h4>
