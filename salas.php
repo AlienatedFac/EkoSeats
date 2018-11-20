@@ -180,7 +180,6 @@ if($resultado = mysqli_fetch_array($consulta)){
               
 
 </div>
-</div>
 <div id="modal-wrapper" class="modal">
   
   <form class="modal-content animate" action="/action_page.php">
@@ -211,11 +210,11 @@ if($resultado = mysqli_fetch_array($consulta)){
 <script>
 // If user clicks anywhere outside of the modal, Modal will close
 function openForm() {
-    document.getElementById("myForm").style.display = "block";
+    document.getElementById('myForm').style.display = "block";
 }
 
 function closeForm() {
-    document.getElementById("myForm").style.display = "none";
+    document.getElementById('myForm').style.display = "none";
 }
 </script>
  <!-- Aqui termina sala redonda-->      
