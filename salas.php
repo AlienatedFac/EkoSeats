@@ -103,7 +103,9 @@ $var2="";
 $var3="";
 $var4="";                  
 $conexion = mysqli_connect("localhost", "root", "", "EkoBDD");
-$consulta =$conexion->query("SELECT * from inventario WHERE id= 1");
+                  for($contador=1;$contador<6;$contador++)
+                  {
+$consulta =$conexion->query("SELECT * from salas WHERE id= $contador");
 
 if($resultado = mysqli_fetch_array($consulta)){
 
@@ -115,101 +117,31 @@ if($resultado = mysqli_fetch_array($consulta)){
     
    
 }
+         
                   
+         
 
             
             echo"<div class='mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp'>
               <div class='mdl-card__media'>
-                <img src='images/salas1.jpg'>
-              </div>
-              <div class='mdl-card__title'>
-                 <h4 class='mdl-card__title-text'>$variableejemplo</h4>
-              </div>
-              <div class='mdl-card__supporting-text'>
-              </div>
-              <div class='mdl-card__actions'>
-               <button onclick='document.getElementById('modal-wrapper').style.display='block'' style='width:200px; margin-top:200px; margin-left:145px;'>
-Ver producto</button>
-
-              </div>
-            </div>
-            <!-- Aqui termina la tarjeta-->
-
-            <div class='mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp'>
-              <div class='mdl-card__media'>
-                <img src='images/sala2.jpg'>
-              </div>
-              <div class='mdl-card__title'>
-                 <h4 class='mdl-card__title-text'>$variableejemplo</h4>
-              </div>
-              <div class='mdl-card__supporting-text'>
-                
-              </div>
-              <div class='mdl-card__actions'>
-                 <button onclick='document.getElementById('modal-wrapper').style.display='block'' style='width:200px; margin-top:200px; margin-left:145px;'>
-Ver producto</button>
-              </div>
-            </div>
-
-            <div class='ml-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp'>
-              <div class='mdl-card__media'>
-                <img src='images/salas3.jpg'>
-              </div>
-              <div class='mdl-card__title'>
-                 <h4 class='mdl-card__title-text'>$variableejemplo</h4>
-              </div>
-              <div class='mdl-card__supporting-text'>
-              </div>
-              <div class='mdl-card__actions'>
-                 <button onclick='document.getElementById('modal-wrapper').style.display='block'' style='width:200px; margin-top:200px; margin-left:145px;'>
-Ver producto</button>
-              </div>
-            </div>
-
-
-
-            <div class='mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp'>
-              <div class='mdl-card__media'>
-                <img src='images/salas4.jpg'>
-              </div>
-              <div class='mdl-card__title'>
-                 <h4 class='mdl-card__title-text'>$variableejemplo</h4>
-              </div>
-              <div class='mdl-card__supporting-text'>
-              </div>
-              <div class='mdl-card__actions'>
-                 <button onclick='document.getElementById('modal-wrapper').style.display='block'' style='width:200px; margin-top:200px; margin-left:145px;'>
-Ver producto</button>
-              </div>
-            </div>
-
-            <br>
-            <br>
-
-
-            <div class='mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp'>
-              <div class='mdl-card__media'>
-                <img src='images/salas5.jpg'>
-              </div>
-              <div class='mdl-card__title'>
-                 <h4 class='mdl-card__title-text'>$variableejemplo</h4>
-              </div>
-              <div class='mdl-card__supporting-text'>
-              </div>
-              <div class='mdl-card__actions'>
-               <button onclick='document.getElementById('modal-wrapper').style.display='block'' style='width:200px; margin-top:200px; margin-left:145px;'>
-Ver producto</button>
-              </div>
-            </div>
-
-
-            <div class='mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp'>
-              <div class='mdl-card__media'>
-                <img src='images/$var1.jpg'>
+                <img src='images/salas/$var1.jpg'>
               </div>
               <div class='mdl-card__title'>
                  <h4 class='mdl-card__title-text'>$var2</h4>
-              </div>";
+              </div>
+              <div class='mdl-card__supporting-text'>
+              </div>
+              <div class='mdl-card__actions'>
+               <button onclick='document.getElementById('modal-wrapper').style.display='block'' style='width:200px; margin-top:200px; margin-left:145px;'>
+Ver producto</button>
+
+              </div>
+            </div>
+            
+            ";
+            }
+
+          
 ?>
               
 <style>

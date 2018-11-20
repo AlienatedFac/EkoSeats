@@ -45,7 +45,7 @@
               <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Entregas</a>
               <a class="mdl-navigation__link mdl-typography--text-uppercase" href="uploading.html">Uploads</a>
               <a class="mdl-navigation__link mdl-typography--text-uppercase" href="informacion.html">Informacion</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="contactos.html">Contactos</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="contactos.html">Carrito</a>
             </nav>
           </div>
           <button class="android-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" id="more-button">
