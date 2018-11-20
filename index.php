@@ -157,8 +157,8 @@ date_default_timezone_set("America/New_York");
 $dia = date("l");
             echo "<div class='android-screens'>";
             echo"<div class='android-wear android-screen'>";
-             echo "<a class='android-image-link' href=''>";
-               echo "<img class='android-screen-image' src='images/wear.jpg'>";
+             echo "<a class='android-image-link' href=''>
+             <img class='android-screen-image' src='images/wear.jpg'>";
                 
               echo"</a>";
             echo"<a class='android-link mdl-typography--font-regular mdl-typography--text-uppercase' href=''>$dia</a>";

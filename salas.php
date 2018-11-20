@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Ejemplo de Material Design">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>SALAS</title>
+      <?php
+         $Titulo=$_POST['seccion'];
+    echo"<title>$Titulo</title>"
+      ?>
     <link rel="shortcut icon" href="icono.ico" />
 
     <!-- Prueba en GitHub desde StarPlatinumUwU -->
