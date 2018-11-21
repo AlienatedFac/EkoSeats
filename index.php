@@ -43,14 +43,14 @@
             <nav class="android-navigation mdl-navigation">
               <a class="mdl-navigation__link mdl-typography--text-uppercase" href="index.html">Home</a>
               <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Catalogo</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="uploading.html">Uploads</a>
+           
               <a class="mdl-navigation__link mdl-typography--text-uppercase" href="informacion.html">Informacion</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="contactos.html">Carrito</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="contactos.html">Registro</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="contactos.html">Inicio de Sesion</a>
+
             </nav>
           </div>
-          <button class="android-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" id="more-button">
-            <i class="material-icons">more_vert</i>
-            </button>
+         
         
             <?php
             echo"
@@ -239,7 +239,7 @@ body {font-family: Verdana, sans-serif;}
           <br>
 <?php
 
-            echo "<div class='android-screens'>";
+            echo "<div class='android-screens' style='width: 900px; height:500px;'>";
             echo"<div class='android-wear android-screen'>";                
           
             echo"</div>";
@@ -265,7 +265,7 @@ body {font-family: Verdana, sans-serif;}
   <div class='numbertext'>3 / 3</div>
   <img src='images/salas3.jpg' style='width:100%''>
   <div class='text'>Sala</div>
-</div>
+</div>500
 
 </div>
 <br>
