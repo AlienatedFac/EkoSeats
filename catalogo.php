@@ -5,10 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Ejemplo de Material Design">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-      <?php
-         $Titulo=$_POST['seccion'];
-    echo"<title>$Titulo</title>"
-      ?>
+     
     <link rel="shortcut icon" href="icono.ico" />
 
     <!-- Prueba en GitHub desde StarPlatinumUwU -->
@@ -47,21 +44,15 @@
           <div class="android-navigation-container">
             <nav class="android-navigation mdl-navigation">
               <a class="mdl-navigation__link mdl-typography--text-uppercase" href="index.php">Home</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Entregas</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Uploads</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="catalogo.php">Catalogo</a>
+           
               <a class="mdl-navigation__link mdl-typography--text-uppercase" href="informacion.html">Informacion</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="contactos.html">Contactos</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Registro</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Inicio de Sesion</a>
+
             </nav>
           </div>
-          <button class="android-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" id="more-button">
-            <i class="material-icons">more_vert</i>
-          </button>
-          <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="more-button">
-            <li class="mdl-menu__item">Cuenta</li>
-            <li class="mdl-menu__item">Usuario</li>
-            <li class="mdl-menu__item">Administrador</li>
-            <li class="mdl-menu__item">Vendedor</li>
-          </ul>
+       
           <span class="android-mobile-title mdl-layout-title">
             <img class="android-logo-image" src="images/ekoseats.png">
           </span>
@@ -163,14 +154,15 @@ document.getElementById("defaultOpen").click();
      
 
 <?php
-         $Nombre=$_POST['seccion'];
+      
 echo"<div class='android-content mdl-layout__content'>
         <a name='top'></a>
         <div class='android-be-together mdl-typography--text-center'>
            
           <div class='android-font android-slogan'>$Nombre</div>
           <div class='android-font android-sub-slogan'>
-              <div class='android-card-container mdl-grid'>";
+          <div class='android-card-container mdl-grid'>";
+
 date_default_timezone_set("America/New_York");
 $variableejemplo = date("l");
 $var1="";
