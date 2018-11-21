@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Ejemplo de Material Design">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>EkoSeatS</title>
+    <title>Registrarse</title>
     <!-- Prueba en GitHub desde StarPlatinumUwU -->
     <!-- Prueba en GitHub desde AlienatedFac -->
      <!-- Prueba en GitHub desde Yisus -->
@@ -17,7 +17,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/material.min.css">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/regis.css">
+    <link rel="stylesheet" href="css/registro.css">
     <link rel="shortcut icon" href="icono.ico" />
    <!-- Mi Head we --> 
   </head>
@@ -137,26 +137,28 @@ else{
 <div class="android-content mdl-layout__content">
   <form action="/action_page.php">
   <div class="container">
-    <h1>Register</h1>
+    <h1>Registrarse!</h1>
     <p>Please fill in this form to create an account.</p>
     <hr>
 
     <label for="email"><b>Email</b></label>
     <input type="text" placeholder="Enter Email" name="email" required>
+    <label for="Nombre"><b>Nombre</b></label>
+    <input type="text" placeholder="Ingresa tu Nombre" name="nombre" required>
 
     <label for="psw"><b>Password</b></label>
     <input type="password" placeholder="Enter Password" name="psw" required>
 
-    <label for="psw-repeat"><b>Repeat Password</b></label>
-    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+    <label for="psw-repeat"><b>Repite el Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw-repeat" required>
     <hr>
     <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
 
-    <button type="submit" class="registerbtn">Register</button>
+    <button type="submit" class="registerbtn">Registrarse</button>
   </div>
   
-  <div class="container signin">
-    <p>Already have an account? <a href="#">Sign in</a>.</p>
+  <div class="container-signin">
+    <p>Tienes una cuenta? <a href="Log-in.html">Inicia sesion</a>.</p>
   </div>
 </form>
 </div>
