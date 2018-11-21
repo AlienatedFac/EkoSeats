@@ -44,8 +44,8 @@
             
           <div class='android-navigation-container'>
             <nav class='android-navigation mdl-navigation'>
-              <a class='mdl-navigation__link mdl-typography--text-uppercase' href='index.php'>Home</a>
-              <a class='mdl-navigation__link mdl-typography--text-uppercase' href='log-in.html'>$login Sesion</a>
+              <a class='mdl-navigation__link mdl-typography--text-uppercase' href='index.php'>Inicio</a>
+              <a class='mdl-navigation__link mdl-typography--text-uppercase' href='log-in.html'>CataLogo</a>
               <a class='mdl-navigation__link mdl-typography--text-uppercase' href='uploading.html'>Uploads</a>
               <a class='mdl-navigation__link mdl-typography--text-uppercase' href='informacion.html'>Informacion</a>
               <a class='mdl-navigation__link mdl-typography--text-uppercase' href='contactos.html'>Carrito</a>
@@ -99,7 +99,7 @@ else{
         <form action="salas.php" method="POST">
  <input type="submit" class="mdl-navigation__link" name="seccion" value="Salas" />
 </form>
-  <form action="salas.php" method="POST">
+  <form action="catalogo.php" method="POST">
  <input type="submit" class="mdl-navigation__link" name="seccion" value="Sillones" />
 </form>
   <form action="salas.php" method="POST">
