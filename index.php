@@ -239,7 +239,7 @@ body {font-family: Verdana, sans-serif;}
           <br>
 <?php
 
-            echo "<div class='android-screens' style='width: 900px; height:500px;'>";
+            echo "<div class='android-screens' style='width: 600px; height:500px;''>";
             echo"<div class='android-wear android-screen'>";                
           
             echo"</div>";
