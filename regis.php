@@ -139,10 +139,10 @@ else{
         </nav>
       </div>
 <div class="android-content mdl-layout__content">
-  <form action="/action_page.php">
+  <form action="refistrado.php" method="POST">
   <div class="container">
     <h1>Registrarse!</h1>
-    <p>Please fill in this form to create an account.</p>
+    <p>Por favor llena los datos para registrarte.</p>
     <hr>
 
     <label for="email"><b>Email</b></label>
@@ -155,16 +155,23 @@ else{
 
     <label for="psw-repeat"><b>Repite el Password</b></label>
     <input type="password" placeholder="Enter Password" name="psw-repeat" required>
+      <label for="psw-repeat"><b>Tipo de usuario:   </b></label>
+       <select name="combo">
+    <!-- Opciones de la lista -->
+    <option value="1" name="Proveedor">Proveedor</option>
+    <option value="2" name="Usuario"selected>Usuario</option> <!-- Opción por defecto -->
+  </select>
     <hr>
     <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
 
-    <button type="submit" class="registerbtn">Registrarse</button>
+    <input class="btn" type="submit" name=" " value="Registrarse">
   </div>
   
   <div class="container-signin">
     <p>Tienes una cuenta? <a href="Log-in.html">Inicia sesion</a>.</p>
   </div>
 </form>
+    
 </div>
 </div>
 </body>
