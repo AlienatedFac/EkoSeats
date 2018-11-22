@@ -44,8 +44,8 @@
               <a class="mdl-navigation__link mdl-typography--text-uppercase" href="index.php">Home</a>
               <a class="mdl-navigation__link mdl-typography--text-uppercase" href="catalogo.php">Catalogo</a>
            
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="informacion.html">Informacion</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="regis.php">Registro</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="informacion.html">Nosotros</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Registro</a>
               <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Inicio de Sesion</a>
 
             </nav>

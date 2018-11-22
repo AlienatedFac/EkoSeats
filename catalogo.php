@@ -18,8 +18,8 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/material.min.css">
     <link rel="stylesheet" href="css/styles.css">
-      <link rel="stylesheet" href="css/popup.css">
-      <link rel="stylesheet" href="css/tab.css">
+    <link rel="stylesheet" href="css/popup.css">
+    <link rel="stylesheet" href="css/tab.css">
    <!-- Mi Head we --> 
   </head>
   <body>
@@ -46,7 +46,7 @@
               <a class="mdl-navigation__link mdl-typography--text-uppercase" href="index.php">Home</a>
               <a class="mdl-navigation__link mdl-typography--text-uppercase" href="catalogo.php">Catalogo</a>
            
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="informacion.html">Informacion</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="informacion.html">Nosotros</a>
               <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Registro</a>
               <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Inicio de Sesion</a>
 
