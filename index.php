@@ -39,57 +39,53 @@
             </div>
           </div>
           <!-- Menú -->
-          <div class="android-navigation-container">
-            <nav class="android-navigation mdl-navigation">
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="index.php">Home</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="catalogo.php">Catalogo</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="contact.php">Contactanos</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="informacion.php">Nosotros</a>
-              <br>
-              <br>
-
-
-
-
-
-
-
-                         <?php
- 
- 
+        <?php
+error_reporting(0);
 $user=$_POST['user'];
-$password=$_POST['password'];
-            $sesion="";
+$password=$_POST['password']; 
+if(empty($user and $password))
+{
+   echo "<script type=\"text/javascript\">alert(\"Bienvenido\");</script>"; 
+}
 session_start();
-
 $conexion = mysqli_connect("localhost", "root", "", "EkoBDD");
-$consulta =$conexion->query("SELECT * from ACCESO WHERE Nombre='$user' AND Password='$password'");
-           
-    
-
+$consulta =$conexion->query("SELECT * from ACCESO WHERE Nombre='$user' AND Password='$password'");       
 if($resultado = mysqli_fetch_array($consulta)){
 	$_SESSION['u']=$user;
-
             echo "<script type=\"text/javascript\">alert(\"Bienvenido $user\");</script>";
-    echo"
-    <a class='mdl-navigation__link mdl-typography--text-uppercase' id='open-modal-login' href=''>$user</a>
-              <a class='mdl-navigation__link mdl-typography--text-uppercase' href='index.php'>Cerrar Sesion</a>";
+    $registro="index.php";
+    $regis="Logout";
+    $sesion="index.php";
+    $ses=$user;
     
 }
-else{
-    echo"
-     <a class='mdl-navigation__link mdl-typography--text-uppercase' id='open-modal-login' href=''>Registro</a>
-              <a class='mdl-navigation__link mdl-typography--text-uppercase' href='Log-in.html'>Log In</a>";
-   
-}
-              ?>
+            else{
+                $registro="regis.php";
+                $regis="Registrate";
+                $sesion="Log-in.html";
+    $ses="Login";
                 
-              </nav>
-                   <ul class='mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect' for='more-button'>
+            }
+            
+ echo"
+          <div class='android-navigation-container'>
+            <nav class='android-navigation mdl-navigatio'>
+              <a class='mdl-navigation__link mdl-typography--text-uppercase' href='index.php'>Home</a>
+              <a class='mdl-navigation__link mdl-typography--text-uppercase' href='catalogo.php'>Catalogo</a>
+              <a class='mdl-navigation__link mdl-typography--text-uppercase' href='contact.html'>Contactanos</a>
+              <a class='mdl-navigation__link mdl-typography--text-uppercase' href='informacion.html'>Nosotros</a>
+            <a class='mdl-navigation__link mdl-typography--text-uppercase' id='open-modal-login' href='$registro'>$regis</a>
+             <a class='mdl-navigation__link mdl-typography--text-uppercase' id='open-modal-login' href='$sesion'>$ses</a>
+            </nav>
+            
+    <ul class='mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect' for='more-button'>
                 </ul>
 
            
           </div>
+";
+
+ ?>
          
         
    
