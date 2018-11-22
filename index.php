@@ -48,7 +48,7 @@
               <br>
               <br>
               <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Registro</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Inicio de Sesion</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="Log-in.html">Inicio de Sesion</a>
 
             </nav>
           </div>
