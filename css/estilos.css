@@ -1,0 +1,672 @@
+html {
+    box-sizing: border-box;
+}
+
+body {    
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+    background-color: #FFFFFF;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    transition: all 0.5s;
+}
+
+/*    WHITE SPACES    */
+
+.white-space-8 {
+    height: 8px;
+}
+
+.white-space-16 {
+    height: 16px;
+}
+
+.white-space-24 {
+    height: 24px;
+}
+
+.white-space-32 {
+    height: 32px;
+}
+
+.white-space-48 {
+    height: 48px;
+}
+
+.white-space-64 {
+    height: 64px;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex div, .flex img, .flex nav {
+    display: flex;
+}
+
+div, header, footer, section, article, aside, nav, form, table {
+    width: 100%;
+}
+
+.container {
+    width: 90%;
+}
+
+.responsive-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.row-responsive {
+    flex-direction: row;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.auto {
+    width: auto;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.justify-start {
+    justify-content: flex-start;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+.header {
+    background-color: #008b8b;
+    padding: 32px 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+button, input, select, textarea, option {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.btn {
+    width: auto;                    
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;       
+    font-weight: 700;
+    padding: 8px 24px;
+}
+
+label {
+    color: #2D2D2D;
+}
+
+h2 {
+    font-size: 1.6em;
+    font-weight: 700;
+}
+
+.phone .icon {
+    max-width: 48px;   
+}
+
+.email .icon, .tel .icon {
+    max-width: 62px;
+}
+
+.phone .info, .email .info, .tel .info {
+    font-size: 1.4em;
+}
+
+.contact-info i {
+    font-size: 3em;
+}
+
+.phone .row, .email .row, .tel .row {
+    justify-content: center;
+}
+
+.send .container {
+    height: 50px;
+}
+
+.text{
+    font-size: 1.6em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    padding-left: 24px;
+
+}
+
+.input-contact{
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    margin: 8px 0;
+    padding: 8px;
+    border: 2px solid #D8D8D8;
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: none;
+    margin: 8px 0;
+    font-size: 0.93em;
+}
+
+.input-name {
+    padding-right: 8px;
+}
+
+.input-contact:focus{
+    border-color:darkcyan;
+    box-shadow: 0 0 8px 0 darkgray;
+}
+
+.btn-black{
+    background-color: #2B2B2B;
+    margin-left: 20px;
+    border-radius: 4px;
+    width: 150px;
+}
+
+.btn-buy {
+    background-color: darkcyan;
+    border-radius: 4px;
+    width: 180px;
+    height: 40px;
+}
+
+/* Opciones carrito y guardados. */
+
+.worko-tabs {
+    width: 80%;
+    padding: 32px 0;
+  }
+  .worko-tabs .state {
+    position: absolute;
+    left: -10000px;
+  }
+  .worko-tabs .flex-tabs {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .worko-tabs .flex-tabs .tab {
+    flex-grow: 1;
+    max-height: 40px;
+  }
+  .worko-tabs .flex-tabs .panel {
+    background-color: #fff;
+    min-height: 300px;
+    display: none;
+    width: 100%;
+    flex-basis: auto;
+  }
+  .worko-tabs .tab {
+    display: inline-block;
+    padding: 10px;
+    vertical-align: top;
+    background-color: #eee;
+    cursor: hand;
+    cursor: pointer;
+    border-left: 10px solid #ccc;
+  }
+  .worko-tabs .tab:hover {
+    background-color: #fff;
+  }
+  
+  #tab-one:checked ~ .tabs #tab-one-label,
+  #tab-two:checked ~ .tabs #tab-two-label {
+    background-color: #fff;
+    cursor: default;
+    border-left-color: cadetblue;
+  }
+  
+  #tab-one:checked ~ .tabs #tab-one-panel,
+  #tab-two:checked ~ .tabs #tab-two-panel {
+    display: block;
+  }
+  
+  /* Registro */
+  
+  .register-tabs {
+    width: 100%;
+    padding: 8px 0;
+  }
+  
+  .register-tabs .state {
+    position: absolute;
+    left: -10000px;
+  }
+  
+  .register-tabs .flex-tabs {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .register-tabs .flex-tabs .tab {
+    flex-grow: 1;
+    max-height: 40px;
+  }
+  
+  .register-tabs .flex-tabs .panelxr {
+    background-color: #fff;
+    display: none;
+    width: 100%;
+    flex-basis: auto;
+    padding-top: 10px;
+  }
+  
+  .register-tabs .tab {
+    display: inline-block;
+    padding: 10px;
+    vertical-align: top;
+    background-color: #eee;
+    cursor: hand;
+    cursor: pointer;
+  }
+  
+  .register-tabs .tab:hover {
+    background-color: #fff;
+  }
+  
+  #tab-rone:checked ~ .tabs #tab-rone-label,
+  #tab-rtwo:checked ~ .tabs #tab-rtwo-label {
+    background-color: #fff;
+    cursor: default;
+  }
+  
+  #tab-rone:checked ~ .tabs #tab-rone-panel,
+  #tab-rtwo:checked ~ .tabs #tab-rtwo-panel {
+    display: block;
+  }
+  
+  #modal-register {
+      display: none;
+  }
+  
+  .modal-content-register {
+      background-color: #fefefe;
+      margin: auto;
+      padding-right: 20px;
+      border-radius: 5px;
+      width: 80%;
+  }
+  
+  .modal-register {
+      display: none; 
+      position: fixed; 
+      z-index: 1; 
+      padding-top: 60px;
+      left: 0;
+      top: 0;
+      width: 100%; 
+      height: 100%; 
+      overflow: auto; 
+      background-color: rgb(0,0,0); 
+      background-color: rgba(0,0,0,0.7);
+  }
+  
+  .register-photo{
+      padding-top: 15px;
+  }
+  
+  .btn-register {
+      background-color: black;
+      border-radius: 4px;
+      width: 100%;
+  }
+  
+  .r-btn {
+      padding-top: 10px;
+  }
+  
+  .r-photo{
+      width: 55%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+  }
+  
+  .product-img{
+      border-radius: 5px 0px 0px 5px;
+      object-fit: contain;
+  }
+  
+  .r-register{
+      padding-left: 20px;
+      padding-bottom: 10px;
+  }
+  
+  .modal-content {
+      background-color: #fefefe;
+      margin: auto;
+      padding-right: 20px;
+      border: 1px solid #888;
+      width: 80%;
+  }
+  
+  #modal-close {
+      padding-top: 10px;
+      color: black;
+      float: right;
+      font-size: 24px;
+      font-weight: bold;
+  }
+  
+  .register-method {
+      min-width: 30%;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #D8D8D8;
+  }
+  
+  .registeroptions i{
+      font-size: 1.5em;
+      color: white;
+  }
+  
+  .r-iuser{
+      width: 40px;
+      background-color: #888;
+  }
+  
+  #imguser{
+      height: 30px;
+      width: 30px;
+  }
+  
+  
+  .panel {
+      padding-top: 16px;
+  }
+  
+  .car-complete {
+      border-bottom: 1px solid #D8D8D8;
+      max-height: 200px;
+      min-height: 150px;
+  }
+  
+  .total-complete {
+      border-bottom: 1px solid #D8D8D8;
+      height: 150px;
+  }
+  
+  .car-lstotal {
+      width: 4500px;
+      justify-content: flex-end;
+  }
+  
+  .car-total {
+      padding-left: 30px;
+  }
+  
+  .save-complete {
+      border-bottom: 1px solid #D8D8D8;
+      height: 50%;
+  }
+  
+  .car-info {
+      width: 2000px;
+      font-size: 1em;
+  }
+  
+  .car-price {
+      padding: 32px 0;
+      font-size: 1.6em;
+      font-weight: 700;
+  }
+  
+  .stock {
+      font-size: 0.8em;
+  }
+  
+  .car-buy, .car-save, .car-delete, .link-product {
+      font-size: 0.93em;
+      font-family: 'Roboto', sans-serif;
+      color: royalblue;
+      color: cadetblue;
+  }
+  
+  .car-buy {
+      justify-content: flex-start;
+  }
+  
+  .car-save {
+      justify-content: center;
+      text-align: center;
+  }
+  
+  .car-delete {
+      justify-content: center;
+  }
+
+  /* Input number */
+
+.input-number {
+    width: 80px;
+    padding: 0 12px;
+    vertical-align: top;
+    text-align: center;
+    outline: none;
+}
+
+.input-number,
+.input-number-decrement,
+.input-number-increment {
+    border: 1px solid #D8D8D8;
+    height: 40px;
+    user-select: none;
+}
+
+.input-number-decrement,
+.input-number-increment {
+    display: inline-block;
+    width: 30px;
+    line-height: 38px;
+    background: #f1f1f1;
+    color: #444;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.input-number-decrement:active,
+.input-number-increment:active {
+    background: #ddd;
+}
+
+.input-number-decrement {
+    border-right: none;
+    border-radius: 4px 0 0 4px;
+}
+
+.input-number-increment {
+    border-left: none;
+    border-radius: 0 4px 4px 0;
+}
+
+@media screen and (min-width: 1440px) {
+
+    .container {
+        max-width: 1440px;
+    }
+
+}
+
+@media screen and (max-width: 992px) {  
+    .car-price {
+        padding: 32px 0;
+        font-size: 1.2em;
+        font-weight: 700;
+    }
+
+    .car-info {
+        width: 1250px;
+        font-size: 1em;
+        /*padding-right: 64px;*/
+    }
+
+    .input-number {
+        width: 20px;
+        padding: 0 12px;
+        vertical-align: top;
+        text-align: center;
+        outline: none;
+    }
+
+    .car-total {
+        padding-left: 20px;
+        padding-right: 10px;
+    }
+
+    .modal-content-register {
+        width: 80%;
+    }
+
+    .r-photo{
+        width: 100%;
+    }
+}
+
+/*    TABLETS DEVICES    */
+
+@media screen and (max-width: 768px) { 
+    .row-responsive {
+        flex-direction: column;
+    }
+
+    .white-space-64 {
+        height: 32px;
+    }  
+    
+    .phone .row, .email .row, .tel .row {
+        justify-content: flex-start;
+        padding: 16px 0;
+    }
+
+    .phone .icon {
+        max-width: 62px;   
+    }
+
+    .product-img {
+        width: 50%;
+    }
+
+    .car-info {
+        width: 100%;
+    }
+
+    .quantity {
+        padding-top: 32px;
+    }
+
+    .save-complete {
+        height: 100%;
+    }
+
+    .worko-tabs {
+        width: 100%;
+        padding: 0 0;
+    }
+
+    .car-delete {
+        justify-content: flex-end;
+    }
+
+    .car-complete {
+        border-bottom: 1px solid #D8D8D8;
+        max-height: 500px;
+    }
+
+    .input-number {
+        width: 80px;
+        padding: 0 12px;
+        vertical-align: top;
+        text-align: center;
+        outline: none;
+    }
+
+    .car-price {
+        padding: 32px 0;
+        font-size: 1.6em;
+        font-weight: 700;
+    }
+
+    /*Modal*/
+    .register-photo{
+        padding-top: 0px;
+    }
+
+    .modal-register {
+        padding-top: 0px;
+    }
+
+    .modal-content-register {
+        width: 80%;
+    }
+
+    .r-photo{
+        width: 100%;
+    }
+
+    .r-register{
+        padding-left: 10px;
+        padding-bottom: 10px;
+    }
+    
+    .register-photo{
+        padding-top: 0px;
+    }
+
+    .r-photo{
+        width: 100%;
+    }
+
+    .modal-register {
+        padding-top: 0px;
+    }
+
+    .car-save {
+        justify-content: left;
+        text-align: center;
+    }
+}
+
+/*    MOBILE DEVICES    */
+    
+@media screen and (max-width: 576px) {
+    .modal-content-register {
+        width: 80%;
+    }
+
+    .r-photo{
+        width: 100%;
+    }
+}

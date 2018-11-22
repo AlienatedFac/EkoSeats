@@ -1,0 +1,58 @@
+.panelcontact{
+    background-color: black;
+    height: 120px;
+    color: var(--white);
+    font-size: var(--fontHuge);
+    font-family: var(--Roboto);
+    font-weight: var(--weightBold);
+}
+
+.contact{
+    /*background-color: burlywood;*/
+    height: 180px;
+    font-family: var(--Roboto);
+    font-size: var(--fontMedium);
+}
+
+.icon{
+    padding-right: var(--paddingMedium);
+}
+
+.text{
+    font-size: var(--fontLarge);
+    font-family: var(--Roboto);
+    font-weight: var(--weightBold);
+    padding-left: var(--paddingSemi);
+}
+
+.input-contact{
+    font-family: var(--Roboto);
+    width: 100%;
+    margin: 8px 0;
+    padding: var(--paddingNormal);
+    border: 2px solid var(--borderGray);
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: none;
+    margin: var(--paddingNormal);
+    font-size: var(--fontText);
+}
+
+.input-contact:focus{
+    /*border-color:darkgray;
+    box-shadow: 0 0 8px 0 darkgray;*/
+    border-color:darkcyan;
+    box-shadow: 0 0 8px 0 darkgray;
+}
+
+.Uno{
+    background-color: aqua;
+}
+
+.Dos{
+    background-color: chocolate;
+}
+
+.Tres{
+    background-color: crimson;
+}
