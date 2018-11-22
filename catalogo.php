@@ -45,10 +45,12 @@
             <nav class="android-navigation mdl-navigation">
               <a class="mdl-navigation__link mdl-typography--text-uppercase" href="index.php">Home</a>
               <a class="mdl-navigation__link mdl-typography--text-uppercase" href="catalogo.php">Catalogo</a>
-           
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="contact.html">Contactanos</a>
               <a class="mdl-navigation__link mdl-typography--text-uppercase" href="informacion.html">Nosotros</a>
+              <br>
+              <br>
               <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Registro</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Inicio de Sesion</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="Log-in.html">Inicio de Sesion</a>
 
             </nav>
           </div>

@@ -47,7 +47,7 @@
               <a class="mdl-navigation__link mdl-typography--text-uppercase" href="informacion.html">Nosotros</a>
               <br>
               <br>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Registro</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" id="open-modal-login" href="">Registro</a>
               <a class="mdl-navigation__link mdl-typography--text-uppercase" href="Log-in.html">Inicio de Sesion</a>
 
             </nav>

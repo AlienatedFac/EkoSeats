@@ -43,11 +43,15 @@
             <?php
             echo" <div class='android-navigation-container'>
             <nav class='android-navigation mdl-navigation'>
-              <a class='mdl-navigation__link mdl-typography--text-uppercase' href='index.php'>Inicio</a>
-              <a class='mdl-navigation__link mdl-typography--text-uppercase' href='log-in.html'>CataLogo</a>
-              <a class='mdl-navigation__link mdl-typography--text-uppercase' href='uploading.html'>Uploads</a>
-              <a class='mdl-navigation__link mdl-typography--text-uppercase' href='informacion.html'>Informacion</a>
-              <a class='mdl-navigation__link mdl-typography--text-uppercase' href='contactos.html'>Carrito</a>
+               <a class='mdl-navigation__link mdl-typography--text-uppercase' href='index.php'>Home</a>
+              <a class='mdl-navigation__link mdl-typography--text-uppercase' href='catalogo.php'>Catalogo</a>
+              <a class='mdl-navigation__link mdl-typography--text-uppercase' href='contact.html'>Contactanos</a>
+              <a class='mdl-navigation__link mdl-typography--text-uppercase' href='informacion.html'>Nosotros</a>
+              <br>
+              <br>
+              <a class='mdl-navigation__link mdl-typography--text-uppercase' href=''>Registro</a>
+              <a class='mdl-navigation__link mdl-typography--text-uppercase' href='Log-in.html'>Inicio de Sesion</a>
+
             </nav>
           </div>
           <button class='android-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect' id='more-button'>

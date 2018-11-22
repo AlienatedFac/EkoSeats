@@ -581,7 +581,154 @@ a img{
   z-index: 900;
 }
 
-
+/* Registro */
+  
+  .register-tabs {
+    width: 100%;
+    padding: 8px 0;
+  }
+  
+  .register-tabs .state {
+    position: absolute;
+    left: -10000px;
+  }
+  
+  .register-tabs .flex-tabs {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .register-tabs .flex-tabs .tab {
+    flex-grow: 1;
+    max-height: 40px;
+  }
+  
+  .register-tabs .flex-tabs .panelxr {
+    background-color: #fff;
+    display: none;
+    width: 100%;
+    flex-basis: auto;
+    padding-top: 10px;
+  }
+  
+  .register-tabs .tab {
+    display: inline-block;
+    padding: 10px;
+    vertical-align: top;
+    background-color: #eee;
+    cursor: hand;
+    cursor: pointer;
+  }
+  
+  .register-tabs .tab:hover {
+    background-color: #fff;
+  }
+  
+  #tab-rone:checked ~ .tabs #tab-rone-label,
+  #tab-rtwo:checked ~ .tabs #tab-rtwo-label {
+    background-color: #fff;
+    cursor: default;
+  }
+  
+  #tab-rone:checked ~ .tabs #tab-rone-panel,
+  #tab-rtwo:checked ~ .tabs #tab-rtwo-panel {
+    display: block;
+  }
+  
+  #modal-register {
+      display: none;
+  }
+  
+  .modal-content-register {
+      background-color: #fefefe;
+      margin: auto;
+      padding-right: 20px;
+      border-radius: 5px;
+      width: 80%;
+  }
+  
+  .modal-register {
+      display: none; 
+      position: fixed; 
+      z-index: 1; 
+      padding-top: 60px;
+      left: 0;
+      top: 0;
+      width: 100%; 
+      height: 100%; 
+      overflow: auto; 
+      background-color: rgb(0,0,0); 
+      background-color: rgba(0,0,0,0.7);
+  }
+  
+  .register-photo{
+      padding-top: 15px;
+  }
+  
+  .btn-register {
+      background-color: black;
+      border-radius: 4px;
+      width: 100%;
+  }
+  
+  .r-btn {
+      padding-top: 10px;
+  }
+  
+  .r-photo{
+      width: 55%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+  }
+  
+  .product-img{
+      border-radius: 5px 0px 0px 5px;
+      object-fit: contain;
+  }
+  
+  .r-register{
+      padding-left: 20px;
+      padding-bottom: 10px;
+  }
+  
+  .modal-content {
+      background-color: #fefefe;
+      margin: auto;
+      padding-right: 20px;
+      border: 1px solid #888;
+      width: 80%;
+  }
+  
+  #modal-close {
+      padding-top: 10px;
+      color: black;
+      float: right;
+      font-size: 24px;
+      font-weight: bold;
+  }
+  
+  .register-method {
+      min-width: 30%;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #D8D8D8;
+  }
+  
+  .registeroptions i{
+      font-size: 1.5em;
+      color: white;
+  }
+  
+  .r-iuser{
+      width: 40px;
+      background-color: #888;
+  }
+  
+  #imguser{
+      height: 30px;
+      width: 30px;
+  }
 
 
 
