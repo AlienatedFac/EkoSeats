@@ -47,8 +47,17 @@
               <a class="mdl-navigation__link mdl-typography--text-uppercase" href="informacion.html">Nosotros</a>
               <br>
               <br>
-                         <?php
- 
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" id="open-modal-login" href="">Registro</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="Log-in.html">Inicio de Sesion</a>
+
+            </nav>
+          </div>
+         
+        
+            <?php
+            echo"
+    <ul class='mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect' for='more-button'>
+            <li class='mdl-menu__item' href='Log-in.html'> <a  href='Log-in.html'>$sesion Sesion </a></li>";
  
 $user=$_POST['user'];
 $password=$_POST['password'];
@@ -62,31 +71,18 @@ $consulta =$conexion->query("SELECT * from ACCESO WHERE Nombre='$user' AND Passw
 
 if($resultado = mysqli_fetch_array($consulta)){
 	$_SESSION['u']=$user;
-
-            echo "<script type=\"text/javascript\">alert(\"Bienvenido $user\");</script>";
-    echo"
-    <a class='mdl-navigation__link mdl-typography--text-uppercase' id='open-modal-login' href=''>$user</a>
-              <a class='mdl-navigation__link mdl-typography--text-uppercase' href='index.php'>Cerrar Sesion</a>";
+    $sesion="Cerrar";
+echo" 
+            <li class='mdl-menu__item'>$user</li>
+            <li class='mdl-menu__item'>Administrador</li>
+            <li class='mdl-menu__item' href='index.php'>Cerrar Sesion</li>
+          </ul>";
     
 }
 else{
-    echo"
-     <a class='mdl-navigation__link mdl-typography--text-uppercase' id='open-modal-login' href=''>Registro</a>
-              <a class='mdl-navigation__link mdl-typography--text-uppercase' href='Log-in.html'>Inicio de Sesion</a>";
-   
+    $sesion="Iniciar";
 }
               ?>
-                
-              </nav>
-                   <ul class='mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect' for='more-button'>
-                </ul>
-
-           
-          </div>
-         
-        
-   
-            
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
