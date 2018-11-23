@@ -78,8 +78,6 @@
           <a class="mdl-navigation__link" href="">Decoracion</a>
         </nav>
       </div>
-        <div class='android-content mdl-layout__content'>
-        <a name='top'></a>
         <?
     $nombre=$_POST['nombre'];
     $email=$_POST['email'];
@@ -95,7 +93,8 @@ VALUES ('$nombre', '$pass', '$email')";
 
 if ($conexion->query($sql) === TRUE) {
    echo "
-      
+      <div class='android-content mdl-layout__content'>
+        <a name='top'></a>
         <div class='android-be-together-section1 mdl-typography--text-center'>
           <div class='android-font android-slogan'>EkoSeats.</div>
           <div class='android-font android-sub-slogan'>$nombre Tu cuenta ha sido agregada satisfactoriamente por favor inicia Sesion 
