@@ -28,6 +28,7 @@
           <span class="android-title mdl-layout-title">
             <img class="android-logo-image" src="images/ekoseats.png">
           </span>
+          
           <!-- Agregamos un espacio entre el logo de y el menú -->
           <div class="android-header-spacer mdl-layout-spacer"></div>
           <div class="android-search-box mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width">
@@ -45,7 +46,7 @@ $user=$_POST['user'];
 $password=$_POST['password']; 
 if(empty($user and $password))
 {
-   echo "<script type=\"text/javascript\">alert(\"Bienvenido\");</script>"; 
+   echo ""; 
 }
 session_start();
 $conexion = mysqli_connect("localhost", "root", "", "EkoBDD");
@@ -70,10 +71,11 @@ if($resultado = mysqli_fetch_array($consulta)){
  echo"
           <div class='android-navigation-container'>
             <nav class='android-navigation mdl-navigatio'>
+
               <a class='mdl-navigation__link mdl-typography--text-uppercase' href='index.php'>Home</a>
               <a class='mdl-navigation__link mdl-typography--text-uppercase' href='catalogo.php'>Catalogo</a>
-              <a class='mdl-navigation__link mdl-typography--text-uppercase' href='contact.html'>Contactanos</a>
-              <a class='mdl-navigation__link mdl-typography--text-uppercase' href='informacion.html'>Nosotros</a>
+              <a class='mdl-navigation__link mdl-typography--text-uppercase' href='contact.php'>Contactanos</a>
+              <a class='mdl-navigation__link mdl-typography--text-uppercase' href='informacion.php'>Nosotros</a>
             <a class='mdl-navigation__link mdl-typography--text-uppercase' id='open-modal-login' href='$registro'>$regis</a>
              <a class='mdl-navigation__link mdl-typography--text-uppercase' id='open-modal-login' href='$sesion'>$ses</a>
             </nav>

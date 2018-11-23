@@ -91,6 +91,9 @@
           <div class="android-font android-slogan">EkoSeats.</div>
           <div class="android-font android-sub-slogan">Los problemas causados por la contaminación son mucho más graves de lo que pensamos. No solo se trata de que el aire que respiramos sea menos sano o que recursos naturales como el agua escaseen. Las consecuencias y los efectos nocivos tanto en nuestra salud como en el equilibrio planetario ya son evidentes. Es por ello como parte del planeta en el que nos encontramos tenemos que   tratar de crear métodos o estrategias para reducir la contaminación en nuestro alcance posible. Y una opción para empezar es con la reutilización. Pero ¿Qué es reutilizar?  Es toda actividad del hombre para evitar tirar  a la basura  o desechar productos materiales que pueden volver ser utilizados con mismos o diferentes fines para los que fue creado.
 En el presente trabajo se hablará acerca del proyecto “eco room” el cual consiste en crear una sala ecológica a través de llantas de carro y cajas de madera, el fin es generar conciencia acerca de cuidar el medio ambiente, mediante el hábito de reutilizar materiales que nos rodean en la vida diaria. 
+
+
+
 </div>
           <div class="android-font android-create-character">
             <a href=""><img src="images/andy.png"> </a>

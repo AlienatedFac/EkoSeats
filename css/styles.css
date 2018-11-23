@@ -22,7 +22,7 @@
 }
 
 body {
-  margin: 0;
+  margin: 0%;
 }
 
 /* Disable ugly boxes around images in IE10 */
@@ -59,8 +59,8 @@ a img{
   right: 20%;
   bottom: -26px;
   z-index: 3;
-  background: #64ffda !important;
-  color: black !important;
+  background: #c9e7a5 !important;
+  color: green !important;
 }
 
 .android-mobile-title {
@@ -69,18 +69,21 @@ a img{
 
 
 .android-logo-image {
-  height: 130px;
+ 
+  height: 118px;
   width: 180px;
+   margin-left: 590px;
+    margin-right: 16px
 }
 
 
 .android-header {
   overflow: visible;
-  background-color: white;
+  background-color:#ecffe1;
 }
 
   .android-header .material-icons {
-    color: #767777 !important;
+    color: #757575 !important;
   }
 
   .android-header .mdl-layout__drawer-button {
@@ -90,8 +93,8 @@ a img{
 
   .android-header .mdl-navigation__link {
     color: #757575;
-    font-weight: 700;
-    font-size: 14px;
+    font-weight: 650;
+    font-size: 15.5px;
   }
 
   .android-navigation-container {
@@ -134,6 +137,7 @@ a img{
 
     .android-navigation .mdl-navigation__link:hover {
       border-bottom: 4px solid #8bc34a;
+
     }
 
   .android-search-box {
@@ -141,8 +145,9 @@ a img{
     -webkit-order: 2;
         -ms-flex-order: 2;
             order: 2;
-    margin-left: 16px;
-    margin-right: 16px;
+    margin-left: 10px;
+    margin-right: 5px;
+     margin-bottom:  -10px;
   }
 
   .android-more-button {
@@ -150,6 +155,8 @@ a img{
     -webkit-order: 3;
         -ms-flex-order: 3;
             order: 3;
+       
+
   }
 
 
@@ -169,18 +176,19 @@ a img{
   }
 
   .android-drawer span.mdl-navigation__link.mdl-navigation__link {
-    color: #8bc34a;
+    color: black;
   }
 
   .android-drawer .mdl-layout-title {
     position: relative;
-    background: #6ab344;
-    height: 160px;
+    background: #ecffe1;
+    height: 64px;
   }
 
     .android-drawer .android-logo-image {
       position: absolute;
-      bottom: 16px;
+      bottom: -27px;
+      right: 3px
     }
 /*Fondo donde estan las letras e EkoSeats*/
 .android-be-together-section {
@@ -196,7 +204,7 @@ a img{
   height: 600px;
   width:600px;
   width: auto;
-  background-color: #f3f3f3;
+  background-color: #e7ffd8;
   background-size:lenght;
 }
 
@@ -334,11 +342,14 @@ a img{
 
 
 .android-wear-band {
+
   position: absolute;
   bottom: 0;
   width: 100%;
   text-align: center;
-  background-color: #37474f;
+  background-color: black;
+  opacity: 0.7;
+
 }
 
 .android-wear-band-text {
