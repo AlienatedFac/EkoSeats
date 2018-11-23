@@ -78,6 +78,8 @@
           <a class="mdl-navigation__link" href="">Decoracion</a>
         </nav>
       </div>
+        <div class='android-content mdl-layout__content'>
+        <a name='top'></a>
         <?
     $nombre=$_POST['nombre'];
     $email=$_POST['email'];
@@ -85,25 +87,24 @@
     $tipo=$_POST['combo'];
     $conexion = mysqli_connect("localhost", "root", "", "EkoBDD");
     if ($conexion->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+    die("Connection failed: " . $conexion->connect_error);
 } 
 
 $sql = "INSERT INTO Acceso (Nombre,Password, Correo)
 VALUES ('$nombre', '$pass', '$email')";
 
-if ($conn->query($sql) === TRUE) {
+if ($conexion->query($sql) === TRUE) {
    echo "
-      <div class='android-content mdl-layout__content'>
-        <a name='top'></a>
+      
         <div class='android-be-together-section1 mdl-typography--text-center'>
           <div class='android-font android-slogan'>EkoSeats.</div>
           <div class='android-font android-sub-slogan'>$nombre Tu cuenta ha sido agregada satisfactoriamente por favor inicia Sesion 
 </div>";
 } else {
-    echo "Error: " . $sql . "<br>" . $conn->error;
+    echo "Error: " . $sql . "<br>" . $conexion->error;
 }
 
-$conn->close(); 
+$conexion->close(); 
         
    ;
             ?>
