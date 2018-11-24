@@ -157,17 +157,17 @@ if($resultado = mysqli_fetch_array($consulta)){
                                     <a href="tel:9983460666"><i class="fas fa-mobile-alt"></i></a>
                                 </div>
                                 <div class="info auto">
-                                    <a href="tel:9983460666">9983460666</a>
+                                    <a href="tel:9983460666">9984033196</a>
                                 </div>
                             </div>
                         </div>
                         <div class="email">
                             <div class="row align-center">
                                 <div class="icon justify-center">
-                                    <a href="mailto:ejemplo@hotmail.com"><i class="fas fa-envelope-open-text"></i></a>
+                                    <a href="mailto:Eko_Seats@hotmail.com"><i class="fas fa-envelope-open-text"></i></a>
                                 </div>
                                 <div class="info auto">
-                                    <a href="mailto:ejemplo@hotmail.com">ejemplo@hotmail.com</a>
+                                    <a href="mailto:Eko_Seats@hotmail.com">Eko_Seats@hotmail.com</a>
                                 </div>
                             </div>
                             
@@ -242,7 +242,7 @@ if($resultado = mysqli_fetch_array($consulta)){
         </div>
 
 
-        
+
     </div>
 <footer class="android-footer mdl-mega-footer">
           <div class="mdl-mega-footer--top-section">
