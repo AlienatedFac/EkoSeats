@@ -28,7 +28,7 @@
           <span class="android-title mdl-layout-title">
             <img class="android-logo-image" src="images/ekoseats.png">
           </span>
-          
+
           <!-- Agregamos un espacio entre el logo de y el menú -->
           <div class="android-header-spacer mdl-layout-spacer"></div>
           <div class="android-search-box mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width">
@@ -201,17 +201,8 @@ if($resultado = mysqli_fetch_array($consulta)){
             </div>
           </div>
         </div>
-        <div class='android-customized-section'>
-          <div class='android-customized-section-text'>
-            <div class='mdl-typography--font-light mdl-typography--display-1-color-contrast'>OTROS PRODUCTOS</div>
-            <p class='mdl-typography--font-light'>
-              Descripciones
-              <br>
-              <a href='' class='android-link mdl-typography--font-light'>Enlace</a>
-            </p>
-          </div>
-          <div class='android-customized-section-image'></div>
-        </div>
+       
+       
         <div class='android-more-section'>
           <div class='android-section-title mdl-typography--display-1-color-contrast'>Mas de Ekoseats</div>
           <div class='android-card-container mdl-grid'>
@@ -226,7 +217,7 @@ if($resultado = mysqli_fetch_array($consulta)){
                 <span class='mdl-typography--font-light mdl-typography--subhead'>Sala color madera reciclada</span>
               </div>
               <div class='mdl-card__actions'>
-                 <a class='android-link mdl-button mdl-js-button mdl-typography--text-uppercase' href='salas.html'>
+                 <a class='android-link mdl-button mdl-js-button mdl-typography--text-uppercase' href='salas.php'>
                    VER
                    <i class='material-icons'>chevron_right</i>
                  </a>
@@ -244,7 +235,7 @@ if($resultado = mysqli_fetch_array($consulta)){
                 <span class='mdl-typography--font-light mdl-typography--subhead'>Sala de Madera Reciclada con tres piezas</span>
               </div>
               <div class='mdl-card__actions'>
-                 <a class='android-link mdl-button mdl-js-button mdl-typography--text-uppercase' href='salas.html' target='_blank'>
+                 <a class='android-link mdl-button mdl-js-button mdl-typography--text-uppercase' href='salas.php' target='_blank'>
                    <i class='material-icons'>chevron_right</i>
                  </a>
               </div>
@@ -252,7 +243,7 @@ if($resultado = mysqli_fetch_array($consulta)){
 
             <div class='mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp'>
               <div class='mdl-card__media'>
-                <img src='images/salas6.jpg'>
+                <img src='images/1.jpg'>
               </div>
               <div class='mdl-card__title'>
                  <h4 class='mdl-card__title-text'>Sala Redonda</h4>
@@ -261,7 +252,7 @@ if($resultado = mysqli_fetch_array($consulta)){
                 <span class='mdl-typography--font-light mdl-typography--subhead'>Sala Color Azul con 4 piezas </span>
               </div>
               <div class='mdl-card__actions'>
-                 <a class='android-link mdl-button mdl-js-button mdl-typography--text-uppercase' href='salas.html'>
+                 <a class='android-link mdl-button mdl-js-button mdl-typography--text-uppercase' href='salas.php'>
                    VER
                    <i class='material-icons'>chevron_right</i>
                  </a>
