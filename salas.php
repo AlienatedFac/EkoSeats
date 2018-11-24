@@ -43,25 +43,74 @@
               <input class="mdl-textfield__input" type="text" id="search-field" />
             </div>
           </div>
-          <!-- Menú -->
-          <div class="android-navigation-container">
-            <nav class="android-navigation mdl-navigation">
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="index.php">Home</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Entregas</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Uploads</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="informacion.html">Informacion</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="contactos.html">Contactos</a>
+              <?php
+error_reporting(0);
+            $var1="";
+            $proveedor="proveedor";
+            $usuario="usuario";
+session_start();     
+if($_SESSION['usuario'] and $_SESSION['password']){    
+    if($_SESSION['tipo']=="usuario")
+    {
+echo "<script type=\"text/javascript\">alert(\"Bienvenido\");</script>";
+    $registro="index.php";
+    $regis="Logout";
+    $sesion="index.php";
+    $ses=$_SESSION['usuario'];
+        $cata="Carrito";
+        $catalink="carrito.php";
+    }
+    else
+        
+    if($_SESSION['tipo']=="proveedor"){
+         echo "<script type=\"text/javascript\">alert(\"Bienvenido\");</script>";
+    $registro="index.php";
+    $regis="Logout";
+    $sesion="index.php";
+    $ses=$_SESSION['usuario']; 
+         $cata="Subidos";
+        $catalink="proveedor.php";
+    }
+    
+          
+    
+}
+            else{
+                $registro="regis.php";
+                $regis="Registrate";
+                $sesion="Log-in.html";
+    $ses="Login";
+                $cata="Carrito";
+        $catalink="carrito.php";
+            }
+            
+ echo"
+          <div class='android-navigation-container'  >
+            <nav class='android-navigation mdl-navigatio' >
+
+              <a class='mdl-navigation__link mdl-typography--text-uppercase' href='index.php' >Home</a>";
+            if($var1!=$proveedor)
+            {
+                 echo"
+              
+              <a class='mdl-navigation__link mdl-typography--text-uppercase' href='catalogo.php'>Catalogo</a>";
+            }
+           
+            echo"
+              <a class='mdl-navigation__link mdl-typography--text-uppercase' href='contact.php'>Contactanos</a>
+              <a class='mdl-navigation__link mdl-typography--text-uppercase' href='$catalink'>$cata</a>
+            <a class='mdl-navigation__link mdl-typography--text-uppercase' id='open-modal-login' href='$registro'>$regis</a>
+             <a class='mdl-navigation__link mdl-typography--text-uppercase' id='open-modal-login' href='$sesion'>$ses</a>
             </nav>
+            
+    <ul class='mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect' for='more-button'>
+                </ul>
+
+           
           </div>
-          <button class="android-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" id="more-button">
-            <i class="material-icons">more_vert</i>
-          </button>
-          <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="more-button">
-            <li class="mdl-menu__item">Cuenta</li>
-            <li class="mdl-menu__item">Usuario</li>
-            <li class="mdl-menu__item">Administrador</li>
-            <li class="mdl-menu__item">Vendedor</li>
-          </ul>
+";
+
+ ?>
           <span class="android-mobile-title mdl-layout-title">
             <img class="android-logo-image" src="images/ekoseats.png">
           </span>
