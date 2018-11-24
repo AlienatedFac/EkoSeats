@@ -40,25 +40,52 @@
               <input class="mdl-textfield__input" type="text" id="search-field" />
             </div>
           </div>
-          <!-- Menú -->
+              <!-- Menú -->
         <?php
 error_reporting(0);
 $user=$_POST['user'];
 $password=$_POST['password']; 
-if(empty($user and $password))
-{
-   echo ""; 
-}
+            $var1="";
+            $proveedor="proveedor";
+            $usuario="usuario";
 session_start();
+            if(empty($user and $password))
+{
+   $user=$_SESSION['usuario'];
+$password=$_SESSION['password'];
+    
+}
+
 $conexion = mysqli_connect("localhost", "root", "", "EkoBDD");
 $consulta =$conexion->query("SELECT * from ACCESO WHERE Nombre='$user' AND Password='$password'");       
 if($resultado = mysqli_fetch_array($consulta)){
-	$_SESSION['u']=$user;
-            echo "<script type=\"text/javascript\">alert(\"Bienvenido $user\");</script>";
+$var1=$resultado['Tipo'];    
+	$_SESSION['usuario']=$user;
+    $_SESSION['tipo']=$var1;
+    $_SESSION['password']=$password;
+    if($var1=="usuario")
+    {
+          echo "<script type=\"text/javascript\">alert(\"Bienvenido $var1\");</script>";
     $registro="index.php";
     $regis="Logout";
     $sesion="index.php";
     $ses=$user;
+        $cata="Carrito";
+        $catalink="carrito.php";
+    }
+    else
+        
+    if($var1=="proveedor"){
+         echo "<script type=\"text/javascript\">alert(\"Bienvenido $user\");</script>";
+    $registro="index.php";
+    $regis="Logout";
+    $sesion="index.php";
+    $ses=$user; 
+         $cata="Subidos";
+        $catalink="proveedor.php";
+    }
+    
+          
     
 }
             else{
@@ -66,19 +93,27 @@ if($resultado = mysqli_fetch_array($consulta)){
                 $regis="Registrate";
                 $sesion="Log-in.html";
     $ses="Login";
-                
+                $cata="Carrito";
+        $catalink="carrito.php";
             }
             
  echo"
           <div class='android-navigation-container'  >
             <nav class='android-navigation mdl-navigatio' >
 
-              <a class='mdl-navigation__link mdl-typography--text-uppercase' href='index.php' >Home</a>
-              <a class='mdl-navigation__link mdl-typography--text-uppercase' href='catalogo.php'>Catalogo</a>
+              <a class='mdl-navigation__link mdl-typography--text-uppercase' href='index.php' >Home</a>";
+            if($var1!=$proveedor)
+            {
+                 echo"
+              
+              <a class='mdl-navigation__link mdl-typography--text-uppercase' href='catalogo.php'>Catalogo</a>";
+            }
+           
+            echo"
               <a class='mdl-navigation__link mdl-typography--text-uppercase' href='contact.php'>Contactanos</a>
-              <a class='mdl-navigation__link mdl-typography--text-uppercase' href='informacion.php'>Nosotros</a>
+              <a class='mdl-navigation__link mdl-typography--text-uppercase' href='$catalink'>$cata</a>
             <a class='mdl-navigation__link mdl-typography--text-uppercase' id='open-modal-login' href='$registro'>$regis</a>
-             <a class='mdl-navigation__link mdl-typography--text-uppercase' id='open-modal-login' href='$sesion'>$ses</a>
+             <a class='mdl-navigation__link mdl-typography--text-uppercase' id='open-modal-login' href='$sesion' >$ses</a>
             </nav>
             
     <ul class='mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect' for='more-button'>
