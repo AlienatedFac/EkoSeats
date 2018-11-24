@@ -144,12 +144,7 @@ if($resultado = mysqli_fetch_array($consulta)){
 }
           echo"<div class='mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp'>
               <div class='mdl-card__media'>
-                <img id='myImg' src='images/salas/$var1.jpg' alt='Snow' style='width:100%;max-width:300px'>
-<div id='myModal' class='modal'>
-  <span class='close'>&times;</span>
-  <img class='modal-content' id='img01'>
-  <div id='caption'></div>
-</div>
+ <img src='images/$Nombre/$var1.jpg'>
               </div>
               <div class='mdl-card__title'>
                  <h4 class='mdl-card__title-text'>$var2</h4>
