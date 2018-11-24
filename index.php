@@ -162,6 +162,12 @@ if($resultado = mysqli_fetch_array($consulta)){
           <a name="screens"></a>
           <div class="mdl-typography--display-1-color-contrast">Conoce toda nuestra linea de productos</div>
           <br>
+
+
+
+
+
+          
 <?php
 
             echo "<div class='android-screens'  >";

@@ -13,7 +13,7 @@
      <link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=es" rel="stylesheet"media="screen">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"media="screen">
     <link rel="stylesheet" href="css/material.min.css"media="screen">
-    <link rel="stylesheet" href="css/estilos.css" media="screen">
+    
     <link rel="stylesheet" href="css/styles.css"media="screen">
     <link rel="shortcut icon" href="icono.ico"media="screen" />
 
@@ -141,7 +141,7 @@ if($resultado = mysqli_fetch_array($consulta)){
       </div>
  <div class="android-content mdl-layout__content">
        
-        
+        <link rel="stylesheet" href="css/estilos.css" media="screen">
 
     <div class="main flex">
         <div class="column">
