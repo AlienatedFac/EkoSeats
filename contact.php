@@ -10,12 +10,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>EkoSeatS</title>
 
-     <link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=es" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="css/material.min.css">
+     <link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=es" rel="stylesheet"media="screen">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"media="screen">
+    <link rel="stylesheet" href="css/material.min.css"media="screen">
     <link rel="stylesheet" href="css/estilos.css" media="screen">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="shortcut icon" href="icono.ico" />
+    <link rel="stylesheet" href="css/styles.css"media="screen">
+    <link rel="shortcut icon" href="icono.ico"media="screen" />
+
 </head>
 <body>
  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
@@ -81,8 +82,7 @@ if($resultado = mysqli_fetch_array($consulta)){
                 </ul>
 
            
-          </div>
-";
+          </div>";
 
  ?>
  <span class="android-mobile-title mdl-layout-title">
@@ -139,7 +139,7 @@ if($resultado = mysqli_fetch_array($consulta)){
 </form>
         </nav>
       </div>
-
+ <div class="android-content mdl-layout__content">
        
         
 

@@ -13,12 +13,12 @@
  
     <!-- Estilos -->
  
-    <link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=es" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="css/material.min.css">
-    
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="shortcut icon" href="icono.ico" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=es" rel="stylesheet"media="screen">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"media="screen">
+    <link rel="stylesheet" href="css/material.min.css"media="screen">
+
+    <link rel="stylesheet" href="css/styles.css" media="screen">
+    <link rel="shortcut icon" href="icono.ico" media="screen">
    <!-- Mi Head we --> 
   </head>
   <body>
@@ -27,7 +27,7 @@
       <div class="android-header mdl-layout__header mdl-layout__header--waterfall">
         <div class="mdl-layout__header-row">
           <span class="android-title mdl-layout-title">
-            <img class="android-logo-image" src="images/ekoseats.png">
+            <img class="android-logo-image" src="images/ekoseats.png" >
           </span>
 
           <!-- Agregamos un espacio entre el logo de y el menú -->
@@ -70,10 +70,10 @@ if($resultado = mysqli_fetch_array($consulta)){
             }
             
  echo"
-          <div class='android-navigation-container'>
-            <nav class='android-navigation mdl-navigatio'>
+          <div class='android-navigation-container'  >
+            <nav class='android-navigation mdl-navigatio' >
 
-              <a class='mdl-navigation__link mdl-typography--text-uppercase' href='index.php'>Home</a>
+              <a class='mdl-navigation__link mdl-typography--text-uppercase' href='index.php' >Home</a>
               <a class='mdl-navigation__link mdl-typography--text-uppercase' href='catalogo.php'>Catalogo</a>
               <a class='mdl-navigation__link mdl-typography--text-uppercase' href='contact.php'>Contactanos</a>
               <a class='mdl-navigation__link mdl-typography--text-uppercase' href='informacion.php'>Nosotros</a>
@@ -89,13 +89,6 @@ if($resultado = mysqli_fetch_array($consulta)){
 ";
 
  ?>
-         
-        
-   
-            
-
-
-
           <span class="android-mobile-title mdl-layout-title">
 
             <img class="android-logo-image" src="images/ekoseats.png">
