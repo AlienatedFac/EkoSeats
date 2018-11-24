@@ -57,7 +57,7 @@ a img{
 .android-fab {
   position: absolute;
   right: 20%;
-  bottom: -26px;
+  bottom: -0px;
   z-index: 3;
   background: #c9e7a5 !important;
   color: green !important;
@@ -72,7 +72,7 @@ a img{
  
   height: 118px;
   width: 180px;
-   margin-left: 390px;
+   margin-left: 200px;
     margin-right: 16px
 }
 
@@ -83,7 +83,7 @@ a img{
 }
 
   .android-header .material-icons {
-    color: #757575 !important;
+    color: #398300 !important;
   }
 
   .android-header .mdl-layout__drawer-button {
@@ -165,14 +165,14 @@ a img{
 }
 
   .android-drawer-separator {
-    height: 1px;
-    background-color: #dcdcdc;
-    margin: 8px 0;
+    height: 10px;
+    background-color: #ecffe1;
+    margin: 15px 0;
   }
 
   .android-drawer .mdl-navigation__link.mdl-navigation__link {
     font-size: 14px;
-    color: #757575;
+    color: green;
   }
 
   .android-drawer span.mdl-navigation__link.mdl-navigation__link {
@@ -193,25 +193,29 @@ a img{
 /*Fondo donde estan las letras e EkoSeats*/
 .android-be-together-section {
   position: relative;
-  height: 300px;
+  height: 510px;
+  top: -100px;
   width: auto;
   background-color: #f3f3f3;
-  background: url('../images/1.png') center 80% no-repeat;
+  background: url('../images/inicio.png') center 80% no-repeat;
   background-size:1500px auto;
+
 }
 .android-be-together-section1 {
   position: center;
   height: 600px;
   width:600px;
+  bottom: 10px;
   width: auto;
-  background-color: #e7ffd8;
+  background-color: white;
   background-size:lenght;
+
 }
 
 .android-font {
   font-family: 'And Black', 'Helvetica', 'Arial', sans-serif;
   line-height: 1;
-  color: #767777;
+  color:#398300;
   font-weight: 300;
 }
 
@@ -222,7 +226,7 @@ a img{
 
 .android-sub-slogan {
   font-size: 21px;
-  padding-top: 24px;
+  padding-top: 44px;
 }
 
 .android-create-character {
@@ -238,7 +242,7 @@ a img{
 
 .android-screen-section {
   position: relative;
-  padding-top: 60px;
+  padding-top: 10px;
   padding-bottom: 80px;
 }
 
@@ -332,7 +336,6 @@ a img{
     z-index: 1;
   }
 
-
 .android-wear-section {
   position: relative;
   background: url('../images/mueble1.jpg') center top no-repeat;
@@ -366,11 +369,11 @@ a img{
 
 .android-link {
   text-decoration: none;
-  color: #8bc34a !important;
+  color: #46a100 !important;
 }
 
   .android-link:hover {
-    color: #7cb342 !important;
+    color:#639a00 !important;
   }
 
   .android-link .material-icons {
@@ -380,12 +383,12 @@ a img{
 
 .android-alt-link {
   text-decoration: none;
-  color: #64ffda !important;
+  color: #53c526 !important;
   font-size: 16px;
 }
 
   .android-alt-link:hover {
-    color: #00bfa5 !important;
+    color: #639a00 !important;
   }
 
   .android-alt-link .material-icons {
@@ -409,7 +412,7 @@ a img{
   }
 
 .android-customized-section-image {
-  background: url('../images/wear.png') center top no-repeat;
+  background: url('../images/1.jpg') center top no-repeat;
   background-size: cover;
   height: 400px;
 }
@@ -474,7 +477,7 @@ a img{
   }
 
 .android-footer {
-  background-color: #fafafa;
+  background-color: #ecffe1;
   position: relative;
 }
 
@@ -505,7 +508,7 @@ a img{
 
 
 .android-link-menu:hover {
-  cursor: pointer;
+  cursor:pointer; cursor: hand
 }
 
 
