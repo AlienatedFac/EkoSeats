@@ -72,7 +72,7 @@ a img{
  
   height: 118px;
   width: 180px;
-   margin-left: 590px;
+   margin-left: 390px;
     margin-right: 16px
 }
 
@@ -145,7 +145,7 @@ a img{
     -webkit-order: 2;
         -ms-flex-order: 2;
             order: 2;
-    margin-left: 10px;
+    margin-left: 20px;
     margin-right: 5px;
      margin-bottom:  -10px;
   }
@@ -196,7 +196,7 @@ a img{
   height: 300px;
   width: auto;
   background-color: #f3f3f3;
-  background: url('../images/inicio.png') center 80% no-repeat;
+  background: url('../images/1.png') center 80% no-repeat;
   background-size:1500px auto;
 }
 .android-be-together-section1 {
