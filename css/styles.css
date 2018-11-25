@@ -141,6 +141,7 @@ a img{
 
     .android-navigation .mdl-navigation__link:hover {
       border-bottom: 4px solid #8bc34a;
+        
 
     }
 
@@ -181,6 +182,7 @@ a img{
 
   .android-drawer span.mdl-navigation__link.mdl-navigation__link {
     color: black;
+         border-radius: 25px;
   }
 
   .android-drawer .mdl-layout-title {
