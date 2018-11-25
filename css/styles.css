@@ -178,7 +178,7 @@ a img{
 /* esta de aqui abajo es lo de los cuadritos (la cosa que le da forma)*/
   .android-drawer .mdl-navigation__link.mdl-navigation__link {
     font-size: 16px;
-    background:#ddffc9;
+    background:red;
     text-align: center;
     border-style:double; 
     color: green;
