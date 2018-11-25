@@ -53,7 +53,7 @@ if($_SESSION['usuario'] and $_SESSION['password']){
     if($_SESSION['tipo']=="usuario")
     {
 echo "<script type=\"text/javascript\">alert(\"Bienvenido\");</script>";
-    $registro="index.php";
+    $registro="logout.php";
     $regis="Logout";
     $sesion="index.php";
     $ses=$_SESSION['usuario'];
@@ -64,7 +64,7 @@ echo "<script type=\"text/javascript\">alert(\"Bienvenido\");</script>";
         
     if($_SESSION['tipo']=="proveedor"){
          echo "<script type=\"text/javascript\">alert(\"Bienvenido\");</script>";
-    $registro="index.php";
+    $registro="logout.php";
     $regis="Logout";
     $sesion="index.php";
     $ses=$_SESSION['usuario']; 

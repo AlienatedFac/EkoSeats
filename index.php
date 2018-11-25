@@ -66,7 +66,7 @@ $var1=$resultado['Tipo'];
     if($var1=="usuario")
     {
           echo "<script type=\"text/javascript\">alert(\"Bienvenido $var1\");</script>";
-    $registro="index.php";
+    $registro="logout.php";
     $regis="Logout";
     $sesion="index.php";
     $ses=$user;
@@ -77,7 +77,7 @@ $var1=$resultado['Tipo'];
         
     if($var1=="proveedor"){
          echo "<script type=\"text/javascript\">alert(\"Bienvenido $user\");</script>";
-    $registro="index.php";
+    $registro="logout.php";
     $regis="Logout";
     $sesion="index.php";
     $ses=$user; 
