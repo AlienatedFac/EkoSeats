@@ -174,15 +174,18 @@ a img{
     background-color: #ecffe1;
     margin: 15px 0;
   }
-
+/* esta de aqui abajo es lo de los cuadritos (la cosa que le da forma)*/
   .android-drawer .mdl-navigation__link.mdl-navigation__link {
     font-size: 14px;
     color: green;
+    right:  50px;
+    height: -20px;
+    border-radius:5px;
   }
 
   .android-drawer span.mdl-navigation__link.mdl-navigation__link {
     color: black;
-         border-radius: 25px;
+         border-radius:45px;
   }
 
   .android-drawer .mdl-layout-title {
