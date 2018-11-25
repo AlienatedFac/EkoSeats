@@ -65,7 +65,6 @@ $var1=$resultado['Tipo'];
     $_SESSION['password']=$password;
     if($var1=="usuario")
     {
-          echo "<script type=\"text/javascript\">alert(\"Bienvenido $var1\");</script>";
     $registro="logout.php";
     $regis="Logout";
     $sesion="index.php";
@@ -76,7 +75,6 @@ $var1=$resultado['Tipo'];
     else
         
     if($var1=="proveedor"){
-         echo "<script type=\"text/javascript\">alert(\"Bienvenido $user\");</script>";
     $registro="logout.php";
     $regis="Logout";
     $sesion="index.php";
@@ -106,7 +104,7 @@ $var1=$resultado['Tipo'];
             {
                  echo"
               
-              <a class='mdl-navigation__link mdl-typography--text-uppercase' href='catalogo.php'>Catalogo</a>";
+              <a class='mdl-navigation__link mdl-typography--text-uppercase' href='informacion.php'>Nosotros</a>";
             }
            
             echo"

@@ -49,7 +49,6 @@ session_start();
 if($_SESSION['usuario'] and $_SESSION['password']){    
     if($_SESSION['tipo']=="usuario")
     {
-echo "<script type=\"text/javascript\">alert(\"Bienvenido\");</script>";
     $registro="index.php";
     $regis="Logout";
     $sesion="index.php";
@@ -60,8 +59,8 @@ echo "<script type=\"text/javascript\">alert(\"Bienvenido\");</script>";
     else
         
     if($_SESSION['tipo']=="proveedor"){
-         echo "<script type=\"text/javascript\">alert(\"Bienvenido\");</script>";
-    $registro="index.php";
+     
+    $registro="logout.php";
     $regis="Logout";
     $sesion="index.php";
     $ses=$_SESSION['usuario']; 
@@ -73,7 +72,7 @@ echo "<script type=\"text/javascript\">alert(\"Bienvenido\");</script>";
     
 }
             else{
-                $registro="regis.php";
+                $registro="logout.php";
                 $regis="Registrate";
                 $sesion="Log-in.html";
     $ses="Login";
