@@ -154,7 +154,7 @@ if($resultado = mysqli_fetch_array($consulta)){
       <div class="android-content mdl-layout__content">
 
 <div class="android-content mdl-layout__content">
-  <form action="" method="POST">
+  <form action="refistrarse.php" method="POST">
   <div class="container">
     <h1>Registrarse!</h1>
     <p>Por favor llena los datos para registrarte.</p>
