@@ -16,7 +16,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=es" rel="stylesheet"media="screen">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"media="screen">
     <link rel="stylesheet" href="css/material.min.css"media="screen">
-
+<link rel="stylesheet" href="css/indexcosaconflechas.css" media="screen">
     <link rel="stylesheet" href="css/styles.css" media="screen">
     <link rel="shortcut icon" href="icono.ico" media="screen">
    <!-- Mi Head we --> 
@@ -176,111 +176,11 @@ $var1=$resultado['Tipo'];
 </form>
         </nav>
       </div>
-
        <div class="android-content mdl-layout__content">
 
-<style>
-body {
-  font-family: Arial;
-  margin: 0;
-  color: black;
-}
+<div class="android-screen-section mdl-typography--text-center">
 
-* {
-  box-sizing: border-box;
-}
-
-img {
-  vertical-align: middle;
-}
-
-/* Position the image container (needed to position the left and right arrows) */
-.container {
-  position: relative;
-  left: 100px;
-  top: 80px;
-  width: 800px;
-}
-
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
-
-/* Add a pointer when hovering over the thumbnail images */
-.cursor {
-  cursor: pointer;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 40%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: white;
-  font-weight: bold;
-  font-size: 50px;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* Container for image text */
-.caption-container {
-  text-align: center;
-  background-color: #222;
-  padding: 2px 16px;
-  color: white;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Six columns side by side */
-.column {
-  float: left;
-  width: 16.66%;
-}
-
-/* Add a transparency effect for thumnbail images */
-.demo {
-  opacity: 0.6;
-}
-
-.active,
-.demo:hover {
-  opacity: 1;
-}
 </style>
-
 <h2 style="text-align:center">Detalle de Producto</h2>
 <div class='android-card-container mdl-grid'>
 <div class="container" style="border-style: groove;" >
@@ -288,73 +188,53 @@ img {
     <div class="numbertext">1 / 2</div>
     <img src="images/salas3.jpg" style="width:100%">
   </div>
-
   <div class="mySlides">
     <div class="numbertext">2 / 2</div>
     <img src="images/prueba2.jpg" style="width:100%">
   </div>
- 
   <a class="prev" onclick="plusSlides(-1)">❮</a>
   <a class="next" onclick="plusSlides(1)">❯</a>
-
- 
   </div>
 </div>
-<div class="row-responsive" style="flex-direction: row;" style="width: 100%;">
-
-	<div class="eq" style=" flex-direction: column;">
-	</div>
-	<div class="eq" style=" flex-direction: column;">
-		<h3>
-			<font style="vertical-align: inherit;" >
-				<font style="vertical-align:  inherit;">NOMBRE DEL PRODUCTO</font>
-				<font style="vertical-align: inherit;">ESPECIFICACIONES BLABLABLABLABLABLABLA</font>
-			</font>
-		</h3>
-	</div>
-</div>  
-     
-        
-
-<script>
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  var captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
-}
-</script>
 
 
 
-  
+
+
+
+
+
+
+       	<footer class="android-footer mdl-mega-footer">
+          <div class="mdl-mega-footer--top-section">
+            
+            <div class="mdl-mega-footer--right-section">
+             
+            </div>
+          </div>
+
+          <div class="mdl-mega-footer--middle-section">
+            <p class="mdl-typography--font-light">Ekoseats © 2018 Mexico</p>
+            <p class="mdl-typography--font-light">Algunas características pueden no estar disponibles en todas las áreas</p>
+          </div>
+
+          <div class="mdl-mega-footer--bottom-section">
+           
+         
+            
+            <a class="android-link mdl-typography--font-light" href="">Blog</a>
+            <a class="android-link mdl-typography--font-light" href="">Política de Privacidad</a>
+          </div>
+
+        </footer>
       </div>
    
-   <script src="js/material.min.js"></script>
-</body>
 
+    
+ 
+    <script src="js/material.min.js"></script>
+
+  </body>
 </html>
 
     
