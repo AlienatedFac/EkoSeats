@@ -177,29 +177,13 @@ $var1=$resultado['Tipo'];
         </nav>
       </div>
 
-      <div class="android-content mdl-layout__content">
-        <a name="top"></a>
-        <div class="android-be-together-section mdl-typography--text-center">
-          <div class="android-font android-slogan">EkoSeats.</div>
-          <div class="android-font android-sub-slogan">Por un mundo mejor</div>
-          <div class="android-font android-create-character">
-          </div>
+       <div class="android-content mdl-layout__content">
 
-          <a href="#screens">
-            <button class="android-fab mdl-button mdl-button--colored mdl-js-button mdl-button--fab mdl-js-ripple-effect">
-              <i class="material-icons">expand_more</i>
-            </button>
-          </a>
-        </div>
-        <div class="android-screen-section mdl-typography--text-center">
-          <a name="screens"></a>
-          <div class="mdl-typography--display-1-color-contrast">Conoce toda nuestra linea de productos</div>
-          <br>
-
-          <style>
+<style>
 body {
   font-family: Arial;
   margin: 0;
+  color: black;
 }
 
 * {
@@ -213,10 +197,9 @@ img {
 /* Position the image container (needed to position the left and right arrows) */
 .container {
   position: relative;
-  left: 0px;
-  top: -0px;
-  width: 950px;
- height: 500px;
+  left: 100px;
+  top: 80px;
+  width: 800px;
 }
 
 /* Hide the images by default */
@@ -298,30 +281,43 @@ img {
 }
 </style>
 
-
-
-<div class="container">
-  <a href="salas.php">
+<h2 style="text-align:center">Detalle de Producto</h2>
+<div class='android-card-container mdl-grid'>
+<div class="container" style="border-style: groove;" >
   <div class="mySlides">
     <div class="numbertext">1 / 2</div>
-    <img src="images/prueba1.jpg" style="width:180% "   >
+    <img src="images/salas3.jpg" style="width:100%">
   </div>
-  </a>
 
   <div class="mySlides">
     <div class="numbertext">2 / 2</div>
-    <img src="images/prueba2.jpg" style="width:180%">
+    <img src="images/prueba2.jpg" style="width:100%">
   </div>
  
   <a class="prev" onclick="plusSlides(-1)">❮</a>
   <a class="next" onclick="plusSlides(1)">❯</a>
-<a href="producto.php ">
-  <div class="caption-container"  style="width:180%" >
-    DESCRIPCION TALVEZ
-   
+
+ 
   </div>
-  </a>
-  </div>
+</div>
+
+<div class='android-more-section'style="bottom: 450px; right: -700px;">
+          
+              <div class='mdl-card__title'>
+                 <h4 class='mdl-card__title-text'>Tipo madera</h4>
+              </div>
+              <div class='mdl-card__supporting-text'>
+                <span class='mdl-typography--font-light mdl-typography--subhead'>Sala color madera reciclada</span>
+              </div>
+              <div class='mdl-card__actions'>
+                 <a class='android-link mdl-button mdl-js-button mdl-typography--text-uppercase' href='salas.php'>
+                   VER
+                   <i class='material-icons'>chevron_right</i>
+                 </a>
+              </div>
+          </div>
+        
+
 <script>
 var slideIndex = 1;
 showSlides(slideIndex);
@@ -351,154 +347,18 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
-
 </script>
 
 
 
-
-          
-<?php
-
-            echo "<div class='android-screens'  >";
-            echo"<div class='android-wear android-screen'>";                
-          
-            echo"</div>";
-            
-
-            echo"<div class='android-phone android-screen'>
-              
-          
-
-
-
-              <a class='android-link mdl-typography--font-regular mdl-typography--text-uppercase mdl-typography--text-left' href=''></a>
-            </div>
-          </div>
-        </div>
-        <div class='android-wear-section'>
-          <div class='android-wear-band'>
-            <div class='android-wear-band-text'>
-              <div class='mdl-typography--display-2 mdl-typography--font-thin'>Recomendado</div>
-              <p class='mdl-typography--headline mdl-typography--font-thin'>
-               Credensa de Madera Con Puerta Corredisa
-              </p>
-              <p>
-                <a class='mdl-typography--font-regular mdl-typography--text-uppercase android-alt-link' href='credensas.html'>
-                  VER PRODUCTO&nbsp;<i class='material-icons'>chevron_right</i>
-                </a>
-              </p>
-            </div>
-          </div>
-        </div>
-       
-       
-        <div class='android-more-section'>
-          <div class='android-section-title mdl-typography--display-1-color-contrast'>Mas de Ekoseats</div>
-          <div class='android-card-container mdl-grid'>
-            <div class='mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp'>
-              <div class='mdl-card__media'>
-                <img src='images/salas1.jpg'>
-              </div>
-              <div class='mdl-card__title'>
-                 <h4 class='mdl-card__title-text'>Tipo madera</h4>
-              </div>
-              <div class='mdl-card__supporting-text'>
-                <span class='mdl-typography--font-light mdl-typography--subhead'>Sala color madera reciclada</span>
-              </div>
-              <div class='mdl-card__actions'>
-                 <a class='android-link mdl-button mdl-js-button mdl-typography--text-uppercase' href='salas.php'>
-                   VER
-                   <i class='material-icons'>chevron_right</i>
-                 </a>
-              </div>
-            </div>
-
-            <div class='mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp'>
-              <div class='mdl-card__media'>
-                <img src='images/sala2.jpg'>
-              </div>
-              <div class='mdl-card__title'>
-                 <h4 class='mdl-card__title-text'>Sala Color Blanco</h4>
-              </div>
-              <div class='mdl-card__supporting-text'>
-                <span class='mdl-typography--font-light mdl-typography--subhead'>Sala de Madera Reciclada con tres piezas</span>
-              </div>
-              <div class='mdl-card__actions'>
-                 <a class='android-link mdl-button mdl-js-button mdl-typography--text-uppercase' href='salas.php' target='_blank'>
-                   <i class='material-icons'>chevron_right</i>
-                 </a>
-              </div>
-            </div>
-
-            <div class='mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp'>
-              <div class='mdl-card__media'>
-                <img src='images/1.jpg'>
-              </div>
-              <div class='mdl-card__title'>
-                 <h4 class='mdl-card__title-text'>Sala Redonda</h4>
-              </div>
-              <div class='mdl-card__supporting-text'>
-                <span class='mdl-typography--font-light mdl-typography--subhead'>Sala Color Azul con 4 piezas </span>
-              </div>
-              <div class='mdl-card__actions'>
-                 <a class='android-link mdl-button mdl-js-button mdl-typography--text-uppercase' href='salas.php'>
-                   VER
-                   <i class='material-icons'>chevron_right</i>
-                 </a>
-              </div>
-            </div>
-
-            <div class='mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp'>
-              <div class='mdl-card__media'>
-                <img src='images/salas4.jpg'>
-              </div>
-              <div class='mdl-card__title'>
-                 <h4 class='mdl-card__title-text'>Sala Junta</h4>
-              </div>
-              <div class='mdl-card__supporting-text'>
-                <span class='mdl-typography--font-light mdl-typography--subhead'>Sala Baja Con 4 Cojines, incluye una pequeña mesa</span>
-              </div>
-              <div class='mdl-card__actions'>
-                 <a class='android-link mdl-button mdl-js-button mdl-typography--text-uppercase' href='salas.html'>
-                   VER
-                   <i class='material-icons'>chevron_right</i>
-                 </a>
-              </div>
-            </div>
-          </div>
-        </div>";
-                ?>
-
-
-        <footer class="android-footer mdl-mega-footer">
-          <div class="mdl-mega-footer--top-section">
-            
-            <div class="mdl-mega-footer--right-section">
-             
-            </div>
-          </div>
-
-          <div class="mdl-mega-footer--middle-section">
-            <p class="mdl-typography--font-light">Ekoseats © 2018 Mexico</p>
-            <p class="mdl-typography--font-light">Algunas características pueden no estar disponibles en todas las áreas</p>
-          </div>
-
-          <div class="mdl-mega-footer--bottom-section">
-           
-         
-            
-            <a class="android-link mdl-typography--font-light" href="">Blog</a>
-            <a class="android-link mdl-typography--font-light" href="">Política de Privacidad</a>
-          </div>
-
-        </footer>
+  
       </div>
-    </div>
+   
+   <script src="js/material.min.js"></script>
+</body>
+
+</html>
 
     
  
-    <script src="js/material.min.js"></script>
-
-  </body>
-</html>
+    
