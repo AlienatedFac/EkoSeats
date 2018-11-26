@@ -180,7 +180,7 @@ if($resultado = mysqli_fetch_array($consulta)){
     <hr>
     <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
 
-    <input class="btn" type="submit" name=" " value="Registrarse">
+    <input class="btn" type="submit" name=" " value="Registrarse" style="border-radius: 50px; background: #cbffad;" >
       </form>
   </div>
   
