@@ -300,22 +300,20 @@ img {
  
   </div>
 </div>
+<div class="row-responsive" style="flex-direction: row;" style="width: 100%;">
 
-<div class='android-more-section'style="bottom: 450px; right: -700px;">
-          
-              <div class='mdl-card__title'>
-                 <h4 class='mdl-card__title-text'>Tipo madera</h4>
-              </div>
-              <div class='mdl-card__supporting-text'>
-                <span class='mdl-typography--font-light mdl-typography--subhead'>Sala color madera reciclada</span>
-              </div>
-              <div class='mdl-card__actions'>
-                 <a class='android-link mdl-button mdl-js-button mdl-typography--text-uppercase' href='salas.php'>
-                   VER
-                   <i class='material-icons'>chevron_right</i>
-                 </a>
-              </div>
-          </div>
+	<div class="eq" style=" flex-direction: column;">
+	</div>
+	<div class="eq" style=" flex-direction: column;">
+		<h3>
+			<font style="vertical-align: inherit;" >
+				<font style="vertical-align:  inherit;">NOMBRE DEL PRODUCTO</font>
+				<font style="vertical-align: inherit;">ESPECIFICACIONES BLABLABLABLABLABLABLA</font>
+			</font>
+		</h3>
+	</div>
+</div>  
+     
         
 
 <script>

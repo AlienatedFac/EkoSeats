@@ -315,12 +315,12 @@ img {
  
   <a class="prev" onclick="plusSlides(-1)">❮</a>
   <a class="next" onclick="plusSlides(1)">❯</a>
-<a href="producto.php ">
+
   <div class="caption-container"  style="width:180%" >
     DESCRIPCION TALVEZ
    
   </div>
-  </a>
+  
   </div>
 <script>
 var slideIndex = 1;
@@ -396,10 +396,12 @@ function showSlides(n) {
         <div class='android-more-section'>
           <div class='android-section-title mdl-typography--display-1-color-contrast'>Mas de Ekoseats</div>
           <div class='android-card-container mdl-grid'>
+          <a href='salas.php'>
             <div class='mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp'>
               <div class='mdl-card__media'>
                 <img src='images/salas1.jpg'>
               </div>
+              </a>
               <div class='mdl-card__title'>
                  <h4 class='mdl-card__title-text'>Tipo madera</h4>
               </div>
@@ -409,15 +411,17 @@ function showSlides(n) {
               <div class='mdl-card__actions'>
                  <a class='android-link mdl-button mdl-js-button mdl-typography--text-uppercase' href='salas.php'>
                    VER
-                   <i class='material-icons'>chevron_right</i>
+                   
                  </a>
               </div>
             </div>
 
+<a href='salas.php'>
             <div class='mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp'>
               <div class='mdl-card__media'>
                 <img src='images/sala2.jpg'>
               </div>
+   </a>
               <div class='mdl-card__title'>
                  <h4 class='mdl-card__title-text'>Sala Color Blanco</h4>
               </div>
@@ -425,16 +429,18 @@ function showSlides(n) {
                 <span class='mdl-typography--font-light mdl-typography--subhead'>Sala de Madera Reciclada con tres piezas</span>
               </div>
               <div class='mdl-card__actions'>
-                 <a class='android-link mdl-button mdl-js-button mdl-typography--text-uppercase' href='salas.php' target='_blank'>
-                   <i class='material-icons'>chevron_right</i>
+                 <a class='android-link mdl-button mdl-js-button mdl-typography--text-uppercase' href='salas.php'>
+                 VER
+                  
                  </a>
               </div>
             </div>
-
+<a href='salas.php'>
             <div class='mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp'>
               <div class='mdl-card__media'>
                 <img src='images/1.jpg'>
               </div>
+              </a>
               <div class='mdl-card__title'>
                  <h4 class='mdl-card__title-text'>Sala Redonda</h4>
               </div>
@@ -444,15 +450,16 @@ function showSlides(n) {
               <div class='mdl-card__actions'>
                  <a class='android-link mdl-button mdl-js-button mdl-typography--text-uppercase' href='salas.php'>
                    VER
-                   <i class='material-icons'>chevron_right</i>
+                
                  </a>
               </div>
             </div>
-
+<a href='salas.php'>
             <div class='mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp'>
               <div class='mdl-card__media'>
                 <img src='images/salas4.jpg'>
               </div>
+              </a>
               <div class='mdl-card__title'>
                  <h4 class='mdl-card__title-text'>Sala Junta</h4>
               </div>
@@ -462,7 +469,7 @@ function showSlides(n) {
               <div class='mdl-card__actions'>
                  <a class='android-link mdl-button mdl-js-button mdl-typography--text-uppercase' href='salas.html'>
                    VER
-                   <i class='material-icons'>chevron_right</i>
+                  
                  </a>
               </div>
             </div>
