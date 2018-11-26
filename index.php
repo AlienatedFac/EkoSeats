@@ -77,7 +77,7 @@ $var1=$resultado['Tipo'];
     if($var1=="proveedor"){
     $registro="logout.php";
     $regis="Logout";
-    $sesion="index.php";
+    $sesion="subidos.php";
     $ses=$user; 
          $cata="Subidos";
         $catalink="proveedor.php";
@@ -108,7 +108,7 @@ $var1=$resultado['Tipo'];
             }
            
             echo"
-              <a class='mdl-navigation__link mdl-typography--text-uppercase' href='contact.php'>Contactanos</a>
+              <a class='mdl-navigation__link mdl-typography--text-uppercase' href='contact.php'>Contacto</a>
               <a class='mdl-navigation__link mdl-typography--text-uppercase' href='$catalink'>$cata</a>
             <a class='mdl-navigation__link mdl-typography--text-uppercase' id='open-modal-login' href='$registro'>$regis</a>
              <a class='mdl-navigation__link mdl-typography--text-uppercase' id='open-modal-login' href='$sesion' >$ses</a>
