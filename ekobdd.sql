@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 20-11-2018 a las 17:58:07
+-- Tiempo de generación: 26-11-2018 a las 16:38:09
 -- Versión del servidor: 10.1.36-MariaDB
 -- Versión de PHP: 7.2.10
 
@@ -29,19 +29,22 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `acceso` (
-  `id` int(11) NOT NULL,
-  `Nombre` varchar(20) NOT NULL,
-  `Password` varchar(20) NOT NULL,
-  `Correo` varchar(200) NOT NULL
+  `id` int(100) NOT NULL,
+  `Nombre` varchar(100) NOT NULL,
+  `Password` varchar(100) NOT NULL,
+  `Correo` varchar(100) NOT NULL,
+  `Tipo` enum('usuario','proveedor','','') NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Volcado de datos para la tabla `acceso`
 --
 
-INSERT INTO `acceso` (`id`, `Nombre`, `Password`, `Correo`) VALUES
-(1, 'Fernando', '8675', 'oppaiskoibito@gmail.com'),
-(2, 'Yisus', 'Pantalones25', 'nose');
+INSERT INTO `acceso` (`id`, `Nombre`, `Password`, `Correo`, `Tipo`) VALUES
+(1, 'fernando', '8675', 'oppaiskoibito@gmail.com', 'proveedor'),
+(6, 'SexMachine', '8675', 'substratum21@gmail.com', 'usuario'),
+(8, 'Fernando A', '8675', '201700057@estudiantes.upqroo.edu.mx', 'usuario'),
+(9, 'admin', '8675', 'na', 'proveedor');
 
 -- --------------------------------------------------------
 
@@ -54,29 +57,30 @@ CREATE TABLE `salas` (
   `Nombre` varchar(20) NOT NULL,
   `Descripcion` text NOT NULL,
   `Precio` int(11) NOT NULL,
-  `Existencia` int(11) NOT NULL
+  `Existencia` int(11) NOT NULL,
+  `Vendedor` varchar(100) NOT NULL DEFAULT 'admin'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Volcado de datos para la tabla `salas`
 --
 
-INSERT INTO `salas` (`id`, `Nombre`, `Descripcion`, `Precio`, `Existencia`) VALUES
-(1, 'Articulo 1', 'Articulo 1', 6000, 2),
-(2, 'articulo 2', 'Artivulo 2', 5000, 5),
-(3, 'Articulo 3', 'Articulo 3', 8000, 4),
-(4, 'Articulo 4', 'Articulo 4', 7000, 7000),
-(5, 'articulo 5', 'Articulo 5', 45666, 1),
-(6, 'Articulo 6', 'Articulo 6', 4522, 15),
-(7, 'Articulo 7', 'Articulo 7', 20000, 15),
-(8, 'Articulo 8', 'Articulo 8', 20000, 15),
-(9, 'Articulo 9', 'Articulo 9', 20000, 15),
-(10, 'Articulo 10', 'Articulo 10', 20000, 15),
-(11, 'Articulo 11', 'Articulo 11', 20000, 15),
-(12, 'Articulo 12', 'Articulo 12', 20000, 15),
-(13, 'Articulo 13', 'Articulo 13', 20000, 15),
-(14, 'Articulo 14', 'Articulo 14', 20000, 15),
-(15, 'Articulo 15', 'Articulo 15', 20000, 15);
+INSERT INTO `salas` (`id`, `Nombre`, `Descripcion`, `Precio`, `Existencia`, `Vendedor`) VALUES
+(1, 'Articulo 1', 'Articulo 1', 6000, 2, 'admin'),
+(2, 'articulo 2', 'Artivulo 2', 5000, 5, 'admin'),
+(3, 'Articulo 3', 'Articulo 3', 8000, 4, 'admin'),
+(4, 'Articulo 4', 'Articulo 4', 7000, 7000, 'admin'),
+(5, 'articulo 5', 'Articulo 5', 45666, 1, 'admin'),
+(6, 'Articulo 6', 'Articulo 6', 4522, 15, 'admin'),
+(7, 'Articulo 7', 'Articulo 7', 20000, 15, 'admin'),
+(8, 'Articulo 8', 'Articulo 8', 20000, 15, 'admin'),
+(9, 'Articulo 9', 'Articulo 9', 20000, 15, 'admin'),
+(10, 'Articulo 10', 'Articulo 10', 20000, 15, 'admin'),
+(11, 'Articulo 11', 'Articulo 11', 20000, 15, 'admin'),
+(12, 'Articulo 12', 'Articulo 12', 20000, 15, 'admin'),
+(13, 'Articulo 13', 'Articulo 13', 20000, 15, 'admin'),
+(14, 'Articulo 14', 'Articulo 14', 20000, 15, 'admin'),
+(15, 'Articulo 15', 'Articulo 15', 20000, 15, 'admin');
 
 -- --------------------------------------------------------
 
@@ -88,23 +92,30 @@ CREATE TABLE `sillones` (
   `id` int(100) NOT NULL,
   `Nombre` varchar(100) NOT NULL,
   `Descripcion` text NOT NULL,
-  `Precio` int(100) NOT NULL
+  `Precio` int(100) NOT NULL,
+  `Vendedor` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Volcado de datos para la tabla `sillones`
 --
 
-INSERT INTO `sillones` (`id`, `Nombre`, `Descripcion`, `Precio`) VALUES
-(1, 'Articulo1', 'Articulo1', 6000),
-(2, 'Articulo1', 'Articulo1', 6000),
-(3, 'Articulo1', 'Articulo1', 6000),
-(4, 'Articulo1', 'Articulo1', 6000),
-(5, 'Articulo1', 'Articulo1', 6000);
+INSERT INTO `sillones` (`id`, `Nombre`, `Descripcion`, `Precio`, `Vendedor`) VALUES
+(1, 'Articulo1', 'Articulo1', 6000, ''),
+(2, 'Articulo1', 'Articulo1', 6000, ''),
+(3, 'Articulo1', 'Articulo1', 6000, ''),
+(4, 'Articulo1', 'Articulo1', 6000, ''),
+(5, 'Articulo1', 'Articulo1', 6000, '');
 
 --
 -- Índices para tablas volcadas
 --
+
+--
+-- Indices de la tabla `acceso`
+--
+ALTER TABLE `acceso`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indices de la tabla `salas`
@@ -121,6 +132,12 @@ ALTER TABLE `sillones`
 --
 -- AUTO_INCREMENT de las tablas volcadas
 --
+
+--
+-- AUTO_INCREMENT de la tabla `acceso`
+--
+ALTER TABLE `acceso`
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT de la tabla `salas`
