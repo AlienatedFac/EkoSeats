@@ -38,60 +38,43 @@
               <input class="mdl-textfield__input" type="text" id="search-field" />
             </div>
           </div>
-          <!-- Menú -->
-          <div class="android-navigation-container">
-            <nav class="android-navigation mdl-navigation">
-            <a class="mdl-navigation__link mdl-typography--text-uppercase" href="index.php">Home</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="Log-in.html">Inicio de Sesion</a>
+        
+           <!-- Menú -->
+        <?php
+error_reporting(0);
+ echo"
+          <div class='android-navigation-container'  >
+            <nav class='android-navigation mdl-navigatio' >
 
+              <a class='mdl-navigation__link mdl-typography--text-uppercase' href='index.php' >Home</a>
+              <a class='mdl-navigation__link mdl-typography--text-uppercase' href='informacion.php'>Nosotros</a>
+              <a class='mdl-navigation__link mdl-typography--text-uppercase' href='contact.php'>Contactanos</a>
+             <a class='mdl-navigation__link mdl-typography--text-uppercase' id='open-modal-login' href='log-in.html' >Iniciar Sesion</a>
             </nav>
-          </div>
-         
-          <span class="android-mobile-title mdl-layout-title">
-            <img class="android-logo-image" src="images/ekoseats.png">
-          </span>
-        </div>
-      </div>
+            
+    <ul class='mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect' for='more-button'>
+                </ul>
 
-      <div class="android-drawer mdl-layout__drawer">
-        <span class="mdl-layout-title">
-          <img class="android-logo-image" src="images/ekoseats.png">
-        </span>
-        <nav class="mdl-navigation">
-          
-          <div class="android-drawer-separator"></div>
-          <span class="mdl-navigation__link" href="">Salas</span>
-          <a class="mdl-navigation__link" href="salas.php">Salas </a>
-          <a class="mdl-navigation__link" href="">Sillones</a>
-          <a class="mdl-navigation__link" href="">Sofa</a>
-          <div class="android-drawer-separator"></div>
-          <span class="mdl-navigation__link" href="">Comedores</span>
-          <a class="mdl-navigation__link" href="">Mesas</a>
-          <a class="mdl-navigation__link" href="">Sillas</a>
-          <a class="mdl-navigation__link" href="">Bancos</a>
-          <a class="mdl-navigation__link" href="">Credensas</a>
-          <div class="android-drawer-separator"></div>
-          <span class="mdl-navigation__link" href="">Accesorios</span>
-          <a class="mdl-navigation__link" href="">Lamparas</a>
-          <a class="mdl-navigation__link" href="">Cojines</a>
-          <a class="mdl-navigation__link" href="">Cuadros</a>
-          <a class="mdl-navigation__link" href="">Decoracion</a>
-        </nav>
-      </div>
-        <?
+           
+          </div>
+            </div>
+        </div>
+";
     $nombre=$_POST['nombre'];
     $email=$_POST['email'];
     $pass=$_POST['psw'];
     $tipo=$_POST['combo'];
+echo "<script type=\"text/javascript\">alert(\"$nombre, $email\");</script>"; 
     $conexion = mysqli_connect("localhost", "root", "", "EkoBDD");
     if ($conexion->connect_error) {
     die("Connection failed: " . $conexion->connect_error);
 } 
 
-$sql = "INSERT INTO Acceso (Nombre,Password, Correo)
-VALUES ('$nombre', '$pass', '$email')";
+$sql = "INSERT INTO acceso (Nombre,Password, Correo, Tipo)
+VALUES ('$nombre', '$pass', '$email', '$tipo')";
 
 if ($conexion->query($sql) === TRUE) {
+    
    echo "
       <div class='android-content mdl-layout__content'>
         <a name='top'></a>
@@ -107,7 +90,13 @@ $conexion->close();
         
    ;
             ?>
-           <footer class="android-footer mdl-mega-footer">
+          
+      </div>
+ 
+    <script src="js/material.min.js"></script>
+
+  </body>
+     <footer class="android-footer mdl-mega-footer">
           <div class="mdl-mega-footer--top-section">
             <div class="mdl-mega-footer--left-section">
               <button class="mdl-mega-footer--social-btn">B1</button>
@@ -155,11 +144,4 @@ $conexion->close();
           </div>
 
         </footer>
-      </div>
-    </div>
- 
-    <script src="js/material.min.js"></script>
-
-
-  </body>
 </html>

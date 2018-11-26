@@ -154,8 +154,9 @@ if($resultado = mysqli_fetch_array($consulta)){
       <div class="android-content mdl-layout__content">
 
 <div class="android-content mdl-layout__content">
-  <form action="refistrarse.php" method="POST">
+  
   <div class="container">
+      <form action="registrado.php" method="POST">
     <h1>Registrarse!</h1>
     <p>Por favor llena los datos para registrarte.</p>
     <hr>
@@ -173,13 +174,14 @@ if($resultado = mysqli_fetch_array($consulta)){
       <label for="psw-repeat"><b>Tipo de usuario:   </b></label>
        <select name="combo">
     <!-- Opciones de la lista -->
-    <option value="1" name="Proveedor">Proveedor</option>
-    <option value="2" name="Usuario"selected>Usuario</option> <!-- Opción por defecto -->
+    <option value="1" name="proveedor">Proveedor</option>
+    <option value="2" name="usuario"selected>Usuario</option> <!-- Opción por defecto -->
   </select>
     <hr>
     <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
 
     <input class="btn" type="submit" name=" " value="Registrarse">
+      </form>
   </div>
   
   <div class="container-signin">
@@ -250,7 +252,6 @@ a {
 }
 
 </style>
-</form>
     
 </div>
  <footer class="android-footer mdl-mega-footer">
