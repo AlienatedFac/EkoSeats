@@ -79,8 +79,8 @@ $var1=$resultado['Tipo'];
     $regis="Logout";
     $sesion="subidos.php";
     $ses=$user; 
-         $cata="Subidos";
-        $catalink="proveedor.php";
+         $cata="Subir";
+        $catalink="subir.php";
     }
     
           
