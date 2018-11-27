@@ -14,13 +14,17 @@
     <!-- Estilos -->
  
     <link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=es" rel="stylesheet"media="screen">
+
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"media="screen">
     <link rel="stylesheet" href="css/material.min.css"media="screen">
-<link rel="stylesheet" href="css/indexcosaconflechas.css" media="screen">
     <link rel="stylesheet" href="css/styles.css" media="screen">
     <link rel="shortcut icon" href="icono.ico" media="screen">
+    
+   
+     
    <!-- Mi Head we --> 
   </head>
+
   <body>
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
 
@@ -37,53 +41,28 @@
               <i class="material-icons">search</i>
             </label>
             <div class="mdl-textfield__expandable-holder">
-              <input class="mdl-textfield__input" type="text" placeholder="Buscar" id="search-field" />
+              <input class="mdl-textfield__input" type="text" id="search-field" />
             </div>
           </div>
-              <!-- Menú -->
+          <!-- Menú -->
         <?php
 error_reporting(0);
 $user=$_POST['user'];
 $password=$_POST['password']; 
-            $var1="";
-            $proveedor="proveedor";
-            $usuario="usuario";
-session_start();
-            if(empty($user and $password))
+if(empty($user and $password))
 {
-   $user=$_SESSION['usuario'];
-$password=$_SESSION['password'];
-    
+   echo ""; 
 }
-
+session_start();
 $conexion = mysqli_connect("localhost", "root", "", "EkoBDD");
 $consulta =$conexion->query("SELECT * from ACCESO WHERE Nombre='$user' AND Password='$password'");       
 if($resultado = mysqli_fetch_array($consulta)){
-$var1=$resultado['Tipo'];    
-	$_SESSION['usuario']=$user;
-    $_SESSION['tipo']=$var1;
-    $_SESSION['password']=$password;
-    if($var1=="usuario")
-    {
-    $registro="logout.php";
+  $_SESSION['u']=$user;
+            echo "<script type=\"text/javascript\">alert(\"Bienvenido $user\");</script>";
+    $registro="index.php";
     $regis="Logout";
     $sesion="index.php";
     $ses=$user;
-        $cata="Carrito";
-        $catalink="carrito.php";
-    }
-    else
-        
-    if($var1=="proveedor"){
-    $registro="logout.php";
-    $regis="Logout";
-    $sesion="index.php";
-    $ses=$user; 
-         $cata="Subidos";
-        $catalink="proveedor.php";
-    }
-    
-          
     
 }
             else{
@@ -91,27 +70,19 @@ $var1=$resultado['Tipo'];
                 $regis="Registrate";
                 $sesion="Log-in.html";
     $ses="Login";
-                $cata="Carrito";
-        $catalink="carrito.php";
+                
             }
             
  echo"
           <div class='android-navigation-container'  >
             <nav class='android-navigation mdl-navigatio' >
 
-              <a class='mdl-navigation__link mdl-typography--text-uppercase' href='index.php' >Home</a>";
-            if($var1!=$proveedor)
-            {
-                 echo"
-              
-              <a class='mdl-navigation__link mdl-typography--text-uppercase' href='informacion.php'>Nosotros</a>";
-            }
-           
-            echo"
+              <a class='mdl-navigation__link mdl-typography--text-uppercase' href='index.php' >Home</a>
+              <a class='mdl-navigation__link mdl-typography--text-uppercase' href='catalogo.php'>Catalogo</a>
               <a class='mdl-navigation__link mdl-typography--text-uppercase' href='contact.php'>Contactanos</a>
-              <a class='mdl-navigation__link mdl-typography--text-uppercase' href='$catalink'>$cata</a>
+              <a class='mdl-navigation__link mdl-typography--text-uppercase' href='informacion.php'>Nosotros</a>
             <a class='mdl-navigation__link mdl-typography--text-uppercase' id='open-modal-login' href='$registro'>$regis</a>
-             <a class='mdl-navigation__link mdl-typography--text-uppercase' id='open-modal-login' href='$sesion' >$ses</a>
+             <a class='mdl-navigation__link mdl-typography--text-uppercase' id='open-modal-login' href='$sesion'>$ses</a>
             </nav>
             
     <ul class='mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect' for='more-button'>
@@ -176,36 +147,42 @@ $var1=$resultado['Tipo'];
 </form>
         </nav>
       </div>
-       <div class="android-content mdl-layout__content">
+  <div class="android-content mdl-layout__content">
 
-<div class="android-screen-section mdl-typography--text-center">
+<div class="android-content mdl-layout__content">
 
-</style>
-<h2 style="text-align:center">Detalle de Producto</h2>
-<div class='android-card-container mdl-grid'>
-<div class="container" style="border-style: groove;" >
-  <div class="mySlides">
-    <div class="numbertext">1 / 2</div>
-    <img src="images/salas3.jpg" style="width:100%">
+  <div class="container">
+      </div>
   </div>
-  <div class="mySlides">
-    <div class="numbertext">2 / 2</div>
-    <img src="images/prueba2.jpg" style="width:100%">
-  </div>
-  <a class="prev" onclick="plusSlides(-1)">❮</a>
-  <a class="next" onclick="plusSlides(1)">❯</a>
-  </div>
+
+  <div class="container">
+    <div>
+  <h1 style="padding-left: 35%;">Sube tu producto!</h1>
+    <p style="padding-left: 35%;">Por favor llena los datos correctamente para poder subir el producto.</p><br>
+</div>
+<div>
+    <label for="Nombre"><b style="padding-left: 15%;">Nombre del Producto:</b></label><br>
+    <input type="text" style="left:255px; width: 500px; position:absolute"  placeholder="Producto" name="nombre" required >
+    <label for="Descripcion" style="padding-left: 15%; padding-top: 2.5%; position:absolute; " ><b>Descripcion del Producto:</b></label><br>
+    <textarea class="input-contact"  style="left:255px; bottom: 300px; position:absolute"  name="Descripcion" cols="90" rows="10" placeholder="Descripcion"></textarea> 
+    <label for="Precio" style="padding-left: 15%; padding-top: 15%; position:absolute; " ><b>Precio:</b></label><br>
+    <input type="text" style="left:255px; width: 500px;bottom: 225px; position:absolute"  placeholder="Precio$$$" name="Precio" required >
+    <br>
+
+     <label for="psw-repeat"  style="left:255px; width: 500px;bottom: 185px; position:absolute"><b>Seccion:   </b></label>
+       <select name="combo" style="left:255px; width: 500px;bottom: 155px; position:absolute">
+     <option value="1" name="proveedor">Que secciones </option>
+    <option value="2" name="usuario"selected>x2</option> <!-- Opción por defecto -->
+  </select>
+</div>
+
 </div>
 
 
-
-
-
-
-
-
-
-       	<footer class="android-footer mdl-mega-footer">
+</style>
+    
+</div>
+ <footer class="android-footer mdl-mega-footer">
           <div class="mdl-mega-footer--top-section">
             
             <div class="mdl-mega-footer--right-section">
@@ -228,16 +205,16 @@ $var1=$resultado['Tipo'];
 
         </footer>
       </div>
-  </div>
-   
+    </div>
 
-    
  
     <script src="js/material.min.js"></script>
+</div>
 
-  </body>
+
+
+       
+
+</body>
+
 </html>
-
-    
- 
-    

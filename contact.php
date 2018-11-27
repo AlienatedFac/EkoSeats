@@ -143,6 +143,7 @@ if($resultado = mysqli_fetch_array($consulta)){
        
         <link rel="stylesheet" href="css/estilos.css" media="screen">
 
+
     <div class="main flex">
         <div class="column">
 

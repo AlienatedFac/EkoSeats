@@ -1,0 +1,62 @@
+body{
+	background-color: white;
+}
+
+#noti{
+	/*background-color: #eddede;
+	height: 88%;*/
+}
+
+#publi{
+	/*background-color: blue;*/
+	height: 88%;
+}
+
+h4{
+	text-align: center;
+	color: black;
+}
+
+/*Modal body*/
+#body{
+	background-color: white;
+	font-family: Century gothic;
+	font-size: 15px;
+}
+
+/*Modal header*/
+#hea{
+	background-color: #222222;
+	font-family: Century gothic;
+	font-size: 25px;
+	color: white;
+	text-align: center;
+}
+
+.collapsible-body{
+	background-color: #edeaea;
+}
+
+#noti1{
+	height: 200px;
+	text-align: center;
+}
+
+#noti2{
+	height: 200px;
+	text-align: center;
+}
+
+#noti3{
+	height: 200px;
+	text-align: center;
+}
+
+img.mediana{
+  width: 500px; height: 300px;
+}
+
+#noti4{
+	height: 200px;
+	text-align: center;
+}
