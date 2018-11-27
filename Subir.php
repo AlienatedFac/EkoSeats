@@ -151,36 +151,130 @@ if($resultado = mysqli_fetch_array($consulta)){
 
 <div class="android-content mdl-layout__content">
 
-  <div class="container">
-      </div>
   </div>
+ 
 
-  <div class="container">
-    <div>
+ <div class="container">
+      <form action="" method="POST">
+
+
   <h1 style="padding-left: 35%;">Sube tu producto!</h1>
     <p style="padding-left: 35%;">Por favor llena los datos correctamente para poder subir el producto.</p><br>
-</div>
-<div>
-    <label for="Nombre"><b style="padding-left: 15%;">Nombre del Producto:</b></label><br>
-    <input type="text" style="left:255px; width: 500px; position:absolute"  placeholder="Producto" name="nombre" required >
-    <label for="Descripcion" style="padding-left: 15%; padding-top: 2.5%; position:absolute; " ><b>Descripcion del Producto:</b></label><br>
-    <textarea class="input-contact"  style="left:255px; bottom: 300px; position:absolute"  name="Descripcion" cols="90" rows="10" placeholder="Descripcion"></textarea> 
-    <label for="Precio" style="padding-left: 15%; padding-top: 15%; position:absolute; " ><b>Precio:</b></label><br>
-    <input type="text" style="left:255px; width: 500px;bottom: 225px; position:absolute"  placeholder="Precio$$$" name="Precio" required >
+
+    <label for="Nombre"><b >Nombre del Producto:</b></label><br>
+    <input type="text"   placeholder="Producto" name="nombre" required >
+    <label for="Descripcion" ><b>Descripcion del Producto:</b></label><br>
+    <textarea class="input-contact"    name="Descripcion" cols="90" rows="10" placeholder="Descripcion"></textarea> <br>
+    <label for="Precio" ><b>Precio:</b></label><br>
+    <input type="text"  placeholder="Precio$$$" name="Precio" required >
     <br>
 
-     <label for="psw-repeat"  style="left:255px; width: 500px;bottom: 185px; position:absolute"><b>Seccion:   </b></label>
-       <select name="combo" style="left:255px; width: 500px;bottom: 155px; position:absolute">
-     <option value="1" name="proveedor">Que secciones </option>
-    <option value="2" name="usuario"selected>x2</option> <!-- Opción por defecto -->
+      <label for="psw-repeat" ><b>Tipo de Producto:   </b></label>
+       
+        <select name="combo">
+     
+    <option value="2" name="salas1"selected>Salas</option>
+     <option value="3" name="Sillones1"selected>Sillone</option>
+      <option value="4" name="Sofa1"selected>Sofa</option>
+       <option value="5" name="Mesas1"selected>Mesas</option>
+        <option value="6" name="Sillas1"selected>Silla</option>
+         <option value="7" name="Banco1"selected>Banco</option>
+          <option value="8" name="Credensa1"selected>Credensa</option>
+           <option value="9" name="Lampara1"selected>Lampara</option>
+            <option value="10" name="Cojines1"selected>Cojines</option>
+             <option value="11" name="Cuadros1"selected>Cuadros</option>
+              <option value="12" name="Decoraciones1"selected>Decoraciones</option> <!-- Opción por defecto -->
   </select>
-</div>
+  <br>
+  <br>  
+  <form action="#">
+                <div class="file-field input-field">
+                  <div class="btn">
+                    <b>Seleccion imagen:</b>
+                    <br>
+                    <br>
+                    <input type="file">
+                  </div>
+                  <div class="file-path-wrapper">
+                   
+                  </div>
+                </div>
+              </form>
+              <br>
+              <br>
+      <input class="btn" type="submit" name=" " value="SUBIR" style="border-radius: 50px; background: #cbffad;" >
 
-</div>
+  </div>
 
 
 </style>
     
+
+    <style >
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Add padding to containers */
+.container {
+    padding-left: 300px;
+width:75%;
+    background-color: white;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+    background-color: black;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.registerbtn:hover {
+    opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+    color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+</style>
 </div>
  <footer class="android-footer mdl-mega-footer">
           <div class="mdl-mega-footer--top-section">
@@ -204,6 +298,7 @@ if($resultado = mysqli_fetch_array($consulta)){
           </div>
 
         </footer>
+
       </div>
     </div>
 
