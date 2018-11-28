@@ -171,11 +171,8 @@ if($resultado = mysqli_fetch_array($consulta)){
     <label for="psw-repeat"><b>Repite el Password</b></label>
     <input type="password" placeholder="Enter Password" name="psw-repeat" required>
       <label for="psw-repeat"><b>Tipo de usuario:   </b></label>
-       <select name="combo">
-    <!-- Opciones de la lista -->
-    <option value="1" name="proveedor">Proveedor</option>
-    <option value="2" name="usuario"selected>Usuario</option> <!-- Opción por defecto -->
-  </select>
+      <label for="Tipo"><b>Usuario o Proveedor?</b></label>
+    <input type="text" placeholder="Ingresa tu tipo de usuario" name="combo" required>
     <hr>
     <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
 
