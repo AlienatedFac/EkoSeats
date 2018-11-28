@@ -180,7 +180,7 @@ $var1=$resultado['Tipo'];
         <div class="android-content mdl-layout__content">
 <style>
 body, html {
-    height: 100%;
+    height: 200%;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -212,6 +212,7 @@ left:  205px;
     height: 600px;
     padding: 70px;
     background-color: #ecffe1;
+    background-position: center; 
 }
 
 /* Full-width input fields */
@@ -248,15 +249,35 @@ input[type=text]:focus, input[type=password]:focus {
 
 </style>
 
-        
-
-
+<?php
+    $valor=$_POST['variable'];
+    $conexion = mysqli_connect("localhost", "root", "", "ekobdd" );
+$consulta =$conexion->query("SELECT * from $Nombre WHERE id= $valor");
+if($resultado = mysqli_fetch_array($consulta)){
+ 
+   $var1 = $resultado["id"];
+    $var2 = $resultado["Nombre"];
+    $var3 = $resultado["Descripcion"];
+    $var4 = $resultado["Precio"];
+    $var5 = $resultado["Existencia"];
+    $var6 = $resultado["Vendedor"];
     
 
+    echo"$valor si esta pasando variable";}
+    echo"
+
 <br>
+<br>
+<br>
+<br>
+<br>
+
+        
+
 <h2 align='center'>Descripcion de Producto</h2>
 <br>
 <div class='bg-img'>
+    
   <form class='container' align='center'>
     <h1 >$var2</h1>
 
@@ -270,16 +291,16 @@ input[type=text]:focus, input[type=password]:focus {
   </form>
 </div>
 
-
-
+";
+?>
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 <input type="hidden" name="cmd" value="_s-xclick">
 <input type="hidden" name="hosted_button_id" value="9KCYJFB89F4NQ">
 <table>
-<tr><td><input type="hidden" name="on0" value="Pago">Pago</td></tr><tr><td><select name="os0">
+<tr><td><input type="hidden" name="on0" value="Pago">Pago</td></tr><tr><td>
+    <select name="os0">
     <option value="Opción 1">Opción 1 $200.00 MXN</option>
-    <option value="Opción 2">Opción 2 $2,000.00 MXN</option>
-    <option value="Opción 3">Opción 3 $20,000.00 MXN</option>
+  
 </select> </td></tr>
 </table>
 <input type="hidden" name="currency_code" value="MXN">
