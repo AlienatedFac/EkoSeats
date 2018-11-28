@@ -380,17 +380,45 @@ img {vertical-align: middle;}
         <div class='android-more-section'>
           <div class='android-section-title mdl-typography--display-1-color-contrast'>Puedes encontrar este tipo de productos en EkoSeats</div>
           <div class='android-card-container mdl-grid'>
-        
+          
+        ";
+$var1="";
+$var2="";
+$var3="";
+$var4="";
+$var5="";
+$secciones= array(Salas, Sillones, Sofa, Mesas, Sillas, Bancos, Credensas, Lamparas, Cojines, Cuadros, Decoracion);
+            $conexion = mysqli_connect("localhost", "root", "", "EkoBDD");
+             for($contador=1;$contador<13;$contador++){
+                  $salas=$secciones[1];
+  
+
+      
+$consulta =$conexion->query("SELECT * from $secciones[$contador] where id=1");
+if($resultado = mysqli_fetch_array($consulta)){
+   //Guardo los datos de la BD en las variables de php
+   $var1 = $resultado["id"];
+    $var2 = $resultado["Nombre"];
+    $var3 = $resultado["Descripcion"];
+    $var4 = $resultado["Precio"];
+    $var4 = $resultado["Tipo"];
+    
+}
+               if($var1!="")
+               { 
+           $secc=$secciones[$contador];
+            
+               echo"
             <div class='mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp'>
               <div class='mdl-card__media'>
-                <img src='images/salas1.jpg'>
+                <img src='images/$secc/$var1.jpg'>
               </div>
               </a>
               <div class='mdl-card__title'>
-                 <h4 class='mdl-card__title-text'>Tipo madera</h4>
+                 <h4 class='mdl-card__title-text'>$var2</h4>
               </div>
               <div class='mdl-card__supporting-text'>
-                <span class='mdl-typography--font-light mdl-typography--subhead'>Sala color madera reciclada</span>
+                <span class='mdl-typography--font-light mdl-typography--subhead'>$var3</span>
               </div>
               <div class='mdl-card__actions'>
                  <a class='android-link mdl-button mdl-js-button mdl-typography--text-uppercase' href=''>
@@ -398,65 +426,20 @@ img {vertical-align: middle;}
                    
                  </a>
               </div>
-            </div>
-
-
-            <div class='mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp'>
-              <div class='mdl-card__media'>
-                <img src='images/sala2.jpg'>
-              </div>
-   </a>
-              <div class='mdl-card__title'>
-                 <h4 class='mdl-card__title-text'>Sala Color Blanco</h4>
-              </div>
-              <div class='mdl-card__supporting-text'>
-                <span class='mdl-typography--font-light mdl-typography--subhead'>Sala de Madera Reciclada con tres piezas</span>
-              </div>
-              <div class='mdl-card__actions'>
-                 <a class='android-link mdl-button mdl-js-button mdl-typography--text-uppercase' href=''>
+            </div>";   
+            }
+                              $var1 = "";
+    $var2 = "";
+    $var3 = "";
+    $var4 = "";
+    $var4 = "";
+    
+          
                  
-                  
-                 </a>
-              </div>
-            </div>
+             }
+       
 
-            <div class='mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp'>
-              <div class='mdl-card__media'>
-                <img src='images/1.jpg'>
-              </div>
-              </a>
-              <div class='mdl-card__title'>
-                 <h4 class='mdl-card__title-text'>Sala Redonda</h4>
-              </div>
-              <div class='mdl-card__supporting-text'>
-                <span class='mdl-typography--font-light mdl-typography--subhead'>Sala Color Azul con 4 piezas </span>
-              </div>
-              <div class='mdl-card__actions'>
-                 <a class='android-link mdl-button mdl-js-button mdl-typography--text-uppercase' href=''>
-                   
-                
-                 </a>
-              </div>
-            </div>
-
-            <div class='mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp'>
-              <div class='mdl-card__media'>
-                <img src='images/salas4.jpg'>
-              </div>
-              </a>
-              <div class='mdl-card__title'>
-                 <h4 class='mdl-card__title-text'>Sala Junta</h4>
-              </div>
-              <div class='mdl-card__supporting-text'>
-                <span class='mdl-typography--font-light mdl-typography--subhead'>Sala Baja Con 4 Cojines, incluye una pequeña mesa</span>
-              </div>
-              <div class='mdl-card__actions'>
-                 <a class='android-link mdl-button mdl-js-button mdl-typography--text-uppercase' href=''>
-                   
-                  
-                 </a>
-              </div>
-            </div>
+echo"
           </div>
         </div>";
                 ?>
