@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <!--<link rel="stylesheet" href="assets/css/core.css" media="screen">-->
+    <link rel="stylesheet" href="css/estilos.css" media="screen">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/solid.css" integrity="sha384-VGP9aw4WtGH/uPAOseYxZ+Vz/vaTb1ehm1bwx92Fm8dTrE+3boLfF1SpAtB1z7HW"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/brands.css" integrity="sha384-rf1bqOAj3+pw6NqYrtaE1/4Se2NBwkIfeYbsFdtiR6TQz0acWiwJbv1IM/Nt/ite"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/fontawesome.css" integrity="sha384-1rquJLNOM3ijoueaaeS5m+McXPJCGdr5HcA03/VHXxcp2kX2sUrQDmFc3jR5i/C7"
+        crossorigin="anonymous">
+    <title>AO - Car</title>
+</head>
+<body>
+    <div class="main flex">
+        <div class="column">
+
+            <div class="header justify-center">
+                <div class="container">
+                    <div class="heading justify-center">
+                        <h2 class="color-white">
+                            HEADER
+                        </h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="white-space-24"></div>
+
+            <div class="carrito-info justify-center">
+                <div class="container">
+                    <div class="row-responsive justify-center align-center">
+                        <div class="worko-tabs">
+                            <input class="state" type="radio" title="tab-one" name="tabs-state" id="tab-one" checked />
+                            <input class="state" type="radio" title="tab-two" name="tabs-state" id="tab-two" />
+                        
+                            <div class="tabs flex-tabs">
+                                <label for="tab-one" id="tab-one-label" class="tab">Carrito (2)</label>
+                                <label for="tab-two" id="tab-two-label" class="tab">Guardados (3)</label>
+                                <!-- Panel de agregados al carrito -->
+                                <div id="tab-one-panel" class="panel">
+                                    <div class="car-complete">
+                                        <div class="row-responsive">
+                                            <div class="car-image">
+                                                <div class="column justify-center">
+                                                    <div class="responsive-img">
+                                                        <img class="product-img" src="assets/img/producto1.jpg" alt="Laptop">
+                                                    </div>
+                                                </div>  
+                                            </div>
+                                            <div class="car-info">
+                                                <div class="column justify-center">
+                                                    <div class="car-name">
+                                                        <a href="#">Nombre del producto</a>
+                                                    </div>
+                                                    <div class="white-space-16"></div>
+                                                    <div class="car-model">
+                                                        <a href="#">Modelo: </a>
+                                                    </div>
+                                                    <div class="white-space-16"></div>
+                                                    <div class="car-options">
+                                                        <div class="row">
+                                                            <div class="car-save">
+                                                                <a href="#">Guardar para después</a>
+                                                            </div>
+                                                            <div class="car-delete">
+                                                                <a href="#">Eliminar</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>  
+                                            </div>
+                                            <div class="car-quantity">
+                                                <div class="column justify-center">
+                                                    <div class="quantity">
+                                                        <div class="row justify-center">
+                                                            <span class="input-number-decrement">–</span><input class="input-number" type="text" value="1" min="0" max="10"><span
+                                                                class="input-number-increment">+</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="white-space-16"></div>
+                                                    <div class="stock">
+                                                        <div class="row justify-center">
+                                                            <label>Único disponible</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="car-price">
+                                                <div class="column justify-center align-center">
+                                                    <label>$13,000.00</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="car-complete">
+                                        <div class="row-responsive">
+                                            <div class="car-image">
+                                                <div class="column justify-center">
+                                                    <div class="responsive-img">
+                                                        <img class="product-img" src="assets/img/producto2.jpg" alt="Laptop">
+                                                    </div>
+                                                </div>  
+                                            </div>
+                                            <div class="car-info">
+                                                <div class="column justify-center">
+                                                    <div class="car-name">
+                                                        <a href="#">Nombre del producto</a>
+                                                    </div>
+                                                    <div class="white-space-16"></div>
+                                                    <div class="car-model">
+                                                        <a href="#">Modelo: </a>
+                                                    </div>
+                                                    <div class="white-space-16"></div>
+                                                    <div class="car-options">
+                                                        <div class="row">
+                                                            <div class="car-save">
+                                                                <a href="#">Guardar para después</a>
+                                                            </div>
+                                                            <div class="car-delete">
+                                                                <a href="#">Eliminar</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>  
+                                            </div>
+                                            <div class="car-quantity">
+                                                <div class="column justify-center">
+                                                    <div class="quantity">
+                                                        <div class="row justify-center">
+                                                            <span class="input-number-decrement">–</span><input class="input-number" type="text" value="1" min="0" max="10"><span
+                                                                class="input-number-increment">+</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="white-space-16"></div>
+                                                    <div class="stock">
+                                                        <div class="row justify-center">
+                                                            <label>3 disponibles</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="car-price">
+                                                <div class="column justify-center align-center">
+                                                    <label>$13,000.00</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="total-complete align-center">
+                                        <div class="row">
+                                            <div class="car-lstotal">
+                                                <div class="column">
+                                                    <div class="white-space-8"></div>
+                                                    <div class="row justify-end">
+                                                        <label>Productos(2)</label>
+                                                    </div>
+                                                    <div class="white-space-16"></div>
+                                                    <div class="row justify-end">
+                                                        <label>Envío a C.P. 77519, Ciudad</label>
+                                                    </div>
+                                                    <div class="white-space-16"></div>
+                                                    <div class="row justify-end">
+                                                        <h4>Total</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="car-total">
+                                                <div class="column">
+                                                    <div class="white-space-8"></div>
+                                                    <div class="row justify-start">
+                                                        <label>$26,000.00</label>
+                                                    </div>
+                                                    <div class="white-space-16"></div>
+                                                    <div class="row justify-start">
+                                                        <label>$150.00</label>
+                                                    </div>
+                                                    <div class="white-space-16"></div>
+                                                    <div class="row justify-start">
+                                                        <h4>$26,150.00</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="white-space-32"></div>
+                                    <div class="car-button">
+                                        <div class="row justify-end">
+                                            <button class="btn btn-buy" id="open-modal-login">COMPRAR</button>
+                                        </div>
+                                    </div>
+                                    <div class="white-space-32"></div>
+                                </div>
+                                <!-- Panel de guardados -->
+                                <div id="tab-two-panel" class="panel">
+                                    <div class="car-complete">
+                                        <div class="row-responsive">
+                                            <div class="car-image">
+                                                <div class="column justify-center">
+                                                    <div class="responsive-img">
+                                                        <img class="product-img" src="assets/img/producto2.jpg" alt="Laptop">
+                                                    </div>
+                                                </div>  
+                                            </div>
+                                            <div class="car-info">
+                                                <div class="column justify-center">
+                                                    <div class="car-name">
+                                                        <a href="#">Nombre del producto</a>
+                                                    </div>
+                                                    <div class="white-space-16"></div>
+                                                    <div class="car-model">
+                                                        <a href="#">Modelo: </a>
+                                                    </div>
+                                                    <div class="white-space-16"></div>
+                                                    <div class="car-options">
+                                                        <div class="row">
+                                                            <div class="car-save">
+                                                                <a href="#">Agregar al carrito</a>
+                                                            </div>
+                                                            <div class="car-delete">
+                                                                <a href="#">Eliminar</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>  
+                                            </div>
+                                            <div class="car-quantity">
+                                                <div class="column justify-center">
+                                                    <div class="quantity">
+                                                        <div class="row justify-center">
+                                                            <span class="input-number-decrement">–</span><input class="input-number" type="text" value="1" min="0" max="10"><span
+                                                                class="input-number-increment">+</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="white-space-16"></div>
+                                                    <div class="stock">
+                                                        <div class="row justify-center">
+                                                            <label>3 disponibles</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="car-price">
+                                                <div class="column justify-center align-center">
+                                                    <label>$13,000.00</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="car-complete">
+                                        <div class="row-responsive">
+                                            <div class="car-image">
+                                                <div class="column justify-center">
+                                                    <div class="responsive-img">
+                                                        <img class="product-img" src="assets/img/producto1.jpg" alt="Laptop">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="car-info">
+                                                <div class="column justify-center">
+                                                    <div class="car-name">
+                                                        <a href="#">Nombre del producto</a>
+                                                    </div>
+                                                    <div class="white-space-16"></div>
+                                                    <div class="car-model">
+                                                        <a href="#">Modelo: </a>
+                                                    </div>
+                                                    <div class="white-space-16"></div>
+                                                    <div class="car-options">
+                                                        <div class="row">
+                                                            <div class="car-save">
+                                                                <a href="#">Agregar al carrito</a>
+                                                            </div>
+                                                            <div class="car-delete">
+                                                                <a href="#">Eliminar</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="car-quantity">
+                                                <div class="column justify-center">
+                                                    <div class="quantity">
+                                                        <div class="row justify-center">
+                                                            <span class="input-number-decrement">–</span><input class="input-number" type="text" value="1" min="0"
+                                                                max="10"><span class="input-number-increment">+</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="white-space-16"></div>
+                                                    <div class="stock">
+                                                        <div class="row justify-center">
+                                                            <label>Único disponible</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="car-price">
+                                                <div class="column justify-center align-center">
+                                                    <label>$13,000.00</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="car-complete">
+                                        <div class="row-responsive">
+                                            <div class="car-image">
+                                                <div class="column justify-center">
+                                                    <div class="responsive-img">
+                                                        <img class="product-img" src="assets/img/producto2.jpg" alt="Laptop">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="car-info">
+                                                <div class="column justify-center">
+                                                    <div class="car-name">
+                                                        <a href="#">Nombre del producto</a>
+                                                    </div>
+                                                    <div class="white-space-16"></div>
+                                                    <div class="car-model">
+                                                        <a href="#">Modelo: </a>
+                                                    </div>
+                                                    <div class="white-space-16"></div>
+                                                    <div class="car-options">
+                                                        <div class="row">
+                                                            <div class="car-save">
+                                                                <a href="#">Agregar al carrito</a>
+                                                            </div>
+                                                            <div class="car-delete">
+                                                                <a href="#">Eliminar</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="car-quantity">
+                                                <div class="column justify-center">
+                                                    <div class="quantity">
+                                                        <div class="row justify-center">
+                                                            <span class="input-number-decrement">–</span><input class="input-number" type="text" value="1" min="0"
+                                                                max="10"><span class="input-number-increment">+</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="white-space-16"></div>
+                                                    <div class="stock">
+                                                        <div class="row justify-center">
+                                                            <label>3 disponibles</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="car-price">
+                                                <div class="column justify-center align-center">
+                                                    <label>$13,000.00</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <form>
+                <div class="modal-register justify-center" id="modal-register">
+                    <div class="modal-content-register row-responsive">
+                        <div class="r-photo align-center" style="background-image: url(assets/img/fondo.png)"></div>
+                        <div class="r-register row-responsive">
+                            <div class="column">
+                                <div class="row justify-end">
+                                    <a href="" id="modal-close">&times;</a>
+                                </div>
+                                <div class="register-method row-responsive">
+                                    <div class="register">
+                                        <div class="column align-center">
+                                            <h2 class="register-title">
+                                                REGISTRO
+                                            </h2>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="register-photo row-responsive">
+                                    <div class="r-inputs row-responsive align-center">
+                                        <div class="column">
+                                            <div class="r-email row-responsive">
+                                                <div class="input-name">
+                                                    <input class="input-contact" type="email" placeholder="Email">
+                                                </div>
+                                                <div class="input-nam">
+                                                    <input class="input-contact" type="email" placeholder="Confirmar email">
+                                                </div>
+                                            </div>
+                                            <div class="r-password row-responsive">
+                                                <div class="input-name">
+                                                    <input class="input-contact" type="password" placeholder="Contraseña">
+                                                </div>
+                                                <div class="input-nam">
+                                                    <input class="input-contact" type="password" placeholder="Confirmar contraseña">
+                                                </div>
+                                            </div>
+                                            <div class="registeroptions">
+                                                <div class="row-responsive justify-center align-center">
+                                                    <div class="register-tabs">
+                                                        <input class="state" type="radio" title="tab-rone" name="tabs-rstate" id="tab-rone"
+                                                            checked />
+                                                        <input class="state" type="radio" title="tab-rtwo" name="tabs-rstate" id="tab-rtwo" />
+                
+                                                        <div class="tabs flex-tabs">
+                                                            <div class="registericon row-responsive">
+                                                                <div class="row">
+                                                                    <div class="r-iuser column align-center justify-center">
+                                                                        <i class="fas fa-user"></i>
+                                                                    </div>
+                                                                    <div class="r-iprovider column">
+                                                                        <label for="tab-rone" id="tab-rone-label" class="tab">Usuario</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="r-iuser column align-center justify-center">
+                                                                        <i class="fas fa-user-tie"></i>
+                                                                    </div>
+                                                                    <div class="r-iprovider column">
+                                                                        <label for="tab-rtwo" id="tab-rtwo-label" class="tab">Proveedor</label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- Panel de agregados al carrito -->
+                                                            <div id="tab-rone-panel" class="panelxr">
+                                                                <div class="r-usuario">
+                                                                    <div class="r-password row-responsive">
+                                                                        <div class="input-name">
+                                                                            <input class="input-contact" type="text" placeholder="Nombre">
+                                                                        </div>
+                                                                        <div class="input-nam">
+                                                                            <input class="input-contact" type="text" placeholder="Apellidos">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="r-usuario">
+                                                                    <div class="r-password row-responsive">
+                                                                        <div class="input-nam">
+                                                                            <input class="input-contact" type="text" placeholder="Dirección">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="r-usuario">
+                                                                    <div class="r-password row-responsive">
+                                                                        <div class="input-name">
+                                                                            <input class="input-contact" type="text" placeholder="C.P.">
+                                                                        </div>
+                                                                        <div class="input-nam">
+                                                                            <input class="input-contact" type="text" placeholder="Teléfono" />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="registerbtn">
+                                                                    <div class="r-btn row-responsive">
+                                                                        <button class="btn btn-register">Registrar</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div id="tab-rtwo-panel" class="panelxr">
+                                                                <div class="r-usuario">
+                                                                    <div class="row-responsive">
+                                                                        <div class="r-password">
+                                                                            <div class="input-name">
+                                                                                <input class="input-contact" type="text" placeholder="Nombre">
+                                                                            </div>
+                                                                            <div class="input-nam">
+                                                                                <input class="input-contact" type="password"
+                                                                                    placeholder="Apellidos">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="r-usuario">
+                                                                    <div class="r-password row-responsive">
+                                                                        <div class="input-nam">
+                                                                            <input class="input-contact" type="text" placeholder="Dirección">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="r-usuario">
+                                                                    <div class="r-password row-responsive">
+                                                                        <div class="input-name">
+                                                                            <input class="input-contact" type="text" placeholder="DNI">
+                                                                        </div>
+                                                                        <div class="input-nam">
+                                                                            <input class="input-contact" type="text" placeholder="Empresa" />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="r-usuario">
+                                                                    <div class="r-password row-responsive">
+                                                                        <div class="input-name">
+                                                                            <input class="input-contact" type="text" placeholder="C.P.">
+                                                                        </div>
+                                                                        <div class="input-nam">
+                                                                            <input class="input-contact" type="text" placeholder="Teléfono" />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="registerbtn">
+                                                                    <div class="r-btn row-responsive">
+                                                                        <button class="btn btn-register">Registrar</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- End Modal-->
+            </form>
+        </div>
+    </div>
+    <script>
+        WebFont.load({
+            google: {
+                families: ['Roboto:400,500,700']
+            }
+        });
+    </script>
+    <script src="assets/js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script>
+        // Get the modal
+        var modal = document.getElementById('modal-register');
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("open-modal-login");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementById("modal-close");
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
