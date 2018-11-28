@@ -189,7 +189,8 @@ if($resultado = mysqli_fetch_array($consulta)){
     $var3 = $resultado["Descripcion"];
     $var4 = $resultado["Precio"];
 }
-          echo"<div class='mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp'>
+          echo"
+          <div class='mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp'>
               <div class='mdl-card__media'>
  <img src='images/$Nombre/$var1.jpg'>
               </div>
@@ -197,7 +198,7 @@ if($resultado = mysqli_fetch_array($consulta)){
                  <h4 class='mdl-card__title-text'>$var2</h4>
               </div>
               <div class='mdl-card__supporting-text'>
-                <span class='mdl-typography--font-light mdl-typography--subhead'>$var3</span>
+               
               </div>
               
               

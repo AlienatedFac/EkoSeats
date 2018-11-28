@@ -77,7 +77,6 @@ if($resultado = mysqli_fetch_array($consulta)){
             <nav class='android-navigation mdl-navigatio' >
 
               <a class='mdl-navigation__link mdl-typography--text-uppercase' href='index.php' >Home</a>
-              <a class='mdl-navigation__link mdl-typography--text-uppercase' href='catalogo.php'>Catalogo</a>
               <a class='mdl-navigation__link mdl-typography--text-uppercase' href='contact.php'>Contactanos</a>
               <a class='mdl-navigation__link mdl-typography--text-uppercase' href='informacion.php'>Nosotros</a>
             <a class='mdl-navigation__link mdl-typography--text-uppercase' id='open-modal-login' href='$registro'>$regis</a>

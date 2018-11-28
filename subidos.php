@@ -221,7 +221,7 @@ if($resultado = mysqli_fetch_array($consulta)){
               
               
               <div class='mdl-card__actions'>
-             <button class='open-button' onclick='openForm();'>Eliminar</button>
+             <button class='open-button' onclick=''>Eliminar</button>
               </div>
             </div>            
             ";  
