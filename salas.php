@@ -70,8 +70,8 @@ if($_SESSION['usuario'] and $_SESSION['password']){
     $regis="Logout";
     $sesion="subidos.php";
     $ses=$_SESSION['usuario']; 
-         $cata="Subidos";
-        $catalink="proveedor.php";
+         $cata="Subir";
+        $catalink="subir.php";
     }
     
           

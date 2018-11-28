@@ -250,6 +250,9 @@ if($resultado = mysqli_fetch_array($consulta)){
     $var4 = $resultado["Precio"];
     $var5 = $resultado["Existencia"];
     $var6 = $resultado["Vendedor"];
+    $var7=$var4+100;
+     $var8=$var4+150;
+    $web="https://www.paypal.com/cgi-bin/webscr";
     
 
     echo"$valor si esta pasando variable";}
@@ -277,6 +280,20 @@ if($resultado = mysqli_fetch_array($consulta)){
     <label for='ven'><b>Vendedor: $var6</b></label>
 
     <button type='submit' class='btn'>Agregar al carrito</button>
+    <form action='$web' method='post' target='_top'>
+<input type='hidden' name='cmd' value='_s-xclick'>
+<input type='hidden' name='hosted_button_id' value='9KCYJFB89F4NQ'>
+<table>
+<tr><td><input type='hidden' name='on0' value='Pago'></td></tr><tr><td><select name='os0'>
+	<option value='Opción 1'>Visa $$var4 MXN</option>
+	<option value='Opción 2'>Paypal 2 $$var7 MXN</option>
+	<option value='Opción 3'>MasterCard 3 $$var8 MXN</option>
+</select> </td></tr>
+</table>
+<input type='hidden' name='currency_code' value='MXN'>
+<input type='image' src='https://www.paypalobjects.com/es_XC/MX/i/btn/btn_buynowCC_LG.gif' border='0' name='submit' alt='PayPal, la forma más segura y rápida de pagar en línea.'>
+<img alt='' border='0' src='https://www.paypalobjects.com/es_XC/i/scr/pixel.gif' width='1' height='1'>
+</form>
   </form>
 </div>
 <style>
