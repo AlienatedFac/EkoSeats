@@ -208,6 +208,7 @@ if($resultado = mysqli_fetch_array($consulta)){
               
               <div class='mdl-card__actions'>
               <form action='producto.php' method='POST'>
+              <input style='visibility:hidden' name='seccion' value='$Nombre' >
              <button type='submit' class='open-button'  name='variable' value='$var1'>$var2</button>
              </form>
               </div>
