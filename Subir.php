@@ -151,10 +151,10 @@ if($resultado = mysqli_fetch_array($consulta)){
 
 <div class="android-content mdl-layout__content">
 
-  </div>
+  
  
 
- <div class="container">
+ <div class="container" style="width: 1000px;">
       <form action="" method="POST">
 
 
@@ -301,10 +301,12 @@ a {
 
       </div>
     </div>
+    </div>
+    </div>
 
  
     <script src="js/material.min.js"></script>
-</div>
+
 
 
 

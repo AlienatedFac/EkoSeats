@@ -203,7 +203,8 @@ if($resultado = mysqli_fetch_array($consulta)){
               
               
               <div class='mdl-card__actions'>
-             <button class='open-button' onclick='openForm();'>Open Form</button>
+              <form action='producto.php' method='POST'>
+             <button class='open-button'  onclick='openForm();'>Open Form</button>
               </div>
             </div>            
             ";
