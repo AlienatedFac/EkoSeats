@@ -201,65 +201,143 @@ $var1=$resultado['Tipo'];
           <br>
 
          
+         <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="images/mueblec.jpg" style="width:100%">
+  <div class="text">Puede encontrarlos en la seccion Credensas! </div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="images/mueble5.jpg" style="width:100% ">
+  <div class="text">Puede encontrarlos en la seccion Credensas!</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="images/mueble1.jpg" style="width:100%">
+  <div class="text">Puede encontrarlos en la seccion Credensas!</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
 
 
+<style>
 
-<div class="container">
-  <a href="salas.php">
-  <div class="mySlides">
-    <div class="numbertext">1 / 2</div>
-    <img src="images/prueba1.jpg" style="width:180% "   >
-  </div>
-  </a>
+body {}
+.mySlides {display: none}
+img {vertical-align: middle;}
 
-  <div class="mySlides">
-    <div class="numbertext">2 / 2</div>
-    <img src="images/prueba2.jpg" style="width:180%">
-  </div>
- 
-  <a class="prev" onclick="plusSlides(-1)">❮</a>
-  <a class="next" onclick="plusSlides(1)">❯</a>
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1500px;
+  position: relative;
+  margin: auto;
+  background: red
 
-  <div class="caption-container"  style="width:180%" >
-    DESCRIPCION TALVEZ
-   
-  </div>
-  
-  </div>
-<script>
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
 }
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
 }
 
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  var captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
+/* Position the "next button" to the right */
+.next {
+  right: 10px;
+  border-radius: 3px 0 0 3px;
 }
 
-</script>
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
 
 
-
+<h2>“Si somos capaces de producir, debemos ser capaces de reciclar.”</h2>
 
           
 <?php
@@ -288,7 +366,7 @@ function showSlides(n) {
                Credensa de Madera Con Puerta Corredisa
               </p>
               <p>
-                <a class='mdl-typography--font-regular mdl-typography--text-uppercase android-alt-link' href='credensas.html'>
+                <a class='mdl-typography--font-regular mdl-typography--text-uppercase android-alt-link' href='salas.php'>
                   VER PRODUCTO&nbsp;<i class='material-icons'>chevron_right</i>
                 </a>
               </p>
@@ -298,9 +376,9 @@ function showSlides(n) {
        
        
         <div class='android-more-section'>
-          <div class='android-section-title mdl-typography--display-1-color-contrast'>Mas de Ekoseats</div>
+          <div class='android-section-title mdl-typography--display-1-color-contrast'>Puedes encontrar este tipo de productos en EkoSeats</div>
           <div class='android-card-container mdl-grid'>
-          <a href='salas.php'>
+        
             <div class='mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp'>
               <div class='mdl-card__media'>
                 <img src='images/salas1.jpg'>
@@ -313,14 +391,14 @@ function showSlides(n) {
                 <span class='mdl-typography--font-light mdl-typography--subhead'>Sala color madera reciclada</span>
               </div>
               <div class='mdl-card__actions'>
-                 <a class='android-link mdl-button mdl-js-button mdl-typography--text-uppercase' href='salas.php'>
-                   VER
+                 <a class='android-link mdl-button mdl-js-button mdl-typography--text-uppercase' href=''>
+                  
                    
                  </a>
               </div>
             </div>
 
-<a href='salas.php'>
+
             <div class='mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp'>
               <div class='mdl-card__media'>
                 <img src='images/sala2.jpg'>
@@ -333,13 +411,13 @@ function showSlides(n) {
                 <span class='mdl-typography--font-light mdl-typography--subhead'>Sala de Madera Reciclada con tres piezas</span>
               </div>
               <div class='mdl-card__actions'>
-                 <a class='android-link mdl-button mdl-js-button mdl-typography--text-uppercase' href='salas.php'>
-                 VER
+                 <a class='android-link mdl-button mdl-js-button mdl-typography--text-uppercase' href=''>
+                 
                   
                  </a>
               </div>
             </div>
-<a href='salas.php'>
+
             <div class='mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp'>
               <div class='mdl-card__media'>
                 <img src='images/1.jpg'>
@@ -352,13 +430,13 @@ function showSlides(n) {
                 <span class='mdl-typography--font-light mdl-typography--subhead'>Sala Color Azul con 4 piezas </span>
               </div>
               <div class='mdl-card__actions'>
-                 <a class='android-link mdl-button mdl-js-button mdl-typography--text-uppercase' href='salas.php'>
-                   VER
+                 <a class='android-link mdl-button mdl-js-button mdl-typography--text-uppercase' href=''>
+                   
                 
                  </a>
               </div>
             </div>
-<a href='salas.php'>
+
             <div class='mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp'>
               <div class='mdl-card__media'>
                 <img src='images/salas4.jpg'>
@@ -371,8 +449,8 @@ function showSlides(n) {
                 <span class='mdl-typography--font-light mdl-typography--subhead'>Sala Baja Con 4 Cojines, incluye una pequeña mesa</span>
               </div>
               <div class='mdl-card__actions'>
-                 <a class='android-link mdl-button mdl-js-button mdl-typography--text-uppercase' href='salas.html'>
-                   VER
+                 <a class='android-link mdl-button mdl-js-button mdl-typography--text-uppercase' href=''>
+                   
                   
                  </a>
               </div>
@@ -395,18 +473,45 @@ function showSlides(n) {
             <p class="mdl-typography--font-light">Algunas características pueden no estar disponibles en todas las áreas</p>
           </div>
 
-          <div class="mdl-mega-footer--bottom-section">
+          <div class="" s="mdl-mega-footer--bottom-section">
            
          
             
             <a class="android-link mdl-typography--font-light" href="">Blog</a>
-            <a class="android-link mdl-typography--font-light" href="">Política de Privacidad</a>
+            <a class="android-link mdl-typography--font-light" href="">     Política de Privacidad</a>
           </div>
 
         </footer>
       </div>
     </div>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
 
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
     
  
     <script src="js/material.min.js"></script>
