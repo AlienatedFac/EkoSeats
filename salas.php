@@ -68,7 +68,7 @@ if($_SESSION['usuario'] and $_SESSION['password']){
     if($_SESSION['tipo']=="proveedor"){
     $registro="logout.php";
     $regis="Logout";
-    $sesion="index.php";
+    $sesion="subidos.php";
     $ses=$_SESSION['usuario']; 
          $cata="Subidos";
         $catalink="proveedor.php";
@@ -183,7 +183,7 @@ $var2="";
 $var3="";
 $var4="";                  
 $conexion = mysqli_connect("localhost", "root", "", "EkoBDD");
-                  for($contador=1;$contador<16;$contador++)
+                  for($contador=1;$contador<101;$contador++)
                   {
 $consulta =$conexion->query("SELECT * from $Nombre WHERE id= $contador");
 if($resultado = mysqli_fetch_array($consulta)){
@@ -193,6 +193,10 @@ if($resultado = mysqli_fetch_array($consulta)){
     $var3 = $resultado["Descripcion"];
     $var4 = $resultado["Precio"];
 }
+                      if($var1!="")
+                      {
+                          
+                      
           echo"
           <div class='mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp'>
               <div class='mdl-card__media'>
@@ -214,32 +218,16 @@ if($resultado = mysqli_fetch_array($consulta)){
               </div>
             </div>            
             ";
-            }
-      echo"
-      
-      <script language='javascript' type='text/javascript'>
-      // Get the modal
-var modal = document.getElementById('myModal');
-
-// Get the image and insert it inside the modal - use its 'alt' text as a caption
-var img = document.getElementById('myImg');
-var modalImg = document.getElementById('img01');
-var captionText = document.getElementById('caption');
-img.onclick = function(){
-    modal.style.display = 'block';
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
-}
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName('close')[0];
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() { 
-    modal.style.display = 'none';
-    </script>
+                            $var1 = "";
+    $var2 = "";
+    $var3 = "";
+    $var4 = "";
+    $var4 = "";
     
-}";
+              
+            } 
+            }
+
 
           
 ?>
