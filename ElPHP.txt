@@ -1,0 +1,17 @@
+<?php
+    $valor=$_POST['variable'];
+    $conexion = mysqli_connect("localhost", "root", "", "EkoBDD");
+$consulta =$conexion->query("SELECT * from $Nombre WHERE id= $valor");
+if($resultado = mysqli_fetch_array($consulta)){
+   $var1 = $resultado["id"];
+    $var2 = $resultado["Nombre"];
+    $var3 = $resultado["Descripcion"];
+    $var4 = $resultado["Precio"];
+    $var5 = $resultado["Existencia"];
+    $var6 = $resultado["Vendedor"];
+    
+
+    echo"$valor si esta pasando variable";
+echo"
+";
+?>

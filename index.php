@@ -366,8 +366,10 @@ img {vertical-align: middle;}
                Credensa de Madera Con Puerta Corredisa
               </p>
               <p>
-                <a class='mdl-typography--font-regular mdl-typography--text-uppercase android-alt-link' href='salas.php'>
-                  VER PRODUCTO&nbsp;<i class='material-icons'>chevron_right</i>
+                <form action='salas.php' method='POST'>
+             <input type='submit' class='mdl-navigation__link' name='seccion' value='Credensas' />
+                  <input style='visibility:hidden' name='seccion' value='Credensas' >
+                  </form>
                 </a>
               </p>
             </div>
