@@ -189,7 +189,7 @@ $var4="";
 $var5="";
 $secciones= array(Salas, Sillones, Sofa, Mesas, Sillas, Bancos, Credensas, Lamparas, Cojines, Cuadros, Decoracion);
         $salas=$secciones[0];
-echo "<script type=\"text/javascript\">alert(\"$salas\");</script>";  
+  
 $conexion = mysqli_connect("localhost", "root", "", "EkoBDD");
         for($conatador=0;$conatador<11;$conatador++)
         {
@@ -219,13 +219,21 @@ if($resultado = mysqli_fetch_array($consulta)){
                 <span class='mdl-typography--font-light mdl-typography--subhead'></span>
               </div>
               
-              
+              <form  method='POST'>
               <div class='mdl-card__actions'>
-             <button class='open-button' onclick=''>Eliminar</button>
+               
+             <button  type='submit' class='open-button' onclick='' name='borrar' value='$var1'>Eliminar</button>
+            <label name='otro' value='$secc'><b></b></label>
+             </form>
+              <form action='editar.php' method='POST'>
+             
+             <button class='open-button' onclick=''>Editar</button>
+             </form>
               </div>
             </div>            
             ";  
                }
+
                 $var1 = "";
     $var2 = "";
     $var3 = "";
@@ -235,6 +243,16 @@ if($resultado = mysqli_fetch_array($consulta)){
               
             }  
         }
+          $borrar=$_POST['borrar'];
+        $otro=$_POST['otro'];
+        echo "<script type=\"text/javascript\">alert(\"$otro\");</script>";
+        $sql = "DELETE FROM $otro WHERE id=$borrar";
+
+if ($conn->query($sql) === TRUE) {
+    echo "Record deleted successfully";
+} else {
+    echo "Error deleting record: " . $conn->error;
+}
        
       echo"
       
