@@ -245,25 +245,47 @@ input[type=text]:focus, input[type=password]:focus {
 .btn:hover {
     opacity: 2.5;
 }
+
 </style>
 </head>
+        
 <body>
-<br>
-<h2 align="center">Descripcion de Producto</h2>
-<br>
-<div class="bg-img">
-  <form action="" class="container" align="center">
-    <h1 >Mueble De Madera Con Soporte</h1>
 
-    <label for="email"><b>La descripcion we</b></label>
+    <?php
+    $valor=$_POST['variable'];
+    $conexion = mysqli_connect("localhost", "root", "", "EkoBDD");
+$consulta =$conexion->query("SELECT * from $Nombre WHERE id= $valor");
+if($resultado = mysqli_fetch_array($consulta)){
+   //Guardo los datos de la BD en las variables de php
+   $var1 = $resultado["id"];
+    $var2 = $resultado["Nombre"];
+    $var3 = $resultado["Descripcion"];
+    $var4 = $resultado["Precio"];
+    $var5 = $resultado["Existencia"];
+    $var6 = $resultado["Vendedor"];
+    
+
+    echo"$valor si esta pasando variable";
+echo"    
+<br>
+<h2 align='center'>Descripcion de Producto</h2>
+<br>
+<div class='bg-img'>
+  <form class='container' align='center'>
+    <h1 >$var2</h1>
+
+    <label for='email'><b>$var3</b></label>
     <br>
     <br>
-    <label for="psw"><b>Password</b></label>
+    <label for='psw'><b>Precio: $var4 MXN</b></label>
+    <label for='ven'><b>Vendedor: $var6</b></label>
 
-    <button type="submit" class="btn">Agregar al carrito</button>
+    <button type='submit' class='btn'>Agregar al carrito</button>
   </form>
 </div>
-
+</div>
+";
+?>
    <footer class="android-footer mdl-mega-footer">
           <div class="mdl-mega-footer--top-section">
             

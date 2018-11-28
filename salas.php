@@ -204,7 +204,8 @@ if($resultado = mysqli_fetch_array($consulta)){
               
               <div class='mdl-card__actions'>
               <form action='producto.php' method='POST'>
-             <button class='open-button'  onclick='openForm();'>Open Form</button>
+             <button type='submit' class='open-button'  name='variable' value='$var1'>$var2</button>
+             </form>
               </div>
             </div>            
             ";
