@@ -128,7 +128,7 @@ $var1=$resultado['Tipo'];
           </span>
         </div>
       </div>
-
+</div>
       <div class="android-drawer mdl-layout__drawer">
         <span class="mdl-layout-title">
           <img class="android-logo-image" src="images/ekoseats.png">
@@ -247,9 +247,9 @@ input[type=text]:focus, input[type=password]:focus {
 }
 
 </style>
-</head>
+
         
-<body>
+
 
     <?php
     $valor=$_POST['variable'];
@@ -266,7 +266,8 @@ if($resultado = mysqli_fetch_array($consulta)){
     
 
     echo"$valor si esta pasando variable";
-echo"    
+echo"
+
 <br>
 <h2 align='center'>Descripcion de Producto</h2>
 <br>
@@ -283,7 +284,7 @@ echo"
     <button type='submit' class='btn'>Agregar al carrito</button>
   </form>
 </div>
-</div>
+
 ";
 ?>
    <footer class="android-footer mdl-mega-footer">
@@ -309,10 +310,7 @@ echo"
 
         </footer>
       </div>
-    </div>
-
-    
- 
+      
     <script src="js/material.min.js"></script>
 
 </body>
