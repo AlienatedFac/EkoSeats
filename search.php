@@ -6,8 +6,8 @@
     <meta name="description" content="Ejemplo de Material Design">
     <meta name="viewport" content="width=device-width, initial-scale=1">
       <?php
-         $Titulo=$_POST['seccion'];
-    echo"<title>$Titulo</title>"
+        
+    echo"<title>Busqueda</title>"
       ?>
     <link rel="shortcut icon" href="icono.ico" />
 
@@ -168,24 +168,20 @@ if($_SESSION['usuario'] and $_SESSION['password']){
       </div>
       
 <?php
-         $Nombre=$_POST['seccion'];
+         $Nombre=$_POST['buscado'];
 echo"<div class='android-content mdl-layout__content'>
         <a name='top'></a>
         <div class='android-be-together mdl-typography--text-center'>
            
-          <div class='android-font android-slogan'>$Nombre</div>
+          <div class='android-font android-slogan'>Busqueda $Nombre</div>
           <div class='android-font android-sub-slogan'>
               <div class='android-card-container mdl-grid'>";
-date_default_timezone_set("America/New_York");
-$variableejemplo = date("l");
-$var1="";
-$var2="";
-$var3="";
-$var4="";                  
+$Seccion=array(Nada, Salas, Sillones, Sofa, Mesas, Sillas, Bancos, Credensas, Lamparas, Cojines, Cuadros, Decoracion);                 
 $conexion = mysqli_connect("localhost", "root", "", "EkoBDD");
-                  for($contador=1;$contador<16;$contador++)
+                  for($contador=1;$contador<13;$contador++)
                   {
-$consulta =$conexion->query("SELECT * from $Nombre WHERE id= $contador");
+$secc=$Seccion[$contador];
+$consulta =$conexion->query("SELECT * from $secc  WHERE Nombre= '$Nombre'");
 if($resultado = mysqli_fetch_array($consulta)){
    //Guardo los datos de la BD en las variables de php
    $var1 = $resultado["id"];
@@ -193,10 +189,12 @@ if($resultado = mysqli_fetch_array($consulta)){
     $var3 = $resultado["Descripcion"];
     $var4 = $resultado["Precio"];
 }
+                       if($var1!="")
+               {
           echo"
           <div class='mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp'>
               <div class='mdl-card__media'>
- <img src='images/$Nombre/$var1.jpg'>
+ <img src='images/$secc/$var1.jpg'>
               </div>
               <div class='mdl-card__title'>
                  <h4 class='mdl-card__title-text'>$var2</h4>
@@ -213,32 +211,26 @@ if($resultado = mysqli_fetch_array($consulta)){
               </div>
             </div>            
             ";
+                       }
+                      if($var1="")
+            {
+                if($contador=12)
+                {
+                    echo"No se ha podido Encontrar el articulo deseado :(";
+                }
             }
-      echo"
-      
-      <script language='javascript' type='text/javascript'>
-      // Get the modal
-var modal = document.getElementById('myModal');
-
-// Get the image and insert it inside the modal - use its 'alt' text as a caption
-var img = document.getElementById('myImg');
-var modalImg = document.getElementById('img01');
-var captionText = document.getElementById('caption');
-img.onclick = function(){
-    modal.style.display = 'block';
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
-}
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName('close')[0];
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() { 
-    modal.style.display = 'none';
-    </script>
     
-}";
+              
+            }  
+                      
+                      $var1 = "";
+    $var2 = "";
+    $var3 = "";
+    $var4 = "";
+    $var4 = "";
+            
+            
+
 
           
 ?>

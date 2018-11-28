@@ -41,7 +41,11 @@
               <i class="material-icons">search</i>
             </label>
             <div class="mdl-textfield__expandable-holder">
-              <input class="mdl-textfield__input" type="text" id="search-field" />
+                <form action="search.php" method="POST">
+              <input class="mdl-textfield__input" type="text" placeholder="Buscar" id="search-field" name="buscado"/>
+                    <input class="mdl-textfield__input" type="submit"  name="buscar" value=""/>
+                </form>
+                
             </div>
           </div>
           <!-- Menú -->
