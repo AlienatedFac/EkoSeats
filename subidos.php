@@ -327,24 +327,10 @@ function closeForm() {
 </script>
  <!-- Aqui termina sala redonda-->      
         
-          <div class="android-font android-create-character">
-            <a href=""><img src="images/andy.png"> </a>
-          </div>
+         
            <footer class="android-footer mdl-mega-footer">
           <div class="mdl-mega-footer--top-section">
-            <div class="mdl-mega-footer--left-section">
-              <button class="mdl-mega-footer--social-btn">B1</button>
-              &nbsp;
-              <button class="mdl-mega-footer--social-btn">B2</button>
-              &nbsp;
-              <button class="mdl-mega-footer--social-btn">B3</button>
-            </div>
-            <div class="mdl-mega-footer--right-section">
-              <a class="mdl-typography--font-light" href="#top">
-                Subir
-                <i class="material-icons">expand_less</i>
-              </a>
-            </div>
+            
           </div>
 
           <div class="mdl-mega-footer--middle-section">
@@ -352,31 +338,7 @@ function closeForm() {
             <p class="mdl-typography--font-light">Algunas características pueden no estar disponibles en todas las áreas</p>
           </div>
 
-          <div class="mdl-mega-footer--bottom-section">
-            <a class="android-link android-link-menu mdl-typography--font-light" id="version-dropdown">
-              OPCIONES
-              <i class="material-icons">arrow_drop_up</i>
-            </a>
-            <ul class="mdl-menu mdl-js-menu mdl-menu--top-left mdl-js-ripple-effect" for="version-dropdown">
-              <li class="mdl-menu__item">posible espacio</li>
-              <li class="mdl-menu__item">posible espacio</li>
-              <li class="mdl-menu__item">posible espacio</li>
-              <li class="mdl-menu__item">posible espacio</li>
-            </ul>
-            <a class="android-link android-link-menu mdl-typography--font-light" id="developers-dropdown">
-              otras opciones
-              <i class="material-icons">arrow_drop_up</i>
-            </a>
-            <ul class="mdl-menu mdl-js-menu mdl-menu--top-left mdl-js-ripple-effect" for="developers-dropdown">
-              <li class="mdl-menu__item">posible espacio</li>
-              <li class="mdl-menu__item">posible espacio</li>
-              <li class="mdl-menu__item">posible espacio</li>
-              <li class="mdl-menu__item">posible espacio</li>
-            </ul>
-            <a class="android-link mdl-typography--font-light" href="">Blog</a>
-            <a class="android-link mdl-typography--font-light" href="">Política de Privacidad</a>
-          </div>
-
+         
         </footer>
       </div>
     </div>
