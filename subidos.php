@@ -213,7 +213,7 @@ if($resultado = mysqli_fetch_array($consulta)){
  <img src='images/$secc/$var1.jpg'>
               </div>
               <div class='mdl-card__title'>
-                 <h4 class='mdl-card__title-text'>$var2</h4>
+                 <h4 class='mdl-card__title-text'></h4>
               </div>
               <div class='mdl-card__supporting-text'>
                 <span class='mdl-typography--font-light mdl-typography--subhead'></span>
