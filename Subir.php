@@ -45,24 +45,34 @@
             </div>
           </div>
           <!-- Menú -->
-        <?php
+      <?php
 error_reporting(0);
-$user=$_POST['user'];
-$password=$_POST['password']; 
-if(empty($user and $password))
-{
-   echo ""; 
-}
-session_start();
-$conexion = mysqli_connect("localhost", "root", "", "EkoBDD");
-$consulta =$conexion->query("SELECT * from ACCESO WHERE Nombre='$user' AND Password='$password'");       
-if($resultado = mysqli_fetch_array($consulta)){
-  $_SESSION['u']=$user;
-            echo "<script type=\"text/javascript\">alert(\"Bienvenido $user\");</script>";
-    $registro="index.php";
+            $var1="";
+            $proveedor="proveedor";
+            $usuario="usuario";
+session_start();     
+if($_SESSION['usuario'] and $_SESSION['password']){    
+    if($_SESSION['tipo']=="usuario")
+    {
+    $registro="logout.php";
     $regis="Logout";
     $sesion="index.php";
-    $ses=$user;
+    $ses=$_SESSION['usuario'];
+        $cata="Carrito";
+        $catalink="carrito.php";
+    }
+    else
+        
+    if($_SESSION['tipo']=="proveedor"){
+    $registro="logout.php";
+    $regis="Logout";
+    $sesion="index.php";
+    $ses=$_SESSION['usuario']; 
+         $cata="Subidos";
+        $catalink="proveedor.php";
+    }
+    
+          
     
 }
             else{
@@ -70,17 +80,24 @@ if($resultado = mysqli_fetch_array($consulta)){
                 $regis="Registrate";
                 $sesion="Log-in.html";
     $ses="Login";
-                
+                $cata="Carrito";
+        $catalink="carrito.php";
             }
             
  echo"
           <div class='android-navigation-container'  >
             <nav class='android-navigation mdl-navigatio' >
 
-              <a class='mdl-navigation__link mdl-typography--text-uppercase' href='index.php' >Home</a>
-              <a class='mdl-navigation__link mdl-typography--text-uppercase' href='catalogo.php'>Catalogo</a>
-              <a class='mdl-navigation__link mdl-typography--text-uppercase' href='contact.php'>Contactanos</a>
-              <a class='mdl-navigation__link mdl-typography--text-uppercase' href='informacion.php'>Nosotros</a>
+              <a class='mdl-navigation__link mdl-typography--text-uppercase' href='index.php' >Home</a>";
+            if($var1!=$proveedor)
+            {
+                 echo"
+              
+              <a class='mdl-navigation__link mdl-typography--text-uppercase' href='informacion.php'>Nosotros</a>";
+            }
+           
+            echo"
+              <a class='mdl-navigation__link mdl-typography--text-uppercase' href='contact.php'>Contacto</a>
             <a class='mdl-navigation__link mdl-typography--text-uppercase' id='open-modal-login' href='$registro'>$regis</a>
              <a class='mdl-navigation__link mdl-typography--text-uppercase' id='open-modal-login' href='$sesion'>$ses</a>
             </nav>
@@ -90,6 +107,8 @@ if($resultado = mysqli_fetch_array($consulta)){
 
            
           </div>
+         
+
 ";
 
  ?>
@@ -151,63 +170,48 @@ if($resultado = mysqli_fetch_array($consulta)){
 
 <div class="android-content mdl-layout__content">
 
-  
- 
+  </div>
+         </div>
 
- <div class="container" style="width: 1000px;">
-      <form action="" method="POST">
+ <div class="container">
+     <form method="post" action="subir2.php" enctype="multipart/form-data">
 
 
   <h1 style="padding-left: 35%;">Sube tu producto!</h1>
     <p style="padding-left: 35%;">Por favor llena los datos correctamente para poder subir el producto.</p><br>
 
     <label for="Nombre"><b >Nombre del Producto:</b></label><br>
-    <input type="text"   placeholder="Producto" name="nombre" required >
+    <input type="text"   placeholder="Producto" name="Nombre" required >
     <label for="Descripcion" ><b>Descripcion del Producto:</b></label><br>
     <textarea class="input-contact"    name="Descripcion" cols="90" rows="10" placeholder="Descripcion"></textarea> <br>
     <label for="Precio" ><b>Precio:</b></label><br>
     <input type="text"  placeholder="Precio$$$" name="Precio" required >
     <br>
 
-      <label for="psw-repeat" ><b>Tipo de Producto:   </b></label>
+      <label for="Seccion" ><b>Tipo de Producto:(Salas,Sofa, Sillones, Mesas, Sillas, Bancos, Credensas, Lamparas, Cojines, Cuadros o Decoracion)   </b></label>
        
-        <select name="combo">
-     
-    <option value="2" name="salas1"selected>Salas</option>
-     <option value="3" name="Sillones1"selected>Sillone</option>
-      <option value="4" name="Sofa1"selected>Sofa</option>
-       <option value="5" name="Mesas1"selected>Mesas</option>
-        <option value="6" name="Sillas1"selected>Silla</option>
-         <option value="7" name="Banco1"selected>Banco</option>
-          <option value="8" name="Credensa1"selected>Credensa</option>
-           <option value="9" name="Lampara1"selected>Lampara</option>
-            <option value="10" name="Cojines1"selected>Cojines</option>
-             <option value="11" name="Cuadros1"selected>Cuadros</option>
-              <option value="12" name="Decoraciones1"selected>Decoraciones</option> <!-- Opción por defecto -->
-  </select>
+         <input type="text"  placeholder="Seccion" name="Seccion" required >
   <br>
   <br>  
-  <form action="#">
+
                 <div class="file-field input-field">
                   <div class="btn">
                     <b>Seleccion imagen:</b>
                     <br>
                     <br>
-                    <input type="file">
+                    <input type="file" name="myfile" />
                   </div>
                   <div class="file-path-wrapper">
                    
                   </div>
                 </div>
+          <input type="submit" value="Enviar">
               </form>
               <br>
               <br>
-      <input class="btn" type="submit" name=" " value="SUBIR" style="border-radius: 50px; background: #cbffad;" >
+     
+     
 
-  </div>
-
-
-</style>
     
 
     <style >
@@ -275,7 +279,17 @@ a {
 }
 
 </style>
+
+
+ 
+    <script src="js/material.min.js"></script>
 </div>
+
+
+
+       
+
+</body>
  <footer class="android-footer mdl-mega-footer">
           <div class="mdl-mega-footer--top-section">
             
@@ -299,19 +313,5 @@ a {
 
         </footer>
 
-      </div>
-    </div>
-    </div>
-    </div>
-
- 
-    <script src="js/material.min.js"></script>
-
-
-
-
-       
-
-</body>
 
 </html>
