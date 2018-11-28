@@ -222,12 +222,13 @@ if($resultado = mysqli_fetch_array($consulta)){
               <form  method='POST'>
               <div class='mdl-card__actions'>
                
-             <button  type='submit' class='open-button' onclick='' name='borrar' value='$var1'>Eliminar</button>
+             <button  type='submit' class='open-button' onclick='' name='borrar' value='$var2'>Eliminar</button>
             <label name='otro' value='$secc'><b></b></label>
              </form>
               <form action='editar.php' method='POST'>
              
-             <button class='open-button' onclick=''>Editar</button>
+             <button class='open-button' onclick='' name='seccion' value='$secc'>Editar</button>
+             <input style='visibility:hidden' name='id' value='$var1'' />
              </form>
               </div>
             </div>            
@@ -245,15 +246,17 @@ if($resultado = mysqli_fetch_array($consulta)){
         }
           $borrar=$_POST['borrar'];
         $otro=$_POST['otro'];
-        echo "<script type=\"text/javascript\">alert(\"$otro\");</script>";
-        $sql = "DELETE FROM $otro WHERE id=$borrar";
+        $Seccion=array(Nada, Salas, Sillones, Sofa, Mesas, Sillas, Bancos, Credensas, Lamparas, Cojines, Cuadros, Decoracion); 
+        for($contador=1;$contador<13;$contador++){
+            $Sec=$Seccion[$contador];
+         $sql = "DELETE FROM $Sec WHERE Nombre='$borrar'";
+        
 
-if ($conn->query($sql) === TRUE) {
-    echo "Record deleted successfully";
-} else {
-    echo "Error deleting record: " . $conn->error;
-}
+if ($conexion->query($sql) === TRUE) {
+} 
        
+        }
+   
       echo"
       
       <script language='javascript' type='text/javascript'>
